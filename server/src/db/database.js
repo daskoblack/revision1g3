@@ -5,13 +5,16 @@ import path from 'path';
 import fs from 'fs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const dataDir = path.join(__dirname, '../../data');
-const dbPath = path.join(dataDir, 'marin.db');
 
-// Créer le dossier data/ si absent
+// Production Railway : volume persistant monté sur /app/data
+// Dev local : server/data/marin.db
+const dataDir = process.env.NODE_ENV === 'production'
+  ? '/app/data'
+  : path.join(__dirname, '../../data');
+
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
-const db = new DatabaseSync(dbPath);
+const db = new DatabaseSync(path.join(dataDir, 'marin.db'));
 db.exec('PRAGMA journal_mode = WAL');
 
 export default db;
