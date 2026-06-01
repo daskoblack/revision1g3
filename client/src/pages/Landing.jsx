@@ -6,8 +6,8 @@ import { useAuth } from '../context/AuthContext';
 export default function Landing() {
   const { login } = useAuth();
   const navigate  = useNavigate();
-  const [form, setForm]     = useState({ email: '', password: '', confirm: '' });
-  const [error, setError]   = useState('');
+  const [form, setForm]       = useState({ username: '', password: '', confirm: '' });
+  const [error, setError]     = useState('');
   const [loading, setLoading] = useState(false);
 
   const set = (k) => (e) => setForm(f => ({ ...f, [k]: e.target.value }));
@@ -15,19 +15,14 @@ export default function Landing() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    if (form.password !== form.confirm) {
-      return setError('Les mots de passe ne correspondent pas.');
-    }
-    if (form.password.length < 8) {
-      return setError('Le mot de passe doit faire au moins 8 caractères.');
-    }
+    if (form.password !== form.confirm) return setError('Les mots de passe ne correspondent pas.');
     setLoading(true);
     try {
       const res = await axios.post('/api/auth/register', {
-        email: form.email,
+        username: form.username,
         password: form.password,
       });
-      login(res.data.token, res.data.email);
+      login(res.data.token, res.data.username);
       navigate('/textes');
     } catch (err) {
       setError(err.response?.data?.error ?? 'Une erreur est survenue. Réessaie.');
@@ -39,29 +34,26 @@ export default function Landing() {
   return (
     <div className="min-h-screen flex flex-col lg:flex-row">
 
-      {/* ── Panneau gauche : branding ── */}
-      <div className="lg:w-5/12 xl:w-2/5 bg-navy-900 text-white flex flex-col justify-between px-8 py-10 sm:px-12 lg:px-14">
+      {/* ── Panneau gauche : branding — masqué sur mobile ── */}
+      <div className="hidden lg:flex lg:w-5/12 xl:w-2/5 bg-navy-900 text-white flex-col justify-between px-12 xl:px-14 py-12">
         <div>
-          {/* Logo */}
-          <div className="mb-10 lg:mb-16">
-            <p className="font-serif text-2xl font-bold text-amber-300 tracking-wide">M. Marin</p>
-            <p className="text-navy-200 text-sm mt-1">Bac de Français · Terminale Générale</p>
+          <div className="mb-14">
+            <p className="font-serif text-2xl font-bold text-amber-300 tracking-wide">Revision1G3</p>
+            <p className="text-navy-200 text-sm mt-1">Français · Première Générale</p>
           </div>
 
-          {/* Citation */}
-          <blockquote className="mb-10">
-            <p className="font-serif text-xl sm:text-2xl lg:text-3xl font-medium text-white leading-relaxed italic">
+          <blockquote className="mb-12">
+            <p className="font-serif text-2xl xl:text-3xl font-medium text-white leading-relaxed italic">
               "Lire, c'est boire et manger. L'esprit qui ne lit pas maigrit comme le corps qui ne mange pas."
             </p>
-            <footer className="mt-4 text-navy-300 text-sm">— Victor Hugo</footer>
+            <footer className="mt-5 text-navy-300 text-sm">— Victor Hugo</footer>
           </blockquote>
 
-          {/* Features */}
           <ul className="space-y-3 text-navy-200 text-sm">
             {[
               { icon: '📖', text: 'Analyses linéaires complètes pour chaque texte du programme' },
               { icon: '🤖', text: 'Assistant M. Marin, expert de chaque texte — répond à tes questions' },
-              { icon: '🎤', text: 'Simule ton oral blanc et prépare tes réponses d\'examinateur' },
+              { icon: '🎤', text: 'Simule ton oral blanc et entraîne-toi aux questions d\'examinateur' },
               { icon: '💡', text: 'Procédés stylistiques, axes de lecture, mémos pour retenir l\'essentiel' },
             ].map(({ icon, text }) => (
               <li key={text} className="flex items-start gap-3">
@@ -71,17 +63,22 @@ export default function Landing() {
             ))}
           </ul>
         </div>
-
-        {/* Footer branding — masqué sur mobile */}
-        <div className="hidden lg:block mt-10 pt-6 border-t border-navy-700 text-navy-400 text-xs">
+        <div className="pt-6 border-t border-navy-700 text-navy-400 text-xs">
           Accès réservé aux élèves de la classe
         </div>
       </div>
 
-      {/* ── Panneau droit : formulaire d'inscription ── */}
-      <div className="flex-1 flex items-center justify-center px-6 py-12 sm:px-10 bg-parchment-100">
+      {/* ── Panneau droit : formulaire — plein écran sur mobile ── */}
+      <div className="flex-1 flex items-center justify-center px-6 py-10 sm:px-10 bg-parchment-100 min-h-screen lg:min-h-0">
         <div className="w-full max-w-md fade-up">
-          <div className="mb-8">
+
+          {/* Logo visible uniquement sur mobile */}
+          <div className="lg:hidden mb-8 text-center">
+            <p className="font-serif text-2xl font-bold text-navy-900">Revision1G3</p>
+            <p className="text-ink-light text-sm mt-1">Français · Première Générale</p>
+          </div>
+
+          <div className="mb-7">
             <h1 className="font-serif text-3xl font-bold text-ink">Crée ton compte</h1>
             <p className="text-ink-light mt-2 text-sm">
               Rejoins tes camarades et accède aux fiches d'analyse.
@@ -90,18 +87,21 @@ export default function Landing() {
 
           <form onSubmit={handleSubmit} noValidate className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="email">
-                Adresse e-mail
+              <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="username">
+                Pseudo <span className="text-ink-pale font-normal">(lettres, chiffres, . _ -)</span>
               </label>
               <input
-                id="email"
-                type="email"
-                autoComplete="email"
+                id="username"
+                type="text"
+                autoComplete="username"
+                autoCapitalize="none"
                 className="field"
-                placeholder="prenom.nom@lycee.fr"
-                value={form.email}
-                onChange={set('email')}
+                placeholder="ex : jules.m ou eleve42"
+                value={form.username}
+                onChange={set('username')}
                 required
+                minLength={3}
+                maxLength={30}
               />
             </div>
 
@@ -144,11 +144,7 @@ export default function Landing() {
               </div>
             )}
 
-            <button
-              type="submit"
-              disabled={loading}
-              className="btn-primary w-full text-base mt-2"
-            >
+            <button type="submit" disabled={loading} className="btn-primary w-full text-base mt-2">
               {loading ? (
                 <span className="flex items-center gap-2">
                   <svg className="animate-spin w-4 h-4" viewBox="0 0 24 24" fill="none">
@@ -170,10 +166,9 @@ export default function Landing() {
             </Link>
           </p>
 
-          {/* Quota info */}
           <div className="mt-8 bg-amber-600/5 border border-amber-600/20 rounded-xl p-4 text-xs text-ink-light">
             <p className="font-medium text-ink mb-1">30 messages gratuits par jour</p>
-            Le quota se recharge automatiquement chaque jour à minuit. Tu peux poser toutes tes questions à M. Marin sans limitation de durée.
+            Le quota se recharge automatiquement à minuit. Pose toutes tes questions à M. Marin sans limite de durée.
           </div>
         </div>
       </div>

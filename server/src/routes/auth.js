@@ -8,33 +8,40 @@ const SALT_ROUNDS = 12;
 
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
-  if (!email || !password) {
-    return res.status(400).json({ error: 'Email et mot de passe requis' });
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Pseudo et mot de passe requis' });
+  }
+  const pseudo = username.trim().toLowerCase();
+  if (pseudo.length < 3) {
+    return res.status(400).json({ error: 'Le pseudo doit faire au moins 3 caractères' });
+  }
+  if (pseudo.length > 30) {
+    return res.status(400).json({ error: 'Le pseudo ne peut pas dépasser 30 caractères' });
+  }
+  if (!/^[a-z0-9._-]+$/.test(pseudo)) {
+    return res.status(400).json({ error: 'Pseudo invalide (lettres, chiffres, . _ - uniquement)' });
   }
   if (password.length < 8) {
     return res.status(400).json({ error: 'Mot de passe trop court (minimum 8 caractères)' });
-  }
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    return res.status(400).json({ error: 'Format d\'email invalide' });
   }
 
   try {
     const hash = await bcrypt.hash(password, SALT_ROUNDS);
     const result = db.prepare(
-      'INSERT INTO users (email, password_hash) VALUES (?, ?)'
-    ).run(email.toLowerCase().trim(), hash);
+      'INSERT INTO users (username, password_hash) VALUES (?, ?)'
+    ).run(pseudo, hash);
 
     const token = jwt.sign(
-      { id: result.lastInsertRowid, email: email.toLowerCase().trim() },
+      { id: result.lastInsertRowid, username: pseudo },
       process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );
-    res.status(201).json({ token, email: email.toLowerCase().trim() });
+    res.status(201).json({ token, username: pseudo });
   } catch (err) {
     if (err.code === 'SQLITE_CONSTRAINT_UNIQUE') {
-      return res.status(409).json({ error: 'Cet email est déjà utilisé' });
+      return res.status(409).json({ error: 'Ce pseudo est déjà pris' });
     }
     console.error('Erreur register:', err);
     res.status(500).json({ error: 'Erreur serveur' });
@@ -43,24 +50,24 @@ router.post('/register', async (req, res) => {
 
 // POST /api/auth/login
 router.post('/login', async (req, res) => {
-  const { email, password } = req.body;
+  const { username, password } = req.body;
 
-  if (!email || !password) {
-    return res.status(400).json({ error: 'Email et mot de passe requis' });
+  if (!username || !password) {
+    return res.status(400).json({ error: 'Pseudo et mot de passe requis' });
   }
 
-  const user = db.prepare('SELECT * FROM users WHERE email = ?').get(email.toLowerCase().trim());
+  const user = db.prepare('SELECT * FROM users WHERE username = ?').get(username.trim().toLowerCase());
   if (!user) return res.status(401).json({ error: 'Identifiants incorrects' });
 
   const valid = await bcrypt.compare(password, user.password_hash);
   if (!valid) return res.status(401).json({ error: 'Identifiants incorrects' });
 
   const token = jwt.sign(
-    { id: user.id, email: user.email },
+    { id: user.id, username: user.username },
     process.env.JWT_SECRET,
     { expiresIn: '7d' }
   );
-  res.json({ token, email: user.email });
+  res.json({ token, username: user.username });
 });
 
 export default router;

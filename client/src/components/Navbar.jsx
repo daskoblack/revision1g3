@@ -28,9 +28,9 @@ export default function Navbar() {
           to="/textes"
           className="font-serif text-lg font-semibold tracking-wide text-amber-300 hover:text-amber-400 transition-colors"
         >
-          M.&nbsp;Marin
+          Revision1G3
           <span className="ml-2 text-xs font-sans font-normal text-navy-200 hidden sm:inline">
-            Bac de Français
+            Français · 1ère Générale
           </span>
         </Link>
 
