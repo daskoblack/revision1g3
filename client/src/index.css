@@ -1,111 +1,118 @@
-:root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; }
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-  @media (max-width: 1024px) {
+  body {
+    @apply bg-parchment-100 text-ink font-sans;
     font-size: 16px;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5 {
+    @apply font-serif text-ink;
+    line-height: 1.2;
+  }
+
+  /* Scrollbar discrète */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { @apply bg-parchment-200; }
+  ::-webkit-scrollbar-thumb { @apply bg-ink-pale rounded-full; }
+  ::-webkit-scrollbar-thumb:hover { @apply bg-ink-light; }
+}
+
+@layer components {
+  /* Boutons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 font-medium rounded-lg
+           transition-all duration-200 focus:outline-none focus-visible:ring-2
+           focus-visible:ring-amber-600 focus-visible:ring-offset-2
+           disabled:opacity-50 disabled:cursor-not-allowed;
+    min-height: 44px; /* accessibilité touch */
+  }
+  .btn-primary {
+    @apply btn bg-amber-600 text-white px-5 py-2.5
+           hover:bg-amber-400 active:scale-95 shadow-sm;
+  }
+  .btn-secondary {
+    @apply btn border border-amber-600 text-amber-600 px-5 py-2.5
+           hover:bg-amber-600 hover:text-white active:scale-95;
+  }
+  .btn-ghost {
+    @apply btn text-ink-light px-4 py-2 hover:text-ink hover:bg-parchment-200;
+  }
+  .btn-danger {
+    @apply btn text-red-600 px-4 py-2 hover:bg-red-50;
+  }
+
+  /* Cartes */
+  .card {
+    @apply bg-white rounded-xl shadow-card border border-parchment-200 overflow-hidden;
+  }
+  .card-padded {
+    @apply card p-5 sm:p-6;
+  }
+
+  /* Champs de formulaire */
+  .field {
+    @apply w-full border border-parchment-300 rounded-lg px-4 py-3 bg-white
+           text-ink placeholder-ink-pale
+           focus:outline-none focus:ring-2 focus:ring-amber-600 focus:border-amber-600
+           transition-colors duration-150;
+    min-height: 44px;
+  }
+
+  /* Badge de mouvement littéraire */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium
+           bg-amber-300/20 text-amber-800 border border-amber-300/40;
+  }
+
+  /* Séparateur décoratif */
+  .divider {
+    @apply flex items-center gap-3 text-ink-pale text-sm;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    @apply flex-1 border-t border-parchment-300;
+  }
+
+  /* Sections d'analyse */
+  .section-card {
+    @apply card-padded mb-5;
+  }
+  .section-title {
+    @apply font-serif text-xl font-semibold text-ink mb-4 pb-2
+           border-b border-parchment-200;
+  }
+
+  /* Accent latéral pour intro/conclusion */
+  .card-accent {
+    @apply card-padded border-l-4 border-l-amber-600;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
+/* Animation d'entrée légère */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeUp 0.35s ease-out both;
 }
 
-body {
-  margin: 0;
+/* Bulles de chat */
+.bubble-user {
+  @apply bg-navy-500 text-white rounded-2xl rounded-tr-sm px-4 py-2.5 text-sm leading-relaxed;
 }
-
-#root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
-  min-height: 100svh;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-h1,
-h2 {
-  font-family: var(--heading);
-  font-weight: 500;
-  color: var(--text-h);
-}
-
-h1 {
-  font-size: 56px;
-  letter-spacing: -1.68px;
-  margin: 32px 0;
-  @media (max-width: 1024px) {
-    font-size: 36px;
-    margin: 20px 0;
-  }
-}
-h2 {
-  font-size: 24px;
-  line-height: 118%;
-  letter-spacing: -0.24px;
-  margin: 0 0 8px;
-  @media (max-width: 1024px) {
-    font-size: 20px;
-  }
-}
-p {
-  margin: 0;
-}
-
-code,
-.counter {
-  font-family: var(--mono);
-  display: inline-flex;
-  border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
-  font-size: 15px;
-  line-height: 135%;
-  padding: 4px 8px;
-  background: var(--code-bg);
+.bubble-assistant {
+  @apply bg-white border border-parchment-200 text-ink rounded-2xl rounded-tl-sm px-4 py-2.5 text-sm leading-relaxed shadow-soft;
 }
