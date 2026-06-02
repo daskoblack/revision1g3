@@ -10,6 +10,7 @@ import MyTexts from './pages/MyTexts';
 import ClassTexts from './pages/ClassTexts';
 import SharedTextView from './pages/SharedTextView';
 import UserTextDetail from './pages/UserTextDetail';
+import Admin from './pages/Admin';
 
 // Route accessible uniquement si connecté
 function PrivateRoute({ children }) {
@@ -43,6 +44,9 @@ function AppRoutes() {
 
         {/* Lien de partage public (lecture seule sans auth) */}
         <Route path="/textes/share/:token" element={<SharedTextView />} />
+
+        {/* Administration */}
+        <Route path="/admin" element={<Admin />} />
 
         {/* Fallback */}
         <Route path="*" element={<Navigate to={token ? '/textes' : '/'} replace />} />

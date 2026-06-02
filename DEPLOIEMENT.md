@@ -60,6 +60,10 @@ node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
 
 → Copier la longue chaîne hexadécimale générée (128 caractères)
 
+### 6. Choisir un ADMIN_SECRET
+
+Choisis un mot de passe ou code secret administrateur difficile à deviner (ex: `marin-admin-super-code-2026`). Ce code vous servira à vous connecter sur la console d'administration en ligne à l'adresse `/admin` pour gérer les comptes des élèves.
+
 ---
 
 ## ÉTAPE 1 — Pousser le projet sur GitHub
@@ -174,6 +178,7 @@ Dans Railway → Service → onglet **Variables** → ajouter :
 | `GROQ_KEY_2`    | `gsk_ta_deuxieme_cle_groq`                     |
 | `GROQ_KEY_3`    | `gsk_ta_troisieme_cle_groq`                    |
 | `JWT_SECRET`    | `la_longue_chaine_generee_a_letape_0`          |
+| `ADMIN_SECRET`   | `ton_code_secret_administrateur_choisi`        |
 | `CLIENT_ORIGIN` | _(à remplir après avoir créé le site Netlify)_ |
 
 ### 2.5 Récupérer l'URL Railway
@@ -308,12 +313,17 @@ Tout push sur la branche `main` déclenche automatiquement :
 - Un redéploiement Netlify (frontend, ~2 min)
 - Un redéploiement Railway (backend, ~2 min)
 
-### Réinitialiser un mot de passe élève
+### Gérer les comptes élèves & les quotas (Console Admin)
 
-Railway n'offre pas de console SQLite directe. Options :
+Une console d'administration sécurisée est intégrée directement sur le site :
 
-- Ajouter une route admin protégée (future évolution)
-- Recréer le compte (l'élève recrée son compte, perd son historique)
+1. Rends-toi sur ton site à l'adresse suivante : `https://revision1g3.netlify.app/admin` (ou en ajoutant `/admin` à ton URL personnalisée).
+2. Saisis le code secret configuré dans la variable `ADMIN_SECRET` sur Railway.
+3. Une fois connecté, tu as accès en temps réel à tous les élèves inscrits.
+4. Depuis cette console, tu peux :
+   - **🔑 Mot de Passe** : Modifier le mot de passe d'un élève s'il l'a oublié.
+   - **⚡ Quotas** : Réinitialiser ses limites de messages de chat et de créations de fiches pour la journée en cas de besoin.
+   - **🗑️ Supprimer** : Supprimer définitivement le compte d'un élève (supprime aussi ses fiches personnelles et ses historiques de conversation).
 
 ---
 

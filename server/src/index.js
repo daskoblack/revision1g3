@@ -6,6 +6,7 @@ import authRouter from './routes/auth.js';
 import chatRouter from './routes/chat.js';
 import textsRouter from './routes/texts.js';
 import userTextsRouter from './routes/userTexts.js';
+import adminRouter from './routes/admin.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -32,6 +33,7 @@ app.use('/api/auth', authRouter);
 app.use('/api/chat', chatRouter);
 app.use('/api/texts', textsRouter);
 app.use('/api/user-texts', userTextsRouter);
+app.use('/api/admin', adminRouter);
 
 // Santé du serveur (utile pour Railway/Render et les tests)
 app.get('/api/health', (req, res) => {
