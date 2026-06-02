@@ -5,19 +5,43 @@ import remarkGfm from 'remark-gfm';
 import { useAuth } from '../context/AuthContext';
 import QuotaBar from './QuotaBar';
 
+const WELCOME_MSG = (textTitle) => ({
+  role: 'assistant',
+  content: `Bonjour ! Je suis **M. Marin**, ton assistant pour *${textTitle}*.
+
+Pose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider ! 📚`,
+});
+
 export default function ChatWidget({ textId, textTitle }) {
-  const { quota, fetchQuota } = useAuth();
-  const [messages, setMessages] = useState([
-    {
-      role: 'assistant',
-      content: `Bonjour ! Je suis **M. Marin**, ton assistant pour *${textTitle}*.\n\nPose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider ! 📚`,
-    },
-  ]);
-  const [input, setInput]   = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError]   = useState('');
-  const endRef  = useRef(null);
+  const { quota, fetchQuota, token } = useAuth();
+  const [messages, setMessages] = useState([WELCOME_MSG(textTitle)]);
+  const [input, setInput]       = useState('');
+  const [loading, setLoading]   = useState(false);
+  const [histLoading, setHistLoading] = useState(true);
+  const [error, setError]       = useState('');
+  const endRef   = useRef(null);
   const inputRef = useRef(null);
+
+  // Charger l'historique depuis la base de données au montage
+  useEffect(() => {
+    if (!token) { setHistLoading(false); return; }
+    const load = async () => {
+      try {
+        const res = await axios.get(`/api/chat/${textId}/history`);
+        if (res.data.history && res.data.history.length > 0) {
+          setMessages([
+            WELCOME_MSG(textTitle),
+            ...res.data.history.map(h => ({ role: h.role, content: h.content })),
+          ]);
+        }
+      } catch {
+        // Pas d'historique ou erreur réseau → on garde le message de bienvenue
+      } finally {
+        setHistLoading(false);
+      }
+    };
+    load();
+  }, [textId]); // eslint-disable-line
 
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
@@ -56,11 +80,11 @@ export default function ChatWidget({ textId, textTitle }) {
     }
   };
 
-  const clearHistory = () => {
-    setMessages([{
-      role: 'assistant',
-      content: `Bonjour ! Je suis **M. Marin**, ton assistant pour *${textTitle}*.\n\nPose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider ! 📚`,
-    }]);
+  const clearHistory = async () => {
+    try {
+      await axios.delete(`/api/chat/${textId}/history`);
+    } catch { /* silencieux */ }
+    setMessages([WELCOME_MSG(textTitle)]);
   };
 
   const quotaEmpty = (quota?.remaining ?? 0) <= 0;
@@ -95,6 +119,17 @@ export default function ChatWidget({ textId, textTitle }) {
 
       {/* Messages */}
       <div className="h-72 sm:h-80 md:h-96 overflow-y-auto px-4 py-4 space-y-3 bg-parchment-50">
+        {histLoading && (
+          <div className="flex justify-center items-center h-full">
+            <div className="flex flex-col items-center gap-2 text-ink-pale text-xs">
+              <svg className="animate-spin w-5 h-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8z" />
+              </svg>
+              Chargement de l'historique…
+            </div>
+          </div>
+        )}
         {messages.map((m, i) => (
           <div key={i} className={`flex gap-2 ${m.role === 'user' ? 'justify-end' : 'justify-start'} fade-up`}>
             {m.role === 'assistant' && (

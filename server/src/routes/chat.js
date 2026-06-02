@@ -25,6 +25,32 @@ router.get('/quota', requireAuth, (req, res) => {
   });
 });
 
+// GET /api/chat/:textId/history — historique de conversation pour un texte
+router.get('/:textId/history', requireAuth, (req, res) => {
+  const { textId } = req.params;
+  const limit = Math.min(parseInt(req.query.limit) || 60, 100);
+
+  const rows = db.prepare(`
+    SELECT role, content, created_at
+    FROM messages_log
+    WHERE user_id = ? AND text_id = ?
+    ORDER BY created_at ASC
+    LIMIT ?
+  `).all(req.user.id, textId, limit);
+
+  res.json({ history: rows });
+});
+
+// DELETE /api/chat/:textId/history — effacer l'historique d'un texte
+router.delete('/:textId/history', requireAuth, (req, res) => {
+  const { textId } = req.params;
+  const info = db.prepare(
+    'DELETE FROM messages_log WHERE user_id = ? AND text_id = ?'
+  ).run(req.user.id, textId);
+
+  res.json({ ok: true, deleted: info.changes });
+});
+
 // POST /api/chat/:textId — envoyer un message à l'IA pour ce texte
 router.post('/:textId', requireAuth, checkQuota, async (req, res) => {
   const { textId } = req.params;
@@ -34,22 +60,38 @@ router.post('/:textId', requireAuth, checkQuota, async (req, res) => {
     return res.status(400).json({ error: 'Tableau messages[] manquant ou vide' });
   }
 
-  // Limiter à 10 messages de contexte pour contrôler la taille des requêtes
-  const context = messages.slice(-10).filter(
-    m => m.role && m.content && typeof m.content === 'string'
-  );
-
   const text = texts.find(t => t.id === textId);
   if (!text) return res.status(404).json({ error: 'Texte introuvable' });
+
+  // Récupérer les 30 derniers messages en DB pour le contexte Groq (vraie mémoire persistante)
+  const dbHistory = db.prepare(`
+    SELECT role, content FROM messages_log
+    WHERE user_id = ? AND text_id = ?
+    ORDER BY created_at DESC
+    LIMIT 30
+  `).all(req.user.id, textId).reverse();
+
+  // Message utilisateur (dernier message du tableau envoyé)
+  const userMsg = messages[messages.length - 1];
+  if (!userMsg || userMsg.role !== 'user') {
+    return res.status(400).json({ error: 'Le dernier message doit être de role "user"' });
+  }
+
+  // Construire le contexte : historique DB + nouveau message user
+  const context = [...dbHistory, { role: userMsg.role, content: userMsg.content }];
 
   try {
     const reply = await chatWithGroq(text.systemPrompt, context);
 
-    // Incrémenter le compteur et logger
-    db.prepare('UPDATE users SET messages_used = messages_used + 1 WHERE id = ?').run(req.user.id);
-    db.prepare(
+    // Logger le message user ET la réponse assistant
+    const insertMsg = db.prepare(
       'INSERT INTO messages_log (user_id, text_id, role, content) VALUES (?, ?, ?, ?)'
-    ).run(req.user.id, textId, 'assistant', reply);
+    );
+    insertMsg.run(req.user.id, textId, 'user', userMsg.content);
+    insertMsg.run(req.user.id, textId, 'assistant', reply);
+
+    // Incrémenter le compteur de quota
+    db.prepare('UPDATE users SET messages_used = messages_used + 1 WHERE id = ?').run(req.user.id);
 
     const updated = db.prepare('SELECT messages_used, daily_quota FROM users WHERE id = ?').get(req.user.id);
     res.json({
