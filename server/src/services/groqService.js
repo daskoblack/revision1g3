@@ -42,3 +42,41 @@ export async function chatWithGroq(systemPrompt, messages, retries = 0) {
     throw err;
   }
 }
+
+export async function analyzeImageWithGroq(prompt, imageBase64, mimeType, retries = 0) {
+  if (keys.length === 0) {
+    throw new Error('Aucune clé GROQ_KEY_* configurée dans .env — configure tes clés API Groq sur console.groq.com');
+  }
+  if (retries >= keys.length) {
+    throw new Error('Toutes les clés Groq sont saturées. Réessaie dans quelques instants.');
+  }
+  const client = getNextClient();
+  try {
+    const completion = await client.chat.completions.create({
+      model: 'llama-3.2-11b-vision-preview',
+      messages: [
+        {
+          role: 'user',
+          content: [
+            { type: 'text', text: prompt },
+            {
+              type: 'image_url',
+              image_url: {
+                url: `data:${mimeType};base64,${imageBase64}`,
+              },
+            },
+          ],
+        },
+      ],
+      max_tokens: 1536,
+      temperature: 0.2,
+    });
+    return completion.choices[0].message.content;
+  } catch (err) {
+    if (err.status === 429) {
+      console.warn(`Clé Groq #${currentKeyIndex} saturée (429), rotation vers la suivante pour la vision...`);
+      return analyzeImageWithGroq(prompt, imageBase64, mimeType, retries + 1);
+    }
+    throw err;
+  }
+}

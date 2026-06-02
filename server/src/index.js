@@ -5,6 +5,7 @@ import { initDB } from './db/init.js';
 import authRouter from './routes/auth.js';
 import chatRouter from './routes/chat.js';
 import textsRouter from './routes/texts.js';
+import userTextsRouter from './routes/userTexts.js';
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -24,12 +25,13 @@ app.use(cors({
   credentials: true,
 }));
 
-app.use(express.json({ limit: '10kb' }));
+app.use(express.json({ limit: '15mb' }));
 
 // Routes
 app.use('/api/auth', authRouter);
 app.use('/api/chat', chatRouter);
 app.use('/api/texts', textsRouter);
+app.use('/api/user-texts', userTextsRouter);
 
 // Santé du serveur (utile pour Railway/Render et les tests)
 app.get('/api/health', (req, res) => {
