@@ -35,11 +35,11 @@ export function AuthProvider({ children }) {
     }
   }, []); // eslint-disable-line
 
-  const login = (newToken, username) => {
+  const login = (newToken, username, classe) => {
     localStorage.setItem('mm_token', newToken);
-    localStorage.setItem('mm_user', JSON.stringify({ username }));
+    localStorage.setItem('mm_user', JSON.stringify({ username, classe }));
     setToken(newToken);
-    setUser({ username });
+    setUser({ username, classe });
   };
 
   const logout = () => {

@@ -18,7 +18,7 @@ export default function Login() {
     setLoading(true);
     try {
       const res = await axios.post('/api/auth/login', form);
-      login(res.data.token, res.data.username);
+      login(res.data.token, res.data.username, res.data.classe);
       navigate('/textes');
     } catch (err) {
       setError(err.response?.data?.error ?? 'Identifiants incorrects.');

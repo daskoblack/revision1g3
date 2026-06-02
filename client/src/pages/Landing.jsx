@@ -6,7 +6,7 @@ import { useAuth } from '../context/AuthContext';
 export default function Landing() {
   const { login } = useAuth();
   const navigate  = useNavigate();
-  const [form, setForm]       = useState({ username: '', password: '', confirm: '' });
+  const [form, setForm]       = useState({ username: '', password: '', confirm: '', classe: '' });
   const [error, setError]     = useState('');
   const [loading, setLoading] = useState(false);
 
@@ -15,14 +15,16 @@ export default function Landing() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
+    if (!form.classe) return setError('Veuillez sélectionner votre classe.');
     if (form.password !== form.confirm) return setError('Les mots de passe ne correspondent pas.');
     setLoading(true);
     try {
       const res = await axios.post('/api/auth/register', {
         username: form.username,
         password: form.password,
+        classe: form.classe,
       });
-      login(res.data.token, res.data.username);
+      login(res.data.token, res.data.username, res.data.classe);
       navigate('/textes');
     } catch (err) {
       setError(err.response?.data?.error ?? 'Une erreur est survenue. Réessaie.');
@@ -103,6 +105,39 @@ export default function Landing() {
                 minLength={3}
                 maxLength={30}
               />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-ink mb-1.5" htmlFor="classe">
+                Classe
+              </label>
+              <select
+                id="classe"
+                className="field"
+                value={form.classe}
+                onChange={set('classe')}
+                required
+              >
+                <option value="">Sélectionne ta classe</option>
+                <optgroup label="Première Générale">
+                  <option value="1G1">1G1</option>
+                  <option value="1G2">1G2</option>
+                  <option value="1G3">1G3</option>
+                  <option value="1G4">1G4</option>
+                  <option value="1G5">1G5</option>
+                  <option value="1G6">1G6</option>
+                  <option value="1G7">1G7</option>
+                </optgroup>
+                <optgroup label="STI2D">
+                  <option value="STI2D1">STI2D1</option>
+                  <option value="STI2D2">STI2D2</option>
+                </optgroup>
+                <optgroup label="STMG">
+                  <option value="STMG1">STMG1</option>
+                  <option value="STMG2">STMG2</option>
+                  <option value="STMG3">STMG3</option>
+                </optgroup>
+              </select>
             </div>
 
             <div>

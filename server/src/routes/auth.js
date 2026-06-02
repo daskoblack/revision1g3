@@ -8,7 +8,7 @@ const SALT_ROUNDS = 12;
 
 // POST /api/auth/register
 router.post('/register', async (req, res) => {
-  const { username, password } = req.body;
+  const { username, password, classe } = req.body;
 
   if (!username || !password) {
     return res.status(400).json({ error: 'Pseudo et mot de passe requis' });
@@ -27,18 +27,20 @@ router.post('/register', async (req, res) => {
     return res.status(400).json({ error: 'Mot de passe trop court (minimum 8 caractères)' });
   }
 
+  const userClasse = (classe || '').trim();
+
   try {
     const hash = await bcrypt.hash(password, SALT_ROUNDS);
     const result = db.prepare(
-      'INSERT INTO users (username, password_hash) VALUES (?, ?)'
-    ).run(pseudo, hash);
+      'INSERT INTO users (username, password_hash, classe) VALUES (?, ?, ?)'
+    ).run(pseudo, hash, userClasse);
 
     const token = jwt.sign(
-      { id: result.lastInsertRowid, username: pseudo },
+      { id: result.lastInsertRowid, username: pseudo, classe: userClasse },
       process.env.JWT_SECRET,
       { expiresIn: '7d' }
     );
-    res.status(201).json({ token, username: pseudo });
+    res.status(201).json({ token, username: pseudo, classe: userClasse });
   } catch (err) {
     if (err.code === 'SQLITE_CONSTRAINT_UNIQUE') {
       return res.status(409).json({ error: 'Ce pseudo est déjà pris' });
@@ -63,11 +65,11 @@ router.post('/login', async (req, res) => {
   if (!valid) return res.status(401).json({ error: 'Identifiants incorrects' });
 
   const token = jwt.sign(
-    { id: user.id, username: user.username },
+    { id: user.id, username: user.username, classe: user.classe },
     process.env.JWT_SECRET,
     { expiresIn: '7d' }
   );
-  res.json({ token, username: user.username });
+  res.json({ token, username: user.username, classe: user.classe });
 });
 
 export default router;
