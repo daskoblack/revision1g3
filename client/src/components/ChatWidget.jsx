@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { useAuth } from '../context/AuthContext';
 import QuotaBar from './QuotaBar';
 
@@ -8,7 +10,7 @@ export default function ChatWidget({ textId, textTitle }) {
   const [messages, setMessages] = useState([
     {
       role: 'assistant',
-      content: `Bonjour ! Je suis M. Marin, ton assistant pour **${textTitle}**. Pose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider !`,
+      content: `Bonjour ! Je suis **M. Marin**, ton assistant pour *${textTitle}*.\n\nPose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider ! 📚`,
     },
   ]);
   const [input, setInput]   = useState('');
@@ -54,6 +56,13 @@ export default function ChatWidget({ textId, textTitle }) {
     }
   };
 
+  const clearHistory = () => {
+    setMessages([{
+      role: 'assistant',
+      content: `Bonjour ! Je suis **M. Marin**, ton assistant pour *${textTitle}*.\n\nPose-moi tes questions : analyse d'un passage, procédé stylistique, aide pour formuler une réponse d'oral… Je suis là pour t'aider ! 📚`,
+    }]);
+  };
+
   const quotaEmpty = (quota?.remaining ?? 0) <= 0;
 
   return (
@@ -68,7 +77,17 @@ export default function ChatWidget({ textId, textTitle }) {
             <p className="font-semibold text-sm">M. Marin</p>
             <p className="text-xs text-navy-200">Assistant expert — {textTitle}</p>
           </div>
-          <div className="ml-auto">
+          <div className="ml-auto flex items-center gap-3">
+            <button
+              onClick={clearHistory}
+              title="Effacer la conversation"
+              className="text-navy-200 hover:text-white transition-colors text-xs flex items-center gap-1 opacity-60 hover:opacity-100"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-3.5 h-3.5">
+                <path fillRule="evenodd" d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z" clipRule="evenodd" />
+              </svg>
+              Effacer
+            </button>
             <span className={`w-2 h-2 rounded-full inline-block ${quotaEmpty ? 'bg-red-400' : 'bg-green-400'}`} />
           </div>
         </div>
@@ -84,9 +103,27 @@ export default function ChatWidget({ textId, textTitle }) {
               </div>
             )}
             <div className={`max-w-[80%] sm:max-w-[75%] ${m.role === 'user' ? 'bubble-user' : 'bubble-assistant'}`}>
-              {m.content.split('\n').map((line, j) => (
-                <span key={j}>{line}{j < m.content.split('\n').length - 1 && <br />}</span>
-              ))}
+              {m.role === 'assistant' ? (
+                <div className="
+                  prose prose-sm max-w-none
+                  prose-headings:font-serif prose-headings:text-ink prose-headings:mt-2 prose-headings:mb-1 prose-headings:text-sm
+                  prose-h2:text-base prose-h3:text-sm
+                  prose-p:text-ink prose-p:leading-relaxed prose-p:my-1 prose-p:text-sm
+                  prose-strong:text-ink prose-strong:font-semibold
+                  prose-em:text-ink-light
+                  prose-ul:my-1 prose-ul:pl-4 prose-li:my-0.5 prose-li:text-ink prose-li:text-sm
+                  prose-ol:my-1 prose-ol:pl-4
+                  prose-blockquote:border-l-2 prose-blockquote:border-amber-600 prose-blockquote:pl-3 prose-blockquote:italic prose-blockquote:text-ink-light prose-blockquote:my-1 prose-blockquote:not-italic
+                  prose-code:bg-parchment-200 prose-code:px-1 prose-code:rounded prose-code:text-ink prose-code:text-xs prose-code:font-mono
+                  prose-hr:border-parchment-300 prose-hr:my-2
+                ">
+                  <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {m.content}
+                  </ReactMarkdown>
+                </div>
+              ) : (
+                <span className="text-sm leading-relaxed">{m.content}</span>
+              )}
             </div>
           </div>
         ))}

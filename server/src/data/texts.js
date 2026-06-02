@@ -1,4 +1,16 @@
 // Miroir de client/src/data/texts.js — AVEC les systemPrompts (jamais exposés au client).
+
+const MARKDOWN_INSTRUCTIONS = `
+
+FORMAT DE TES RÉPONSES (IMPORTANT) :
+- Utilise le **Markdown** pour structurer tes réponses
+- **Gras** pour les termes littéraires importants (procédés, auteurs, concepts)
+- *Italique* pour les citations du texte
+- ## Titre pour les grandes sections si ta réponse est longue
+- - Listes à puces pour les énumérations (procédés, axes, étapes)
+- > Citation pour reproduire un extrait du texte étudié
+- Garde tes réponses claires, aérées, adaptées au niveau lycée`;
+
 export const texts = [
   {
     id: "prevert-promenade-picasso",
@@ -34,7 +46,7 @@ Problématique : Comment Prévert oppose-t-il deux visions de l'art à travers l
 3. L'intervention de Picasso : arrive familièrement, « Quelle idée de peindre une pomme », mange la pomme (agir sur la réalité), casse l'assiette (liberté), « terrifiants pépins de la réalité ».
 
 PROCÉDÉS CLÉS : personnification, énumération, contradiction absurde, comparaison humoristique, jeux de mots surréalistes.
-AXES : 1-Échec du réalisme / 2-Réalité insaisissable / 3-Art moderne libérateur.`
+AXES : 1-Échec du réalisme / 2-Réalité insaisissable / 3-Art moderne libérateur.${MARKDOWN_INSTRUCTIONS}`
   },
   {
     id: "rimbaud-sensation",
@@ -78,7 +90,7 @@ Par la Nature, – heureux comme avec une femme."
 2. Fusion spirituelle et amoureuse (strophe 2) : double négation (ne parlerai pas, ne penserai rien) = vide mental, « amour infini » qui monte dans l'âme, répétition « loin, bien loin » = évasion, comparaison « comme un bohémien » = liberté, comparaison finale « heureux comme avec une femme » = nature partenaire amoureuse.
 
 PROCÉDÉS CLÉS : futur projectif, champ lexical des sensations, double négation, répétition, comparaison amoureuse finale.
-AXES : 1-Corps en contact avec la nature / 2-Élévation spirituelle / 3-Nature partenaire amoureuse.`
+AXES : 1-Corps en contact avec la nature / 2-Élévation spirituelle / 3-Nature partenaire amoureuse.${MARKDOWN_INSTRUCTIONS}`
   },
   {
     id: "rimbaud-ophelie",
@@ -107,7 +119,7 @@ Problématique : Comment Rimbaud transforme-t-il la mort d'Ophélie en une image
 3. Immortalisation (Partie III) : le poète l'immortalise, structure circulaire (retour à l'image du lys au dernier vers) → éternité poétique.
 
 PROCÉDÉS CLÉS : comparaison florale (lys), hyperbole, antithèse chromatique, anaphore « C'est que », personnification de la nature, structure circulaire.
-AXES : 1-Mort sublimée en beauté / 2-Forces naturelles et folie / 3-Immortalisation poétique.`
+AXES : 1-Mort sublimée en beauté / 2-Forces naturelles et folie / 3-Immortalisation poétique.${MARKDOWN_INSTRUCTIONS}`
   },
   {
     id: "rimbaud-maline",
@@ -142,7 +154,7 @@ Elle arrangeait les plats, près de moi, pour m'aiser ; / – Puis, comme ça, �
 3. Le jeu de séduction (tercet 2) : tirets-apartés révèlent la complicité du narrateur (« bien sûr, pour avoir un baiser »), chuchotement intime (« Tout bas »), prétexte évident (froid sur la joue), faute grammaticale (« une froid ») → registre familier authentique.
 
 PROCÉDÉS CLÉS : descriptions sensorielles, adverbe « malinement », comparaison velours de pêche, tirets-apartés, registre familier.
-AXES : 1-Cadre intimiste sensoriel / 2-Malice calculée de la servante / 3-Humour et connivence du narrateur.`
+AXES : 1-Cadre intimiste sensoriel / 2-Malice calculée de la servante / 3-Humour et connivence du narrateur.${MARKDOWN_INSTRUCTIONS}`
   },
   {
     id: "goethe-faust-monologue",
@@ -175,7 +187,7 @@ EXTRAIT CLÉS :
 3. Recours à la magie : « se jeter dans la magie » (acte désespéré), répétition des « si » (souhait, rêve), désir de « tout » connaître (aspiration quasi-divine), apostrophe lyrique à la lune (romantisme, mystère, mélancolie), « pour la dernière fois » = point de non-retour.
 
 PROCÉDÉS CLÉS : énumération, paradoxe, ironie, répétition du « rien », comparaison (chien), apostrophe lyrique.
-AXES : 1-Savoir universitaire vain / 2-Vie sans joie ni sens / 3-Transgression vers l'absolu.`
+AXES : 1-Savoir universitaire vain / 2-Vie sans joie ni sens / 3-Transgression vers l'absolu.${MARKDOWN_INSTRUCTIONS}`
   },
   {
     id: "balzac-peau-chagrin",
@@ -199,7 +211,7 @@ Contexte : Raphaël de Valentin (« l'inconnu ») s'empare d'une peau magique qu
 Genre : Roman fantastique et philosophique, dialogue théâtral.
 Problématique : Comment Balzac traduit-il le désir absolu et la soif de jouissance à travers le langage et les images ?
 
-EXTRAIT CLE :
+EXTRAIT CLÉ :
 "— Eh ! bien, oui, je veux vivre avec excès [...] J'avais résolu ma vie par l'étude et par la pensée ; mais elles ne m'ont même pas nourri [...] Je ne veux être la dupe ni d'une prédication [...] ni de votre amulette [...] ni des charitables efforts [...] Je veux un dîner royalement splendide [...] Que la nuit soit parée de femmes ardentes ! Je veux que la Débauche en délire et rugissante nous emporte dans son char à quatre chevaux [...] fondre toutes les joies dans une joie [...] pour en mourir."
 
 3 UNITÉS :
@@ -208,6 +220,6 @@ EXTRAIT CLE :
 3. Démesure du désir jusqu'à la mort : hyperboles (« royalement splendide », « bacchanale »), gradation des vins, allégorie de la Débauche (personnification en divinité), antithèse cieux/boue + indifférence morale, « fondre toutes les joies dans une joie », mort souhaitée (« pour en mourir »).
 
 PROCÉDÉS CLÉS : hyperboles, gradation, personnification/allégorie (la Débauche), triple négation, antithèse morale (cieux/boue), phrases longues et enchaînées.
-AXES : 1-Décision radicale face à l'échec / 2-Rejet de toutes les limites / 3-Jouissance absolue jusqu'à la mort.`
+AXES : 1-Décision radicale face à l'échec / 2-Rejet de toutes les limites / 3-Jouissance absolue jusqu'à la mort.${MARKDOWN_INSTRUCTIONS}`
   }
 ];
