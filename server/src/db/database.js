@@ -8,9 +8,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Production Railway : volume persistant monté sur /app/data
 // Dev local : server/data/marin.db
-const dataDir = process.env.NODE_ENV === 'production'
-  ? '/app/data'
-  : path.join(__dirname, '../../data');
+// DATA_DIR env var overrides both for flexibility
+const dataDir = process.env.DATA_DIR
+  || (process.env.NODE_ENV === 'production'
+    ? '/app/data'
+    : path.join(__dirname, '../../data'));
 
 if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir, { recursive: true });
 
