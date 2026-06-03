@@ -15,11 +15,13 @@ function getNextClient() {
   return client;
 }
 
-export async function chatWithGroq(systemPrompt, messages, retries = 0) {
+// options : { maxTokens, temperature, _retries } — maxTokens élevé requis pour la génération de fiches
+export async function chatWithGroq(systemPrompt, messages, options = {}) {
+  const { maxTokens = 1024, temperature = 0.7, _retries = 0 } = options;
   if (keys.length === 0) {
     throw new Error('Aucune clé GROQ_KEY_* configurée dans .env — configure tes clés API Groq sur console.groq.com');
   }
-  if (retries >= keys.length) {
+  if (_retries >= keys.length) {
     throw new Error('Toutes les clés Groq sont saturées. Réessaie dans quelques instants.');
   }
   const client = getNextClient();
@@ -30,14 +32,14 @@ export async function chatWithGroq(systemPrompt, messages, retries = 0) {
         { role: 'system', content: systemPrompt },
         ...messages,
       ],
-      max_tokens: 1024,
-      temperature: 0.7,
+      max_tokens: maxTokens,
+      temperature,
     });
     return completion.choices[0].message.content;
   } catch (err) {
     if (err.status === 429) {
       console.warn(`Clé Groq #${currentKeyIndex} saturée (429), rotation vers la suivante...`);
-      return chatWithGroq(systemPrompt, messages, retries + 1);
+      return chatWithGroq(systemPrompt, messages, { ...options, _retries: _retries + 1 });
     }
     throw err;
   }

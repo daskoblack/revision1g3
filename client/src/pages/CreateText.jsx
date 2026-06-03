@@ -91,7 +91,9 @@ export default function CreateText() {
       setStep(3);
       fetchQuota(); // Mettre à jour le quota de messages restants si nécessaire
     } catch (err) {
-      setError(err.response?.data?.error ?? "Une erreur est survenue lors de l'analyse. Vérifie la qualité de l'image.");
+      const data = err.response?.data;
+      const msg = data?.error ?? "Une erreur est survenue lors de l'analyse. Vérifie la qualité de l'image.";
+      setError(data?.details ? `${msg} (${data.details})` : msg);
     } finally {
       setLoading(false);
     }

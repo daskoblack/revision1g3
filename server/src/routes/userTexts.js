@@ -97,7 +97,7 @@ router.post('/create', requireAuth, async (req, res) => {
       extractedResult = await analyzeImageWithGroq(ocrPrompt, imageBase64, mimeType);
     } catch (err) {
       console.error("❌ Erreur OCR (vision Groq):", err.status, err.message);
-      return res.status(500).json({ error: "Impossible de lire l'image (service vision indisponible). Réessaie dans 30s." });
+      return res.status(500).json({ error: "Impossible de lire l'image (service vision indisponible). Réessaie dans 30s.", details: err.message });
     }
 
     if (!extractedResult || extractedResult.trim().length < 10) {
@@ -156,25 +156,34 @@ ${extractedResult}`;
     try {
       reply = await chatWithGroq(
         "Retourne UNIQUEMENT du JSON valide, sans markdown, sans explications.",
-        [{ role: 'user', content: structPrompt }]
+        [{ role: 'user', content: structPrompt }],
+        { maxTokens: 8000, temperature: 0.3 } // fiche riche = sortie volumineuse
       );
     } catch (err) {
-      console.error("Erreur appel Groq:", err.message);
-      return res.status(500).json({ error: "Erreur lors de l'appel à l'IA. Réessaie dans 30s." });
+      console.error("Erreur appel Groq (struct):", err.message);
+      return res.status(500).json({ error: "Erreur lors de l'appel à l'IA. Réessaie dans 30s.", details: err.message });
     }
 
+    // Extraction robuste : isoler le JSON entre la première { et la dernière }
     let cleanJson = reply.trim();
-    // Supprimer les balises markdown si présentes
     if (cleanJson.startsWith('```')) {
       cleanJson = cleanJson.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
+    }
+    const firstBrace = cleanJson.indexOf('{');
+    const lastBrace = cleanJson.lastIndexOf('}');
+    if (firstBrace !== -1 && lastBrace !== -1 && lastBrace > firstBrace) {
+      cleanJson = cleanJson.slice(firstBrace, lastBrace + 1);
     }
 
     let parsedData = {};
     try {
       parsedData = JSON.parse(cleanJson);
     } catch (err) {
-      console.error("❌ JSON parse failed. Raw reply:", reply.substring(0, 500));
-      return res.status(500).json({ error: "Format invalide retourné par l'IA. Réessaie avec une meilleure image." });
+      console.error("❌ JSON parse failed. Raw reply (fin):", reply.slice(-300));
+      return res.status(500).json({
+        error: "L'IA a renvoyé un format incomplet (texte peut-être trop long). Réessaie.",
+        details: err.message
+      });
     }
 
     // Valider les champs obligatoires
@@ -246,7 +255,10 @@ ${extractedResult}`;
     res.status(201).json({ slug, text: parsedData });
   } catch (err) {
     console.error("Erreur de création de texte:", err);
-    res.status(500).json({ error: "Erreur technique lors de la création de la fiche d'analyse." });
+    res.status(500).json({
+      error: "Erreur technique lors de la création de la fiche d'analyse.",
+      details: err.message
+    });
   }
 });
 
