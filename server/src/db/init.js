@@ -72,14 +72,24 @@ export function initDB() {
     try {
       db.exec(`ALTER TABLE ${table} ADD COLUMN ${column} ${definition}`);
       console.log(`  ✓ Migration : ${table}.${column} ajouté`);
-    } catch {
-      // Colonne déjà existante → silencieux
+    } catch (err) {
+      // « duplicate column » = colonne déjà présente (normal) ; on logue le reste
+      if (!/duplicate column/i.test(err.message)) {
+        console.warn(`  ⚠ Migration ${table}.${column} échouée : ${err.message}`);
+      }
     }
   };
 
   migrateColumn('users', 'classe',              "TEXT NOT NULL DEFAULT ''");
   migrateColumn('users', 'texts_created_today', 'INTEGER DEFAULT 0');
-  migrateColumn('users', 'texts_last_reset',    "DATE DEFAULT (date('now'))");
+  // IMPORTANT : SQLite interdit un DEFAULT non-constant (date('now')) sur ADD COLUMN.
+  // On ajoute donc la colonne sans défaut, puis on remplit les lignes existantes.
+  migrateColumn('users', 'texts_last_reset',    'DATE');
+  try {
+    db.exec("UPDATE users SET texts_last_reset = date('now') WHERE texts_last_reset IS NULL");
+  } catch (err) {
+    console.warn(`  ⚠ Backfill texts_last_reset : ${err.message}`);
+  }
 
   console.log('✓ Base de données initialisée');
 }

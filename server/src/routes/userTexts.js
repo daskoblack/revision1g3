@@ -10,6 +10,8 @@ const router = Router();
 router.post('/create', requireAuth, async (req, res) => {
   const { imageBase64, mimeType, classe, title, auteur, oeuvre, isPublic, force, generatedData } = req.body;
 
+  // Garde-fou global : toute erreur DB renvoie une 500 propre au lieu de crasher le process
+  try {
   // 1. Si on a déjà les données générées (suite à la confirmation d'un doublon)
   if (generatedData) {
     const today = new Date().toISOString().split('T')[0];
@@ -88,7 +90,6 @@ router.post('/create', requireAuth, async (req, res) => {
     return res.status(403).json({ error: "Tu as atteint ta limite de 2 créations de texte par jour. Reviens demain ! 🌙" });
   }
 
-  try {
     // 4. Extraction du texte via Groq Vision
     const ocrPrompt = `Extrais l'intégralité du texte littéraire présent sur cette image. Si ce n'est pas un texte littéraire (par exemple: une photo de paysage, un objet, un graphique, une formule mathématique, un texte scientifique ou administratif, une facture, etc.), commence obligatoirement ta réponse par le mot 'INVALID:' suivi d'une explication courte en français (1 ou 2 sentences) expliquant pourquoi ce n'est pas un texte littéraire admissible. Sinon, renvoie uniquement le texte littéraire retranscrit fidèlement mot à mot, sans aucun commentaire ni introduction.`;
     
