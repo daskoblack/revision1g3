@@ -92,70 +92,79 @@ router.post('/create', requireAuth, async (req, res) => {
     // 4. Extraction du texte via Groq Vision
     const ocrPrompt = `Extrais l'intégralité du texte littéraire présent sur cette image. Si ce n'est pas un texte littéraire (par exemple: une photo de paysage, un objet, un graphique, une formule mathématique, un texte scientifique ou administratif, une facture, etc.), commence obligatoirement ta réponse par le mot 'INVALID:' suivi d'une explication courte en français (1 ou 2 sentences) expliquant pourquoi ce n'est pas un texte littéraire admissible. Sinon, renvoie uniquement le texte littéraire retranscrit fidèlement mot à mot, sans aucun commentaire ni introduction.`;
     
-    const extractedResult = await analyzeImageWithGroq(ocrPrompt, imageBase64, mimeType);
-    
+    let extractedResult;
+    try {
+      extractedResult = await analyzeImageWithGroq(ocrPrompt, imageBase64, mimeType);
+    } catch (err) {
+      console.error("❌ Erreur OCR (vision Groq):", err.status, err.message);
+      return res.status(500).json({ error: "Impossible de lire l'image (service vision indisponible). Réessaie dans 30s." });
+    }
+
+    if (!extractedResult || extractedResult.trim().length < 10) {
+      return res.status(400).json({ error: "Aucun texte lisible détecté sur l'image. Prends une photo plus nette." });
+    }
+
     if (extractedResult.startsWith('INVALID:')) {
       return res.status(400).json({ error: extractedResult.replace('INVALID:', '').trim() });
     }
 
     // 5. Génération de la fiche d'analyse au format JSON
-    const structPrompt = `Tu es M. Marin, professeur de français expert. À partir du texte littéraire ci-dessous, génère une fiche d'analyse complète au format JSON.
-La réponse doit être uniquement un JSON brut valide, sans balise markdown de bloc de code (comme \`\`\`json), ni introduction, ni conclusion, ni texte explicatif en dehors du JSON.
+    const structPrompt = `Tu es M. Marin, professeur de français. Analyse ce texte littéraire et retourne UNIQUEMENT un JSON valide (pas de markdown, pas d'explications, juste le JSON).
 
-Voici les métadonnées facultatives transmises par l'élève (utilise-les si elles sont cohérentes, sinon corrige-les ou complète-les) :
-- Titre suggéré : ${title || 'inconnu'}
-- Auteur suggéré : ${auteur || 'inconnu'}
-- Oeuvre suggérée : ${oeuvre || 'inconnu'}
+Métadonnées de l'élève : titre="${title || ''}", auteur="${auteur || ''}", oeuvre="${oeuvre || ''}". Utilise-les si cohérents.
 
-Structure attendue du JSON :
+STRUCTURE JSON OBLIGATOIRE :
 {
-  "title": "Titre du poème ou de l'extrait",
-  "oeuvre": "Titre du recueil, du roman ou de la pièce dont il est extrait",
-  "auteur": "Nom complet de l'auteur",
-  "annee": "Année d'écriture ou de publication (ex: 1870)",
-  "mouvement": "Mouvement littéraire associé (ex: Romantisme, Réalisme, Classicisme, etc.) ou 'Aucun'",
-  "contexteAuteur": "Courte biographie de l'auteur centrée sur sa vie et son oeuvre (3-4 phrases)",
-  "contexteOeuvre": "Contexte de l'oeuvre ou de l'extrait (3-4 phrases)",
-  "resume": "Résumé de l'extrait (3-4 phrases)",
-  "introduction": "Introduction rédigée type Bac de Français (présentation du texte/auteur, problématique générale, annonce du plan linéaire)",
-  "conclusion": "Conclusion rédigée type Bac de Français (bilan de l'analyse et ouverture littéraire)",
+  "title": "Titre du texte",
+  "oeuvre": "Recueil/Roman/Pièce",
+  "auteur": "Nom complet",
+  "annee": "Année (ex: 1870)",
+  "mouvement": "Mouvement littéraire",
+  "contexteAuteur": "Biographie courte de l'auteur (3-4 phrases)",
+  "contexteOeuvre": "Contexte de l'oeuvre (3-4 phrases)",
+  "resume": "Résumé court du passage (3-4 phrases)",
+  "problematique": "LA problématique centrale du texte (une seule question claire)",
+  "introduction": "Introduction rédigée type Bac (présentation auteur/texte + problématique + annonce du plan)",
+  "conclusion": "Conclusion rédigée type Bac (bilan + ouverture)",
   "analyseLineaire": [
     {
-      "passage": "Citation exacte de la première partie du texte",
-      "analyse": "Analyse linéaire détaillée de cette partie (procédés stylistiques, thèmes, effets produits)"
-    },
-    ... (divise le texte en 3 à 5 mouvements linéaires)
+      "titre": "Mouvement 1 : titre du mouvement",
+      "ideePrincipale": "L'idée principale de ce mouvement en 1-2 phrases",
+      "procedes": [
+        {"titre": "🔍 Nom du procédé (avec un emoji pertinent)", "citation": "Citation EXACTE du texte", "explication": "Explication détaillée du procédé et de son effet (2-3 phrases)"}
+      ]
+    }
   ],
   "procedesStyliques": [
-    {
-      "procede": "Nom de la figure de style / du procédé (ex: Métaphore, Comparaison, Allitérations)",
-      "exemple": "Citation exacte du texte",
-      "effet": "Effet produit dans ce contexte"
-    },
-    ... (3 à 5 procédés clés)
+    {"procede": "Nom du procédé", "exemple": "Citation", "effet": "Effet produit"}
   ],
-  "problematiquesPossibles": [
-    "Problématique pertinente 1",
-    "Problématique pertinente 2"
-  ],
-  "axesLecture": [
-    "Axe de lecture 1 (par exemple: Une peinture réaliste de la nature)",
-    "Axe de lecture 2"
-  ],
-  "mnemo": [
-    "Une astuce mémotechnique courte ou point clé pour retenir ce texte"
-  ]
+  "problematiquesPossibles": ["Question d'examen 1", "Question d'examen 2"],
+  "axesLecture": ["Axe 1", "Axe 2"],
+  "mnemo": ["Astuce mnémotechnique 1 (avec emoji)", "Astuce 2"]
 }
 
-Texte extrait :
+RÈGLES IMPORTANTES :
+- Découpe le texte en 2 à 4 mouvements (parties logiques).
+- Pour CHAQUE mouvement, donne 3 à 6 procédés, chacun avec une CITATION EXACTE tirée du texte.
+- Les citations doivent être copiées mot à mot depuis le texte fourni.
+- Chaque procédé commence par un emoji pertinent (🔍 🎭 🌙 💔 ⚡ etc.).
+
+TEXTE À ANALYSER :
 ${extractedResult}`;
 
-    const reply = await chatWithGroq(
-      "Tu es un parseur JSON littéraire expert. Tu retournes uniquement un JSON valide selon la structure demandée.",
-      [{ role: 'user', content: structPrompt }]
-    );
+    let reply;
+    try {
+      reply = await chatWithGroq(
+        "Retourne UNIQUEMENT du JSON valide, sans markdown, sans explications.",
+        [{ role: 'user', content: structPrompt }]
+      );
+    } catch (err) {
+      console.error("Erreur appel Groq:", err.message);
+      return res.status(500).json({ error: "Erreur lors de l'appel à l'IA. Réessaie dans 30s." });
+    }
 
     let cleanJson = reply.trim();
+    // Supprimer les balises markdown si présentes
     if (cleanJson.startsWith('```')) {
       cleanJson = cleanJson.replace(/^```(?:json)?\n?/, '').replace(/\n?```$/, '');
     }
@@ -164,9 +173,27 @@ ${extractedResult}`;
     try {
       parsedData = JSON.parse(cleanJson);
     } catch (err) {
-      console.error("Erreur parsing JSON de l'IA:", reply);
-      return res.status(500).json({ error: "L'IA a généré un format invalide. Réessaie.", raw: reply });
+      console.error("❌ JSON parse failed. Raw reply:", reply.substring(0, 500));
+      return res.status(500).json({ error: "Format invalide retourné par l'IA. Réessaie avec une meilleure image." });
     }
+
+    // Valider les champs obligatoires
+    const required = ['title', 'auteur', 'oeuvre', 'analyseLineaire', 'procedesStyliques'];
+    for (const field of required) {
+      if (!parsedData[field]) {
+        console.error(`❌ Missing required field: ${field}`);
+        return res.status(500).json({ error: `Champ manquant: ${field}. Réessaie.` });
+      }
+    }
+
+    // Assurer que analyseLineaire est un tableau
+    if (!Array.isArray(parsedData.analyseLineaire) || parsedData.analyseLineaire.length === 0) {
+      console.error("❌ analyseLineaire is not a valid array");
+      return res.status(500).json({ error: "Analyse linéaire invalide. Réessaie." });
+    }
+
+    // Forcer le texte complet avec l'OCR exact (plus fiable que la transcription IA)
+    parsedData.texteComplet = extractedResult.trim();
 
     // 6. Vérification de doublon
     if (isPublic && !force) {

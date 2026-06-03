@@ -53,7 +53,8 @@ export async function analyzeImageWithGroq(prompt, imageBase64, mimeType, retrie
   const client = getNextClient();
   try {
     const completion = await client.chat.completions.create({
-      model: 'llama-3.2-11b-vision-preview',
+      // Modèle vision actuel de Groq (l'ancien llama-3.2-*-vision-preview est décommissionné)
+      model: 'meta-llama/llama-4-scout-17b-16e-instruct',
       messages: [
         {
           role: 'user',

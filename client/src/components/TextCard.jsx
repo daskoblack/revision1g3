@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function TextCard({ text }) {
   return (
@@ -9,7 +9,9 @@ export default function TextCard({ text }) {
       <div className="p-5">
         <div className="flex items-start justify-between gap-2 mb-3">
           <span className="badge">{text.mouvement}</span>
-          <span className="text-xs text-ink-pale tabular-nums">{text.annee}</span>
+          <span className="text-xs text-ink-pale tabular-nums">
+            {text.annee}
+          </span>
         </div>
         <h2 className="font-serif text-base font-semibold text-ink group-hover:text-amber-600 transition-colors leading-snug mb-1">
           {text.oeuvre}
@@ -22,7 +24,9 @@ export default function TextCard({ text }) {
       </div>
       <div className="border-t border-parchment-200 px-5 py-2.5 bg-parchment-50 flex items-center justify-between">
         <span className="text-xs text-ink-pale">Analyse complète + IA</span>
-        <span className="text-amber-600 text-sm font-medium group-hover:translate-x-1 transition-transform">→</span>
+        <span className="text-amber-600 text-sm font-medium group-hover:translate-x-1 transition-transform">
+          →
+        </span>
       </div>
     </Link>
   );
