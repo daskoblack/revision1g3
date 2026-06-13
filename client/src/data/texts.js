@@ -576,14 +576,14 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
         ideePrincipale: "Balzac ouvre le portrait par une description physique qui transforme immédiatement le corps de Raphaël en symptôme visible de sa souffrance morale.",
         procedes: [
           {
-            titre: "🤒 Champ lexical de la maladie et de l'affaissement",
+            titre: "🤒 Champ lexical de la maladie",
             citation: "l'attitude maladive de son corps affaissé ; elle était peinte sur son front",
-            explication: "Les termes « mélancolie », « maladive » et « affaissé » forment un champ lexical du déclin physique. Ce réseau lexical fonctionne comme une traduction corporelle d'un état psychologique : la souffrance morale de Raphaël ne reste pas intérieure, elle s'inscrit dans sa posture et sur son visage. Cela révèle un personnage dont le corps a cessé de lutter, comme si la résignation avait déjà gagné la chair — en contraste avec l'intensité du regard que l'on découvrira ensuite."
+            explication: "« Mélancolie », « maladive », « affaissé » : la souffrance morale de Raphaël se lit directement dans son corps. Ce champ lexical révèle un personnage dont la chair a capitulé — en contraste frappant avec l'intensité de son regard, que l'on découvrira ensuite."
           },
           {
             titre: "🌸 Comparaison (fleur étiolée)",
             citation: "son visage pâle comme une fleur étiolée",
-            explication: "La comparaison rapproche le visage de Raphaël d'une fleur privée de lumière, qui se fane sans éclat soudain. Le procédé crée une image à la fois poétique et médicale : une fleur étiolée ne meurt pas violemment, elle dépérit lentement, progressivement, presque imperceptiblement. Cela révèle que Raphaël n'est pas dans une crise aiguë mais dans un dépérissement continu — comme la peau de chagrin qui rétrécit peu à peu, sa vie se consume à petit feu."
+            explication: "Une fleur étiolée ne meurt pas brutalement : elle dépérit lentement, privée de lumière. Cette image révèle que Raphaël ne vit pas une crise aiguë, mais un dépérissement progressif — comme la peau de chagrin qui rétrécit peu à peu."
           }
         ]
       },
@@ -594,22 +594,22 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
           {
             titre: "⚡ L'oxymore",
             citation: "les bizarreries particulières aux malades riches",
-            explication: "L'expression « malades riches » associe deux réalités que l'on attendrait peu ensemble : la richesse, signe de puissance sociale, et la maladie, signe de faiblesse physique. Ce paradoxe condensé en deux mots souligne l'ironie tragique de la situation de Raphaël : le talisman lui a donné tout l'argent du monde, mais celui-ci ne le protège nullement de la déchéance physique et morale. Cela révèle une critique implicite du luxe comme illusion — il masque sans jamais guérir."
+            explication: "« Malades riches » associe puissance sociale et faiblesse physique. Le talisman a tout donné à Raphaël, mais ne le protège pas de la déchéance. Le luxe masque sans jamais guérir."
           },
           {
             titre: "👋 La comparaison (mains de femme)",
             citation: "Ses mains, semblables à celles d'une jolie femme, avaient une blancheur molle et délicate.",
-            explication: "La comparaison aux mains d'une femme féminise Raphaël et souligne l'inactivité de ces mains : pâles, fines, elles n'ont pas travaillé, elles n'agissent plus. Ce procédé construit une image d'un personnage qui a perdu les attributs traditionnels de la virilité et de l'action. Cela révèle un glissement identitaire : Raphaël n'est plus l'homme de désir et d'ambition du début du roman — son énergie vitale s'est retirée du corps pour se concentrer, comme la suite va le montrer, dans son regard."
+            explication: "Des mains féminines sont des mains inactives. Raphaël a perdu les attributs de l'action et de la virilité — son énergie vitale s'est retirée du corps pour se concentrer dans son regard."
           },
           {
             titre: "🏺 L'accumulation d'objets exotiques",
-            citation: "Une calotte grecque [...] le couteau de malachite enrichi d'or [...] le bec d'ambre d'un magnifique houka de l'Inde",
-            explication: "Balzac accumule les objets précieux et à consonance lointaine (Grèce, malachite, Inde) qui entourent Raphaël. Cette accumulation crée un effet de saturation visuelle : le regard du lecteur est submergé de richesses comme celui de Porriquet. Mais ces objets sont tous dans un état d'abandon (le couteau « laissé tomber », le houka « oublié ») — Raphaël ne jouit même plus de ce luxe. Cela révèle un cadre de vie artificiel et muet, un cocon doré qui isole son occupant du monde réel sans lui apporter aucun plaisir."
+            citation: "Une calotte grecque [...] le couteau de malachite [...] le bec d'ambre d'un magnifique houka de l'Inde",
+            explication: "Les objets précieux s'accumulent, mais tous sont abandonnés ou oubliés. Raphaël ne jouit plus de son luxe : c'est un décor artificiel qui l'isole du monde réel sans lui apporter aucun plaisir."
           },
           {
             titre: "🐍 La comparaison animale (serpent)",
             citation: "les spirales émaillées gisaient comme un serpent dans sa chambre",
-            explication: "Le tuyau du houka est comparé à un serpent, animal traditionnellement associé à la tentation, au danger silencieux et à la chute (référence biblique). Ce procédé transforme un simple objet de confort en présence menaçante. Cela révèle que même les plaisirs raffinés qui entourent Raphaël sont teintés d'une menace latente — le danger, désormais, ne vient plus de l'extérieur mais s'est glissé au cœur même du confort de Raphaël."
+            explication: "Le serpent évoque la tentation et le danger silencieux. Même les objets de confort de Raphaël portent une menace — le danger ne vient plus de l'extérieur, il s'est glissé au cœur de son intimité."
           }
         ]
       },
@@ -620,22 +620,22 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
           {
             titre: "⚔️ L'antithèse (corps faible / regard intense)",
             citation: "la faiblesse générale de son jeune corps était démentie par des yeux bleus où toute la vie semblait s'être retirée",
-            explication: "L'antithèse oppose frontalement deux réalités coexistantes : la faiblesse généralisée du corps d'une part, l'intensité concentrée du regard d'autre part. Le verbe « démentie » est crucial : le regard ne complète pas le corps affaibli, il le contredit. Tout ce qui a quitté le corps de Raphaël semble s'être réfugié dans ses yeux. Cela révèle que la vitalité de Raphaël n'a pas disparu — elle s'est simplement déplacée et condensée, faisant du regard le dernier théâtre d'une vie intérieure encore intense."
+            explication: "Le verbe « démentie » est clé : le regard ne complète pas le corps, il le contredit. Tout ce qui a quitté le corps de Raphaël s'est réfugié dans ses yeux — le regard devient le dernier lieu d'une vie encore intense."
           },
           {
             titre: "💥 L'hyperbole",
             citation: "Ce regard faisait mal à voir.",
-            explication: "Cette phrase brève et brutale exagère l'effet physique du regard de Raphaël sur celui qui le croise : regarder devient douloureux. La rupture de rythme — une phrase courte isolée après de longues descriptions — lui donne un impact maximal, comme une chute. Cela révèle l'intensité presque insupportable de la souffrance intérieure de Raphaël : la douleur est si forte qu'elle déborde du personnage et devient contagieuse, visible depuis l'extérieur."
+            explication: "Phrase courte, brutale, isolée : elle frappe comme un coup. L'exagération montre que la douleur de Raphaël est si intense qu'elle déborde sur celui qui le regarde — elle devient presque physiquement contagieuse."
           },
           {
-            titre: "📈 La gradation (accumulation d'interprétations)",
+            titre: "📈 La gradation des interprétations",
             citation: "Les uns pouvaient y lire du désespoir ; d'autres, y deviner un combat intérieur, aussi terrible qu'un remords.",
-            explication: "Balzac propose plusieurs lectures possibles du même regard, dans une gradation qui va du désespoir (sentiment passif, subi) au combat intérieur et au remords (sentiments actifs, douloureux). Cette polysémie organisée crée un effet de profondeur : le regard de Raphaël ne dit pas une seule chose, il dit tout à la fois, selon qui le regarde. Cela révèle la complexité psychologique du personnage — aucune étiquette simple ne peut l'épuiser, ce qui en fait une figure romanesque à la hauteur des grandes figures tragiques que Balzac va évoquer ensuite."
+            explication: "Le regard de Raphaël ne dit pas une seule chose — il dit tout selon qui le regarde. Cette polysémie révèle la complexité du personnage : aucune étiquette simple ne peut l'épuiser."
           },
           {
-            titre: "🏛️ Les comparaisons mythologiques et historiques",
-            citation: "le regard du Prométhée enchaîné, de Napoléon déchu qui [...] demande le commandement pour vingt-quatre heures et ne l'obtient pas",
-            explication: "Balzac élève Raphaël au rang de deux figures emblématiques de la grandeur déchue et de l'impuissance tragique : Prométhée, puni pour avoir voulu égaler les dieux ; Napoléon, génie stratégique réduit à l'inaction après Waterloo. Ces deux références fonctionnent comme une amplification symbolique : elles montrent que Raphaël possède une intelligence et une volonté immenses, mais ne peut plus agir. Cela révèle que Raphaël n'est pas un homme ordinaire en crise, mais une figure tragique au sens fort — un être puissant réduit à l'impuissance par une force supérieure à la sienne."
+            titre: "🏛️ Les comparaisons mythologiques",
+            citation: "le regard du Prométhée enchaîné, de Napoléon déchu qui demande le commandement pour vingt-quatre heures et ne l'obtient pas",
+            explication: "Prométhée puni pour avoir voulu égaler les dieux, Napoléon réduit à l'inaction après Waterloo : deux figures de grandeur déchue. Raphaël n'est pas en simple crise — c'est une figure tragique universelle, puissante mais enchaînée."
           }
         ]
       },
@@ -646,22 +646,22 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
           {
             titre: "⚖️ L'antithèse (volonté / grossier bon sens)",
             citation: "Il soumettait sa volonté, son intelligence, au grossier bon sens d'un vieux paysan à peine civilisé",
-            explication: "L'antithèse oppose deux univers que tout sépare : la volonté et l'intelligence de Raphaël — raffinées, brillantes — face au « grossier bon sens » d'un simple paysan. Le procédé souligne l'ampleur du sacrifice consenti : Raphaël renonce volontairement à ce qui fait sa supériorité intellectuelle pour se soumettre à une sagesse fruste mais prévisible. Cela révèle que le renoncement n'est pas seulement physique — c'est une humiliation consentie de l'esprit lui-même, un abaissement délibéré."
+            explication: "Raphaël sacrifie son intelligence — ce qui fait sa supériorité — pour obéir à un paysan fruste. Ce renversement révèle l'ampleur du renoncement : pour survivre, il doit se renier lui-même."
           },
           {
             titre: "🤖 La métaphore (automate)",
             citation: "Presque joyeux de devenir une sorte d'automate",
-            explication: "Raphaël est comparé à un automate, être mécanique sans âme ni désir propre. L'adverbe « Presque » est capital : il signale que même cette joie de l'effacement de soi est feinte, que Raphaël n'est pas tout à fait convaincu. Ce procédé crée une image glaçante d'un homme qui se déshumanise volontairement. Cela révèle le degré extrême du renoncement : il ne s'agit plus de réprimer des désirs, mais d'effacer sa propre humanité, sa capacité à vouloir et à ressentir."
+            explication: "Un automate n'a ni âme ni désir. Le mot « Presque » trahit que même cette résignation est forcée. Raphaël ne réprime plus ses désirs — il efface sa capacité même à en avoir."
           },
           {
             titre: "🔄 L'oxymore final",
             citation: "il abdiquait la vie pour vivre",
-            explication: "Cette formule paradoxale condense en cinq mots toute la tragédie du roman : abdiquer la vie (renoncer à vivre pleinement, à désirer) pour vivre (survivre physiquement). La contradiction interne crée un effet de choc logique — on ne peut pas à la fois abdiquer et vivre. Cela révèle le paradoxe central de La Peau de chagrin : la survie matérielle se paie au prix de la mort symbolique du désir, de la passion, et donc de ce qui rend la vie digne d'être vécue."
+            explication: "Abdiquer la vie et vivre : les deux termes se contredisent. Cette formule condense le paradoxe central du roman — survivre physiquement en se vidant de tout ce qui rend la vie digne d'être vécue."
           },
           {
-            titre: "✝️ La référence culturelle (Origène)",
+            titre: "✝️ La référence à Origène",
             citation: "il s'était fait chaste à la manière d'Origène, en châtrant son imagination",
-            explication: "La référence à Origène, théologien chrétien qui se serait châtré pour résister à la tentation de la chair, est ici transposée métaphoriquement : Raphaël ne se mutile pas physiquement, mais « châtre » son imagination — sa capacité à désirer et à rêver. Ce procédé donne une dimension religieuse et sacrificielle au renoncement. Cela révèle que ce choix n'est pas une simple précaution rationnelle, mais un véritable sacrifice mystique de sa part la plus vivante : l'imagination, foyer du désir."
+            explication: "Origène s'est mutilé pour résister à la tentation. Raphaël fait de même, mais métaphoriquement : il « châtre » son imagination. Cela donne une dimension de sacrifice mystique à son renoncement — il tue ce qu'il a de plus vivant."
           }
         ]
       }
