@@ -553,5 +553,141 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
       "🎭 Unité 3 : BACCHANALE TOTALE → fête débridée, femmes ardentes, Débauche dans un char — mourir de plaisir",
       "💡 Astuce : Saisir la Peau → rejeter limites → jouissance totale jusqu'à la mort"
     ]
+  },
+  {
+    id: "balzac-portrait-raphael",
+    texteComplet: `Porriquet aperçut de loin son élève au coin d'une cheminée. Enveloppé d'une robe de chambre à grands dessins, et plongé dans un fauteuil à ressorts, Raphaël lisait le journal. L'extrême mélancolie à laquelle il paraissait être en proie était exprimée par l'attitude maladive de son corps affaissé ; elle était peinte sur son front, sur son visage pâle comme une fleur étiolée. Une sorte de grâce efféminée et les bizarreries particulières aux malades riches distinguaient sa personne. Ses mains, semblables à celles d'une jolie femme, avaient une blancheur molle et délicate. Ses cheveux blonds, devenus rares, se bouclaient autour de ses tempes par une coquetterie recherchée. Une calotte grecque, entraînée par un gland trop lourd pour le léger cachemire dont elle était faite, pendait sur un côté de sa tête. Il avait laissé tomber à ses pieds le couteau de malachite enrichi d'or dont il s'était servi pour couper les feuillets d'un livre. Sur ses genoux était le bec d'ambre d'un magnifique houka de l'Inde dont les spirales émaillées gisaient comme un serpent dans sa chambre, et il oubliait d'en sucer les frais parfums. Cependant, la faiblesse générale de son jeune corps était démentie par des yeux bleus où toute la vie semblait s'être retirée, où brillait un sentiment extraordinaire qui saisissait tout d'abord. Ce regard faisait mal à voir. Les uns pouvaient y lire du désespoir ; d'autres, y deviner un combat intérieur, aussi terrible qu'un remords. C'était le coup d'œil profond de l'impuissant qui refoule ses désirs au fond de son cœur, ou celui de l'avare jouissant par la pensée de tous les plaisirs que son argent pourrait lui procurer, et s'y refusant pour ne pas amoindrir son trésor ; ou le regard du Prométhée enchaîné, de Napoléon déchu qui apprend à l'Élysée, en 1815, la faute stratégique commise par ses ennemis, qui demande le commandement pour vingt-quatre heures et ne l'obtient pas. Véritable regard de conquérant et de damné ! et, mieux encore, le regard que, plusieurs mois auparavant, Raphaël avait jeté sur la Seine ou sur sa dernière pièce d'or mise au jeu. Il soumettait sa volonté, son intelligence, au grossier bon sens d'un vieux paysan à peine civilisé par une domesticité de cinquante années. Presque joyeux de devenir une sorte d'automate, il abdiquait la vie pour vivre, et dépouillait son âme de toutes les poésies du désir. Pour mieux lutter avec la cruelle puissance dont il avait accepté le défi, il s'était fait chaste à la manière d'Origène, en châtrant son imagination.
+
+— Balzac, La Peau de chagrin, 1831`,
+    title: "Portrait de Raphaël",
+    oeuvre: "La Peau de chagrin",
+    auteur: "Honoré de Balzac",
+    annee: 1831,
+    mouvement: "Réalisme / Romantisme",
+    contexteAuteur: "Honoré de Balzac (1799-1850) est l'un des plus grands romanciers du XIXe siècle, fondateur du réalisme français. Son œuvre majeure, La Comédie humaine, regroupe plus de 90 romans qui dressent une fresque totale de la société française de son temps. Balzac est connu pour sa capacité à créer des personnages d'une complexité psychologique exceptionnelle et pour ses descriptions minutieuses du monde matériel.",
+    contexteOeuvre: "La Peau de chagrin (1831) est un roman philosophique et fantastique. Raphaël de Valentin, jeune homme ruiné et désespéré, obtient un talisman magique qui réalise tous ses désirs mais raccourcit sa vie à chaque vœu exaucé. Pour survivre, il tente alors de tuer en lui tout désir. Ce passage intervient après que Raphaël a décidé de se retirer du monde pour vivre le plus chastement possible, sous la surveillance de son ancien professeur Porriquet.",
+    resume: "Porriquet, l'ancien professeur de Raphaël, retrouve son ancien élève transformé. Le texte propose un portrait à la fois physique et moral de Raphaël : son corps affaibli, son apparence presque féminine entourée d'objets de luxe exotiques, mais surtout son regard, qui concentre toute la tension dramatique du personnage entre désespoir, remords et volonté de renoncement absolu au désir.",
+    problematique: "Comment Balzac construit-il, à travers le portrait physique et le regard de Raphaël, l'image d'un homme dont la survie dépend désormais du renoncement total à toute forme de désir ?",
+    introduction: "Dans cet extrait de La Peau de chagrin, Balzac propose le portrait de Raphaël de Valentin observé par son ancien professeur, Porriquet. Ce portrait, à la fois minutieux et symbolique, dépasse la simple description physique pour révéler l'état intérieur du personnage : un être épuisé, prisonnier d'un luxe artificiel, et dont le regard trahit un combat intérieur titanesque. Nous étudierons d'abord la description physique de Raphaël et son environnement de malade riche, puis nous analyserons la portée symbolique de son regard, avant d'examiner enfin la décision radicale de renoncement qui clôt le passage.",
+    conclusion: "Ce portrait de Raphaël de Valentin dépasse largement la simple description physique : Balzac y construit une véritable mise en scène symbolique de la crise intérieure de son personnage. D'un corps affaibli et entouré d'un luxe artificiel émerge un regard d'une intensité presque surhumaine, qui place Raphaël aux côtés des grandes figures tragiques de Prométhée et de Napoléon. Mais cette grandeur s'achève dans un paradoxe douloureux : pour continuer à vivre, Raphaël doit renoncer à tout ce qui fait le prix de la vie, transformant ainsi son existence en une lente agonie du désir. Ce passage illustre donc parfaitement la dimension à la fois réaliste et philosophique de La Peau de chagrin.\n\nOuverture : On peut rapprocher ce renoncement de Raphaël de celui de Faust chez Goethe, qui lui aussi cherche à transcender les limites de l'existence humaine, mais par l'excès inverse — le désir absolu plutôt que son effacement.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Un corps affaibli, signe d'une mélancolie profonde",
+        ideePrincipale: "Balzac ouvre le portrait par une description physique qui transforme immédiatement le corps de Raphaël en symptôme visible de sa souffrance morale.",
+        procedes: [
+          {
+            titre: "🤒 Champ lexical de la maladie et de l'affaissement",
+            citation: "l'attitude maladive de son corps affaissé ; elle était peinte sur son front",
+            explication: "Les termes « mélancolie », « maladive » et « affaissé » forment un champ lexical du déclin physique. Ce réseau lexical fonctionne comme une traduction corporelle d'un état psychologique : la souffrance morale de Raphaël ne reste pas intérieure, elle s'inscrit dans sa posture et sur son visage. Cela révèle un personnage dont le corps a cessé de lutter, comme si la résignation avait déjà gagné la chair — en contraste avec l'intensité du regard que l'on découvrira ensuite."
+          },
+          {
+            titre: "🌸 Comparaison (fleur étiolée)",
+            citation: "son visage pâle comme une fleur étiolée",
+            explication: "La comparaison rapproche le visage de Raphaël d'une fleur privée de lumière, qui se fane sans éclat soudain. Le procédé crée une image à la fois poétique et médicale : une fleur étiolée ne meurt pas violemment, elle dépérit lentement, progressivement, presque imperceptiblement. Cela révèle que Raphaël n'est pas dans une crise aiguë mais dans un dépérissement continu — comme la peau de chagrin qui rétrécit peu à peu, sa vie se consume à petit feu."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : Un personnage entouré d'un luxe exotique et artificiel",
+        ideePrincipale: "L'environnement matériel de Raphaël, décrit par accumulation, traduit à la fois sa richesse nouvelle et son enfermement dans un monde irréel, coupé de la vie active.",
+        procedes: [
+          {
+            titre: "⚡ L'oxymore",
+            citation: "les bizarreries particulières aux malades riches",
+            explication: "L'expression « malades riches » associe deux réalités que l'on attendrait peu ensemble : la richesse, signe de puissance sociale, et la maladie, signe de faiblesse physique. Ce paradoxe condensé en deux mots souligne l'ironie tragique de la situation de Raphaël : le talisman lui a donné tout l'argent du monde, mais celui-ci ne le protège nullement de la déchéance physique et morale. Cela révèle une critique implicite du luxe comme illusion — il masque sans jamais guérir."
+          },
+          {
+            titre: "👋 La comparaison (mains de femme)",
+            citation: "Ses mains, semblables à celles d'une jolie femme, avaient une blancheur molle et délicate.",
+            explication: "La comparaison aux mains d'une femme féminise Raphaël et souligne l'inactivité de ces mains : pâles, fines, elles n'ont pas travaillé, elles n'agissent plus. Ce procédé construit une image d'un personnage qui a perdu les attributs traditionnels de la virilité et de l'action. Cela révèle un glissement identitaire : Raphaël n'est plus l'homme de désir et d'ambition du début du roman — son énergie vitale s'est retirée du corps pour se concentrer, comme la suite va le montrer, dans son regard."
+          },
+          {
+            titre: "🏺 L'accumulation d'objets exotiques",
+            citation: "Une calotte grecque [...] le couteau de malachite enrichi d'or [...] le bec d'ambre d'un magnifique houka de l'Inde",
+            explication: "Balzac accumule les objets précieux et à consonance lointaine (Grèce, malachite, Inde) qui entourent Raphaël. Cette accumulation crée un effet de saturation visuelle : le regard du lecteur est submergé de richesses comme celui de Porriquet. Mais ces objets sont tous dans un état d'abandon (le couteau « laissé tomber », le houka « oublié ») — Raphaël ne jouit même plus de ce luxe. Cela révèle un cadre de vie artificiel et muet, un cocon doré qui isole son occupant du monde réel sans lui apporter aucun plaisir."
+          },
+          {
+            titre: "🐍 La comparaison animale (serpent)",
+            citation: "les spirales émaillées gisaient comme un serpent dans sa chambre",
+            explication: "Le tuyau du houka est comparé à un serpent, animal traditionnellement associé à la tentation, au danger silencieux et à la chute (référence biblique). Ce procédé transforme un simple objet de confort en présence menaçante. Cela révèle que même les plaisirs raffinés qui entourent Raphaël sont teintés d'une menace latente — le danger, désormais, ne vient plus de l'extérieur mais s'est glissé au cœur même du confort de Raphaël."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : Le regard, miroir d'un combat intérieur titanesque",
+        ideePrincipale: "Face à l'affaiblissement général du corps, Balzac fait surgir un contraste saisissant : le regard de Raphaël concentre toute l'énergie vitale restante et devient le véritable centre dramatique du portrait.",
+        procedes: [
+          {
+            titre: "⚔️ L'antithèse (corps faible / regard intense)",
+            citation: "la faiblesse générale de son jeune corps était démentie par des yeux bleus où toute la vie semblait s'être retirée",
+            explication: "L'antithèse oppose frontalement deux réalités coexistantes : la faiblesse généralisée du corps d'une part, l'intensité concentrée du regard d'autre part. Le verbe « démentie » est crucial : le regard ne complète pas le corps affaibli, il le contredit. Tout ce qui a quitté le corps de Raphaël semble s'être réfugié dans ses yeux. Cela révèle que la vitalité de Raphaël n'a pas disparu — elle s'est simplement déplacée et condensée, faisant du regard le dernier théâtre d'une vie intérieure encore intense."
+          },
+          {
+            titre: "💥 L'hyperbole",
+            citation: "Ce regard faisait mal à voir.",
+            explication: "Cette phrase brève et brutale exagère l'effet physique du regard de Raphaël sur celui qui le croise : regarder devient douloureux. La rupture de rythme — une phrase courte isolée après de longues descriptions — lui donne un impact maximal, comme une chute. Cela révèle l'intensité presque insupportable de la souffrance intérieure de Raphaël : la douleur est si forte qu'elle déborde du personnage et devient contagieuse, visible depuis l'extérieur."
+          },
+          {
+            titre: "📈 La gradation (accumulation d'interprétations)",
+            citation: "Les uns pouvaient y lire du désespoir ; d'autres, y deviner un combat intérieur, aussi terrible qu'un remords.",
+            explication: "Balzac propose plusieurs lectures possibles du même regard, dans une gradation qui va du désespoir (sentiment passif, subi) au combat intérieur et au remords (sentiments actifs, douloureux). Cette polysémie organisée crée un effet de profondeur : le regard de Raphaël ne dit pas une seule chose, il dit tout à la fois, selon qui le regarde. Cela révèle la complexité psychologique du personnage — aucune étiquette simple ne peut l'épuiser, ce qui en fait une figure romanesque à la hauteur des grandes figures tragiques que Balzac va évoquer ensuite."
+          },
+          {
+            titre: "🏛️ Les comparaisons mythologiques et historiques",
+            citation: "le regard du Prométhée enchaîné, de Napoléon déchu qui [...] demande le commandement pour vingt-quatre heures et ne l'obtient pas",
+            explication: "Balzac élève Raphaël au rang de deux figures emblématiques de la grandeur déchue et de l'impuissance tragique : Prométhée, puni pour avoir voulu égaler les dieux ; Napoléon, génie stratégique réduit à l'inaction après Waterloo. Ces deux références fonctionnent comme une amplification symbolique : elles montrent que Raphaël possède une intelligence et une volonté immenses, mais ne peut plus agir. Cela révèle que Raphaël n'est pas un homme ordinaire en crise, mais une figure tragique au sens fort — un être puissant réduit à l'impuissance par une force supérieure à la sienne."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 4 : Le choix radical du renoncement au désir",
+        ideePrincipale: "Le portrait se clôt sur la décision de Raphaël de soumettre sa volonté à la raison la plus froide, dans une tentative désespérée d'échapper à la mort en tuant en lui toute trace de désir.",
+        procedes: [
+          {
+            titre: "⚖️ L'antithèse (volonté / grossier bon sens)",
+            citation: "Il soumettait sa volonté, son intelligence, au grossier bon sens d'un vieux paysan à peine civilisé",
+            explication: "L'antithèse oppose deux univers que tout sépare : la volonté et l'intelligence de Raphaël — raffinées, brillantes — face au « grossier bon sens » d'un simple paysan. Le procédé souligne l'ampleur du sacrifice consenti : Raphaël renonce volontairement à ce qui fait sa supériorité intellectuelle pour se soumettre à une sagesse fruste mais prévisible. Cela révèle que le renoncement n'est pas seulement physique — c'est une humiliation consentie de l'esprit lui-même, un abaissement délibéré."
+          },
+          {
+            titre: "🤖 La métaphore (automate)",
+            citation: "Presque joyeux de devenir une sorte d'automate",
+            explication: "Raphaël est comparé à un automate, être mécanique sans âme ni désir propre. L'adverbe « Presque » est capital : il signale que même cette joie de l'effacement de soi est feinte, que Raphaël n'est pas tout à fait convaincu. Ce procédé crée une image glaçante d'un homme qui se déshumanise volontairement. Cela révèle le degré extrême du renoncement : il ne s'agit plus de réprimer des désirs, mais d'effacer sa propre humanité, sa capacité à vouloir et à ressentir."
+          },
+          {
+            titre: "🔄 L'oxymore final",
+            citation: "il abdiquait la vie pour vivre",
+            explication: "Cette formule paradoxale condense en cinq mots toute la tragédie du roman : abdiquer la vie (renoncer à vivre pleinement, à désirer) pour vivre (survivre physiquement). La contradiction interne crée un effet de choc logique — on ne peut pas à la fois abdiquer et vivre. Cela révèle le paradoxe central de La Peau de chagrin : la survie matérielle se paie au prix de la mort symbolique du désir, de la passion, et donc de ce qui rend la vie digne d'être vécue."
+          },
+          {
+            titre: "✝️ La référence culturelle (Origène)",
+            citation: "il s'était fait chaste à la manière d'Origène, en châtrant son imagination",
+            explication: "La référence à Origène, théologien chrétien qui se serait châtré pour résister à la tentation de la chair, est ici transposée métaphoriquement : Raphaël ne se mutile pas physiquement, mais « châtre » son imagination — sa capacité à désirer et à rêver. Ce procédé donne une dimension religieuse et sacrificielle au renoncement. Cela révèle que ce choix n'est pas une simple précaution rationnelle, mais un véritable sacrifice mystique de sa part la plus vivante : l'imagination, foyer du désir."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "⚔️ L'antithèse (corps / regard)", exemple: "la faiblesse générale de son jeune corps était démentie par des yeux bleus", effet: "Crée un contraste saisissant entre l'affaiblissement physique et l'intensité du regard — révèle que la vitalité de Raphaël s'est concentrée dans ses yeux." },
+      { procede: "🌸 La comparaison (fleur étiolée)", exemple: "son visage pâle comme une fleur étiolée", effet: "Image poétique d'un dépérissement lent et progressif, qui annonce métaphoriquement la réduction de la peau de chagrin." },
+      { procede: "🏺 L'accumulation (objets exotiques)", exemple: "calotte grecque [...] couteau de malachite [...] houka de l'Inde", effet: "Crée un effet de saturation d'un luxe artificiel et muet — Raphaël ne jouit plus de ses richesses." },
+      { procede: "🔄 L'oxymore (« abdiquer la vie pour vivre »)", exemple: "il abdiquait la vie pour vivre", effet: "Condense le paradoxe central du roman en une formule frappante — survivre en se vidant de toute vie intérieure." },
+      { procede: "🏛️ Les comparaisons mythologiques", exemple: "Prométhée enchaîné, de Napoléon déchu", effet: "Élève Raphaël à une dimension universelle et tragique — héros déchu, impuissant face à une force supérieure." }
+    ],
+    problematiquesPossibles: [
+      "En quoi ce portrait de Raphaël illustre-t-il le tragique de la condition humaine ?",
+      "Comment Balzac fait-il du regard un langage à part entière, capable d'exprimer ce que les mots ne peuvent dire ?",
+      "En quoi ce passage annonce-t-il le dilemme central du roman entre désir et survie ?"
+    ],
+    axesLecture: [
+      "Le portrait comme révélateur d'un état intérieur : le corps et l'environnement de Raphaël ne sont jamais décrits pour eux-mêmes — ils traduisent constamment un état psychologique.",
+      "Le regard comme lieu de la grandeur tragique : si le corps s'affaisse, le regard porte la trace d'une grandeur passée et d'un combat héroïque, à la manière de Prométhée et Napoléon.",
+      "Le renoncement comme paradoxe existentiel : peut-on vraiment « vivre » en renonçant à tout désir ?"
+    ],
+    mnemo: [
+      "📌 Corps = Maladie → mélancolie, fleur étiolée, affaissement",
+      "📌 Décor = Luxe artificiel → accumulation d'objets exotiques abandonnés, oxymore « malades riches »",
+      "📌 Regard = Grandeur tragique → Prométhée, Napoléon, hyperbole « faisait mal à voir »",
+      "📌 Renoncement = Paradoxe → automate, « abdiquer la vie pour vivre », Origène"
+    ]
   }
 ];
