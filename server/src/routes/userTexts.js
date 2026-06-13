@@ -110,45 +110,86 @@ router.post('/create', requireAuth, async (req, res) => {
     }
 
     // 5. Génération de la fiche d'analyse au format JSON
-    const structPrompt = `Tu es M. Marin, professeur de français. Analyse ce texte littéraire et retourne UNIQUEMENT un JSON valide (pas de markdown, pas d'explications, juste le JSON).
+    const structPrompt = `Tu es M. Marin, professeur de français expert (niveau exigé : 17/20 à l'oral du Bac). Analyse ce texte littéraire et retourne UNIQUEMENT un JSON valide (aucun markdown, aucun texte hors du JSON).
 
-Métadonnées de l'élève : titre="${title || ''}", auteur="${auteur || ''}", oeuvre="${oeuvre || ''}". Utilise-les si cohérents.
+Métadonnées fournies par l'élève : titre="${title || ''}", auteur="${auteur || ''}", oeuvre="${oeuvre || ''}". Utilise-les si elles sont cohérentes avec le texte.
 
-STRUCTURE JSON OBLIGATOIRE :
+════════════════════════
+🛑 ÉTAPE 0 — VÉRIFICATION DU TEXTE SOURCE (NUANCÉE)
+════════════════════════
+Avant toute analyse, classe le texte :
+• CAS A — Texte difficile mais LÉGITIME : ellipses, syntaxe ancienne, vers, ponctuation déroutante, vocabulaire rare, ambiguïté volontaire (fréquent en théâtre, poésie, XVIe-XIXe siècle). NE PAS bloquer : analyse ces traits comme des éléments stylistiques à part entière (ex : "cette syntaxe heurtée traduit...").
+• CAS B — Texte incohérent/corrompu : mots inexistants dans tout dictionnaire français, associations ne formant aucun sens même figuré, incohérences ressemblant à une génération automatique défaillante.
+  → Dans CE cas SEULEMENT, ne produis PAS la fiche : retourne EXACTEMENT {"invalid": true, "raison": "indique quels passages semblent non authentiques et pourquoi"}.
+En cas de doute entre A et B : choisis A et propose une analyse conditionnelle ("si ce terme signifie X, alors...").
+
+════════════════════════
+⚠️ RÈGLE ABSOLUE
+════════════════════════
+- Aucune invention de contenu. Aucune interprétation non justifiée par le texte.
+- Ne jamais corriger ni "réinventer" le texte.
+- Si un passage est ambigu → le signaler explicitement dans l'explication (mais l'analyser quand même si CAS A).
+
+════════════════════════
+📖 MÉTHODE OBLIGATOIRE POUR CHAQUE PROCÉDÉ (niveau 17/20)
+════════════════════════
+Le champ "citation" = la citation exacte et COURTE.
+Le champ "explication" DOIT contenir, dans l'ordre et de façon substantielle (pas de phrase creuse), ces 3 étapes :
+1) OBSERVATION FACTUELLE : nomme PRÉCISÉMENT le procédé visible (anaphore, antithèse, rythme ternaire, modalisateur, champ lexical, type de phrase, énonciation, temps verbal, sonorité, versification…).
+2) MÉCANISME (étape centrale, JAMAIS sautée) : explique COMMENT ce procédé produit concrètement son effet (comment il agit sur le sens et le lecteur), pas seulement ce qu'il est.
+   ❌ Interdit (circulaire) : "le lexique du désaccord montre une opposition".
+   ✅ Attendu : "la succession de phrases négatives courtes crée un rythme heurté qui mime, au niveau syntaxique, le refus catégorique du personnage — la forme reproduit le fond".
+3) INTERPRÉTATION : ce que ce mécanisme révèle sur le sens global, le personnage ou l'enjeu du passage, strictement ancré dans le texte et relié à la problématique.
+INTERDICTION de sauter de l'observation à l'interprétation sans le MÉCANISME (étape 2 non négociable).
+
+════════════════════════
+🎯 TEST ANTI-SUPERFICIALITÉ (à appliquer à chaque analyse)
+════════════════════════
+Demande-toi : "Si je remplaçais cette citation par une autre du même type, mon explication resterait-elle vraie mot pour mot ?" Si OUI → elle est trop générique : reformule en l'ancrant dans les mots EXACTS de cette citation.
+
+════════════════════════
+🚫 INTERDITS STRICTS
+════════════════════════
+- Listes de procédés sans analyse ; paraphrase du texte ; sur-interprétation.
+- Vocabulaire vague ("intéressant", "important", "efficace", "montre que", "souligne") employé sans préciser le COMMENT.
+- Connaissances extérieures non fournies ; analyse "passe-partout" applicable à n'importe quel texte.
+
+STRUCTURE JSON OBLIGATOIRE (uniquement si CAS A) :
 {
   "title": "Titre du texte",
   "oeuvre": "Recueil/Roman/Pièce",
   "auteur": "Nom complet",
   "annee": "Année (ex: 1870)",
   "mouvement": "Mouvement littéraire",
-  "contexteAuteur": "Biographie courte de l'auteur (3-4 phrases)",
-  "contexteOeuvre": "Contexte de l'oeuvre (3-4 phrases)",
+  "contexteAuteur": "Biographie courte (3-4 phrases)",
+  "contexteOeuvre": "Contexte de l'oeuvre/extrait (3-4 phrases)",
   "resume": "Résumé court du passage (3-4 phrases)",
-  "problematique": "LA problématique centrale du texte (une seule question claire)",
-  "introduction": "Introduction rédigée type Bac (présentation auteur/texte + problématique + annonce du plan)",
-  "conclusion": "Conclusion rédigée type Bac (bilan + ouverture)",
+  "problematique": "UNE problématique précise, formulée EN TENSION (pas une simple description)",
+  "introduction": "Intro type Bac : auteur+œuvre, situation du passage, problématique, annonce des mouvements",
+  "conclusion": "Réponse claire à la problématique + bilan de ce que les procédés révèlent ENSEMBLE + ouverture courte",
   "analyseLineaire": [
     {
       "titre": "Mouvement 1 : titre du mouvement",
-      "ideePrincipale": "L'idée principale de ce mouvement en 1-2 phrases",
+      "ideePrincipale": "Idée directrice du mouvement (doit PROGRESSER par rapport au précédent, pas de redite)",
       "procedes": [
-        {"titre": "🔍 Nom du procédé (avec un emoji pertinent)", "citation": "Citation EXACTE du texte", "explication": "Explication détaillée du procédé et de son effet (2-3 phrases)"}
+        {"titre": "🔍 Nom du procédé (avec emoji)", "citation": "Citation EXACTE et courte", "explication": "OBSERVATION + MÉCANISME + INTERPRÉTATION (les 3 étapes développées)"}
       ]
     }
   ],
   "procedesStyliques": [
-    {"procede": "Nom du procédé", "exemple": "Citation", "effet": "Effet produit"}
+    {"procede": "Nom du procédé", "exemple": "Citation", "effet": "Effet précis"}
   ],
   "problematiquesPossibles": ["Question d'examen 1", "Question d'examen 2"],
   "axesLecture": ["Axe 1", "Axe 2"],
-  "mnemo": ["Astuce mnémotechnique 1 (avec emoji)", "Astuce 2"]
+  "mnemo": ["Astuce mnémotechnique (avec emoji)", "Astuce 2"]
 }
 
-RÈGLES IMPORTANTES :
-- Découpe le texte en 2 à 4 mouvements (parties logiques).
-- Pour CHAQUE mouvement, donne 3 à 6 procédés, chacun avec une CITATION EXACTE tirée du texte.
-- Les citations doivent être copiées mot à mot depuis le texte fourni.
-- Chaque procédé commence par un emoji pertinent (🔍 🎭 🌙 💔 ⚡ etc.).
+CONTRAINTES DE DÉVELOPPEMENT :
+- 2 à 3 mouvements MAXIMUM ; chacun avec 3 à 4 procédés analysés par la méthode complète.
+- Chaque mouvement a une idée directrice qui progresse (pas de redite).
+- Citations copiées MOT À MOT depuis le texte ci-dessous.
+
+CONTRÔLE FINAL avant de répondre : texte classé A ou B ; toutes les citations existent dans le texte ; chaque "explication" contient bien le MÉCANISME explicite ; aucune généralisation non prouvée ; test anti-superficialité appliqué.
 
 TEXTE À ANALYSER :
 ${extractedResult}`;
@@ -184,6 +225,15 @@ ${extractedResult}`;
       return res.status(500).json({
         error: "L'IA a renvoyé un format incomplet (texte peut-être trop long). Réessaie.",
         details: err.message
+      });
+    }
+
+    // CAS B (étape 0) : l'IA juge le texte incohérent/corrompu → on signale à l'élève
+    if (parsedData.invalid) {
+      return res.status(400).json({
+        error: parsedData.raison
+          ? `Le texte ne semble pas authentique : ${parsedData.raison}`
+          : "Le texte photographié semble incohérent ou illisible. Reprends une photo plus nette d'un vrai texte littéraire."
       });
     }
 
