@@ -555,6 +555,145 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
     ]
   },
   {
+    id: "balzac-peau-mesure",
+    texteComplet: `— Jamais je ne l'ai vu si stupide ! dit Émile.
+— Je te dis..., répondit Raphaël en agitant la Peau devant lui.
+— Oui, cela est très vrai, je pense comme toi, dit Émile en souriant.
+— Je te dis, la Peau ! tu es menteur comme un nouveau roi. Tu ne me crois pas ?
+— Comment veux-tu que j'adopte les divagations de ton ivresse ? répondit Émile.
+— Prenons la mesure ! Prenons la mesure ! s'écria Raphaël.
+Animé d'une adresse de singe et d'une singulière lucidité qui s'élève parfois au-dessus des obtuses visions de l'ivresse, Raphaël sut trouver une écritoire et une serviette. Les deux amis étendirent la Peau sur la serviette, superposèrent le papier sur la Peau, et Raphaël décrivit avec soin les contours du talisman.
+— J'ai souhaité deux cent mille livres de rente, dit-il d'un air triomphant, et tu verras la diminution de tout mon chagrin.
+
+— Honoré de Balzac, La Peau de chagrin, 1831`,
+    title: "La Mesure du talisman",
+    oeuvre: "La Peau de chagrin",
+    auteur: "Honoré de Balzac",
+    annee: 1831,
+    mouvement: "Réalisme / Romantisme fantastique",
+    contexteAuteur: "Honoré de Balzac (1799-1850) est l'un des grands représentants du réalisme. À travers La Comédie humaine, il cherche à représenter la société de son époque dans toute sa diversité. La Peau de chagrin occupe une place particulière dans son œuvre car elle mêle réalisme, fantastique et réflexion philosophique.",
+    contexteOeuvre: "La Peau de chagrin raconte l'histoire de Raphaël de Valentin, qui acquiert une peau magique exauçant tous ses désirs, mais raccourcissant sa vie à chaque vœu. Ce passage intervient peu après que Raphaël a expliqué à ses amis le pouvoir du talisman. Lors d'un repas fortement arrosé, personne ne croit à son histoire : Raphaël tente alors de démontrer la vérité de ses paroles.",
+    resume: "Au cours d'une discussion, Émile refuse de croire aux pouvoirs de la Peau de chagrin. Raphaël, malgré son ivresse, cherche à prouver ses affirmations. Les deux hommes décident de mesurer précisément le talisman afin de vérifier s'il rétrécit réellement après l'accomplissement d'un désir. La scène mêle comique, fantastique et tension dramatique.",
+    problematique: "Comment Balzac transforme-t-il une scène apparemment comique entre deux amis en un moment décisif où le fantastique commence à s'imposer comme une réalité inquiétante ?",
+    introduction: "Dans cet extrait de La Peau de chagrin, Balzac met en scène une conversation entre Raphaël et son ami Émile autour du mystérieux talisman. Alors qu'Émile considère ces affirmations comme les divagations d'un homme ivre, Raphaël cherche à apporter une preuve concrète. Cette scène, d'abord marquée par le comique du dialogue, évolue progressivement vers une expérience inquiétante qui annonce la domination du fantastique. Nous étudierons d'abord le dialogue comique fondé sur l'incompréhension, puis la détermination de Raphaël à convaincre, avant d'analyser la préparation de l'expérience qui fait basculer le récit vers le fantastique.",
+    conclusion: "Dans cet extrait, Balzac transforme une simple discussion entre amis en une scène capitale du roman. Grâce au dialogue comique et aux réactions sceptiques d'Émile, le lecteur demeure d'abord dans un univers réaliste. Cependant, l'insistance de Raphaël et la préparation méthodique de la mesure font progressivement émerger le fantastique. La scène révèle le lien fatal entre le désir et la mort, thème central de La Peau de chagrin. Derrière l'apparente légèreté du dialogue se cache déjà toute la tragédie du destin de Raphaël.\n\nOuverture : On peut rapprocher cette scène des récits fantastiques d'Edgar Allan Poe, où des phénomènes extraordinaires surgissent progressivement au cœur d'un cadre parfaitement réaliste.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Un dialogue comique fondé sur l'incompréhension",
+        ideePrincipale: "Balzac ouvre la scène par un échange vif où l'incrédulité d'Émile s'oppose à l'insistance de Raphaël, créant une situation comique.",
+        procedes: [
+          {
+            titre: "🎭 Le comique de dialogue",
+            citation: "Jamais je ne l'ai vu si stupide !",
+            explication: "Dès la première réplique, Émile ridiculise son ami. Le ton familier et moqueur installe une scène légère où Raphaël n'est pas pris au sérieux — le lecteur comprend d'emblée que le talisman va devoir faire ses preuves."
+          },
+          {
+            titre: "🔄 Les répétitions (agitation de Raphaël)",
+            citation: "Je te dis... / Je te dis, la Peau !",
+            explication: "Raphaël répète les mêmes mots sans parvenir à se faire entendre. Ces répétitions traduisent son agitation, son ivresse et son incapacité à convaincre — le dialogue tourne au dialogue de sourds."
+          },
+          {
+            titre: "😂 L'ironie d'Émile",
+            citation: "Oui, cela est très vrai, je pense comme toi.",
+            explication: "Émile feint d'approuver pour mieux se moquer. Cette ironie accentue le comique de la scène et montre que Raphaël est seul à croire au surnaturel — son ami ne joue pas le jeu."
+          },
+          {
+            titre: "👑 La comparaison satirique",
+            citation: "tu es menteur comme un nouveau roi",
+            explication: "La comparaison avec un roi évoque la flatterie et le mensonge politique. Raphaël retourne l'accusation contre Émile : c'est lui le menteur, pas la Peau. Le ton reste plaisant mais la tension monte."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : Raphaël cherche à imposer sa vérité",
+        ideePrincipale: "Face au scepticisme général, Raphaël devient progressivement plus déterminé à démontrer l'existence du pouvoir surnaturel du talisman.",
+        procedes: [
+          {
+            titre: "🍷 Le champ lexical de l'ivresse",
+            citation: "Comment veux-tu que j'adopte les divagations de ton ivresse ?",
+            explication: "Pour Émile, l'explication est simple : Raphaël est ivre. Cette interprétation rationnelle retarde l'apparition du fantastique — elle constitue une sortie de secours logique que le lecteur est tenté d'accepter."
+          },
+          {
+            titre: "⚔️ L'opposition des points de vue",
+            citation: "Tu ne me crois pas / Comment veux-tu que j'adopte les divagations de ton ivresse ?",
+            explication: "Deux visions du monde s'affrontent : Raphaël croit au surnaturel, Émile défend la raison. Cette hésitation entre explication logique et phénomène extraordinaire est caractéristique du registre fantastique."
+          },
+          {
+            titre: "📏 La répétition obsessionnelle",
+            citation: "Prenons la mesure ! Prenons la mesure !",
+            explication: "Cette formule revient comme un refrain, presque une obsession. Raphaël veut quitter le domaine des mots pour entrer dans celui de la preuve — la répétition traduit une urgence qui dépasse le simple entêtement."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : Une préparation qui crée le suspense",
+        ideePrincipale: "La scène change progressivement de nature : la plaisanterie laisse place à une véritable expérimentation, et le rythme ralentit pour créer l'attente.",
+        procedes: [
+          {
+            titre: "🐒 La comparaison animale",
+            citation: "animé d'une adresse de singe",
+            explication: "Malgré l'alcool, Raphaël agit avec une rapidité et une précision surprenantes. La comparaison avec le singe est comique mais aussi troublante — quelque chose en lui semble dépasser son état d'ivresse."
+          },
+          {
+            titre: "⚡ L'antithèse (lucidité / ivresse)",
+            citation: "singulière lucidité / obtuses visions de l'ivresse",
+            explication: "Balzac oppose deux états qui s'excluent normalement. Raphaël semble à la fois ivre et extraordinairement conscient — cette contradiction intrigue le lecteur et annonce l'irruption du surnaturel."
+          },
+          {
+            titre: "🎬 Le ralentissement du récit",
+            citation: "sut trouver une écritoire et une serviette",
+            explication: "Les gestes sont décrits étape par étape. Le narrateur détaille minutieusement les préparatifs, comme au ralenti. Cette lenteur crée une attente dramatique : on sent qu'on s'approche de la preuve décisive."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 4 : La naissance du fantastique",
+        ideePrincipale: "La mesure du talisman transforme la discussion en expérience scientifique destinée à vérifier l'existence du surnaturel — et c'est ce sérieux même qui rend le fantastique crédible.",
+        procedes: [
+          {
+            titre: "🔬 Le lexique de la précision scientifique",
+            citation: "étendirent [...] superposèrent [...] décrivit [...] contours",
+            explication: "Ces verbes précis donnent à la scène une apparence de laboratoire. Paradoxalement, plus la démonstration est rigoureuse, plus le phénomène surnaturel devient crédible — la méthode scientifique au service du fantastique."
+          },
+          {
+            titre: "💰 Le rappel du désir",
+            citation: "J'ai souhaité deux cent mille livres de rente",
+            explication: "Raphaël nomme le vœu qui a déclenché l'action de la peau. Le désir réapparaît comme la cause du danger — le lecteur comprend que c'est lui le vrai moteur tragique du roman."
+          },
+          {
+            titre: "⚠️ L'ironie tragique (double sens de « chagrin »)",
+            citation: "tu verras la diminution de tout mon chagrin",
+            explication: "« Chagrin » désigne à la fois la tristesse et la Peau elle-même. Raphaël croit gagner le bonheur, mais le lecteur comprend que chaque désir le rapproche de la mort — cette ambiguïté condense toute la tragédie du roman."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "🎭 Le comique de dialogue (ironie d'Émile)", exemple: "Oui, cela est très vrai, je pense comme toi.", effet: "Installe une scène légère qui retarde l'apparition du fantastique — et rend son irruption d'autant plus inquiétante." },
+      { procede: "🔄 La répétition obsessionnelle", exemple: "Prenons la mesure ! Prenons la mesure !", effet: "Traduit l'obsession de Raphaël et sa volonté de passer de la parole à la preuve." },
+      { procede: "⚡ L'antithèse (lucidité / ivresse)", exemple: "singulière lucidité / obtuses visions de l'ivresse", effet: "Souligne le paradoxe du personnage, à la fois ivre et extraordinairement conscient — signe que quelque chose le dépasse." },
+      { procede: "🔬 Le lexique scientifique", exemple: "étendirent, superposèrent, décrivit, contours", effet: "Donne une apparence rationnelle au phénomène fantastique — le rend d'autant plus crédible et inquiétant." },
+      { procede: "⚠️ Le double sens de « chagrin »", exemple: "la diminution de tout mon chagrin", effet: "Condense la tragédie du roman : Raphaël cherche le bonheur mais s'approche de sa mort." }
+    ],
+    problematiquesPossibles: [
+      "Comment Balzac entretient-il l'hésitation entre le réel et le surnaturel ?",
+      "En quoi cette scène constitue-t-elle une étape essentielle dans l'installation du fantastique ?",
+      "Comment le dialogue entre Émile et Raphaël permet-il de révéler la puissance symbolique du désir ?",
+      "Comment Balzac mêle-t-il comique et tragique dans cet extrait ?"
+    ],
+    axesLecture: [
+      "Le fantastique naît du doute : le lecteur hésite constamment entre une explication rationnelle et surnaturelle.",
+      "Le dialogue oppose deux visions du monde : la raison représentée par Émile et la croyance incarnée par Raphaël.",
+      "Le désir apparaît déjà comme une force dangereuse qui menace l'existence du héros."
+    ],
+    mnemo: [
+      "📌 Dialogue = Comique → ironie, moqueries, répétitions",
+      "📌 Raphaël = Convaincre → « Tu ne me crois pas », « Prenons la mesure »",
+      "📌 Mesure = Suspense → écritoire, serviette, contours — le fantastique par la science",
+      "📌 Chagrin = Double sens → bonheur gagné / vie perdue"
+    ]
+  },
+  {
     id: "balzac-portrait-raphael",
     texteComplet: `Porriquet aperçut de loin son élève au coin d'une cheminée. Enveloppé d'une robe de chambre à grands dessins, et plongé dans un fauteuil à ressorts, Raphaël lisait le journal. L'extrême mélancolie à laquelle il paraissait être en proie était exprimée par l'attitude maladive de son corps affaissé ; elle était peinte sur son front, sur son visage pâle comme une fleur étiolée. Une sorte de grâce efféminée et les bizarreries particulières aux malades riches distinguaient sa personne. Ses mains, semblables à celles d'une jolie femme, avaient une blancheur molle et délicate. Ses cheveux blonds, devenus rares, se bouclaient autour de ses tempes par une coquetterie recherchée. Une calotte grecque, entraînée par un gland trop lourd pour le léger cachemire dont elle était faite, pendait sur un côté de sa tête. Il avait laissé tomber à ses pieds le couteau de malachite enrichi d'or dont il s'était servi pour couper les feuillets d'un livre. Sur ses genoux était le bec d'ambre d'un magnifique houka de l'Inde dont les spirales émaillées gisaient comme un serpent dans sa chambre, et il oubliait d'en sucer les frais parfums. Cependant, la faiblesse générale de son jeune corps était démentie par des yeux bleus où toute la vie semblait s'être retirée, où brillait un sentiment extraordinaire qui saisissait tout d'abord. Ce regard faisait mal à voir. Les uns pouvaient y lire du désespoir ; d'autres, y deviner un combat intérieur, aussi terrible qu'un remords. C'était le coup d'œil profond de l'impuissant qui refoule ses désirs au fond de son cœur, ou celui de l'avare jouissant par la pensée de tous les plaisirs que son argent pourrait lui procurer, et s'y refusant pour ne pas amoindrir son trésor ; ou le regard du Prométhée enchaîné, de Napoléon déchu qui apprend à l'Élysée, en 1815, la faute stratégique commise par ses ennemis, qui demande le commandement pour vingt-quatre heures et ne l'obtient pas. Véritable regard de conquérant et de damné ! et, mieux encore, le regard que, plusieurs mois auparavant, Raphaël avait jeté sur la Seine ou sur sa dernière pièce d'or mise au jeu. Il soumettait sa volonté, son intelligence, au grossier bon sens d'un vieux paysan à peine civilisé par une domesticité de cinquante années. Presque joyeux de devenir une sorte d'automate, il abdiquait la vie pour vivre, et dépouillait son âme de toutes les poésies du désir. Pour mieux lutter avec la cruelle puissance dont il avait accepté le défi, il s'était fait chaste à la manière d'Origène, en châtrant son imagination.
 
