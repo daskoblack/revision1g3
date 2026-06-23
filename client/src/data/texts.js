@@ -1375,5 +1375,116 @@ Puisque donc que cette bonne mère nous a donné à tous toute la terre pour dem
       "📌 Parole = Fraternité → communion des volontés, don fait à tous",
       "📌 Conclusion = Liberté → tous naturellement libres, puisque tous compagnons"
     ]
+  },
+  {
+    id: "la-boetie-habitude-servitude",
+    texteComplet: `Il est vrai qu'au commencement on sert contraint et vaincu par la force ; mais ceux qui viennent après servent sans regret, et font volontairement ce que leurs prédécesseurs avaient fait par contrainte. Cela parce que les hommes naissant sous le joug, puis nourris et élevés dans le servage, sans regarder plus avant se contentent de vivre comme ils sont nés ; et ne pensant point avoir d'autre bien ni d'autre droit que ce qu'ils ont trouvé, ils considèrent comme naturel l'état de leur naissance.
+Et toutefois il n'est point d'héritier si prodigue et si nonchalant qui ne jette quelquefois les yeux sur les registres de son père, pour voir s'il jouit de tous les droits de sa succession, ou si l'on a porté quelque atteinte à son prédécesseur ou à lui-même.
+Mais certes la coutume, qui a en toutes choses grand pouvoir sur nous, n'a nulle vertu plus grande que de nous enseigner à servir, et (comme l'on dit de Mithridate qu'il s'accoutuma à boire le poison) de nous apprendre à avaler et à trouver moins amer le venin de la servitude.
+
+L'on ne peut pas nier que la nature n'ait en nous une part importante pour nous tirer là où elle veut, et nous faire estimer bien ou mal nés. Mais il faut cependant confesser que la nature a sur nous moins de pouvoir que la coutume, parce que le naturel, si bon soit-il, se perd s'il n'est entretenu, et la nourriture nous façonne toujours à sa manière, quoi qu'il en soit, malgré la nature : les semences de bien que la nature met en nous sont si menues et glissantes qu'elles ne peuvent endurer le moindre heurt produit par une nourriture contraire. Elles s'entretiennent moins aisément qu'elles ne s'abâtardissent, se fondent, et s'anéantissent, ni plus ni moins que les arbres fruitiers, qui ont bien tous un naturel à part, qu'ils gardent intact si on les laisse se développer, mais qu'ils délaissent aussitôt pour porter d'autres fruits étrangers et non les leurs, pour peu qu'on les greffe.
+Les herbes ont chacune leur propriété, leur naturel et leur singularité, mais toutefois le gel, le temps, le terroir ou la main du jardinier y ajoutent ou diminuent beaucoup de leur vertu : la plante qu'on a vue en un endroit, on est ailleurs incapable de la reconnaître.
+
+— Étienne de La Boétie, Discours de la servitude volontaire, vers 1548`,
+    title: "L'Habitude de la servitude",
+    oeuvre: "Discours de la servitude volontaire",
+    auteur: "Étienne de La Boétie",
+    annee: 1548,
+    mouvement: "Humanisme / Renaissance",
+    contexteAuteur: "Étienne de La Boétie (1530-1563) est un humaniste de la Renaissance, ami de Montaigne. Dans le Discours de la servitude volontaire, il cherche à comprendre pourquoi les peuples acceptent de vivre sous la domination d'un seul, alors qu'ils sont naturellement libres.",
+    contexteOeuvre: "Ce passage fait suite à la démonstration de l'égalité naturelle des hommes (texte 13). La Boétie s'interroge maintenant sur le mécanisme psychologique qui explique l'acceptation de la servitude : comment la contrainte initiale se transforme-t-elle en habitude acceptée, voire en conviction naturelle ?",
+    resume: "La Boétie montre que les hommes, d'abord forcés de servir, finissent par accepter volontairement la servitude. Cette habitude devient si forte qu'ils la considèrent comme naturelle. Il explique ensuite que la coutume est plus puissante que la nature, à travers des métaphores végétales : comme les plantes, l'homme est profondément façonné par son environnement.",
+    problematique: "Comment La Boétie explique-t-il que la coutume transforme la servitude contrainte en une habitude acceptée comme naturelle ?",
+    introduction: "Dans cet extrait du Discours de la servitude volontaire, La Boétie s'interroge sur les mécanismes psychologiques qui permettent à la servitude de se perpétuer. Après avoir montré que les hommes sont naturellement libres, il explique ici comment la coutume efface cette liberté naturelle. Nous étudierons d'abord comment la servitude se transforme en habitude acceptée, puis la puissance écrasante de la coutume, avant d'analyser la fragilité du naturel face à l'environnement.",
+    conclusion: "Dans cet extrait, La Boétie démontre que la servitude est avant tout un conditionnement psychologique : ce qui était contrainte devient habitude, puis conviction. La coutume, plus puissante que la nature, finit par rendre invisible le joug que l'on porte. Les métaphores végétales donnent à cette réflexion une dimension universelle : comme la plante greffée, l'homme finit par produire des fruits qui ne sont pas les siens.\n\nOuverture : Cette réflexion préfigure les analyses modernes du conditionnement social, comme celles de Bourdieu sur l'habitus, ou de Rousseau sur la corruption de l'état naturel par la société.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : La servitude devient une habitude acceptée",
+        ideePrincipale: "La Boétie montre que la contrainte initiale se transforme progressivement en acceptation volontaire, au point que les hommes considèrent leur servitude comme naturelle.",
+        procedes: [
+          {
+            titre: "⛓️ L'antithèse contrainte / volonté",
+            citation: "on sert contraint et vaincu par la force… servent sans regret",
+            explication: "L'antithèse entre « contraint » et « sans regret » décrit le basculement psychologique central du texte. La violence initiale disparaît — non parce que la situation change, mais parce que les générations suivantes n'ont pas connu l'avant. C'est le mécanisme de la normalisation."
+          },
+          {
+            titre: "👶 La métaphore du joug natal",
+            citation: "naissant sous le joug, puis nourris et élevés dans le servage",
+            explication: "Le joug (instrument de labour) désigne métaphoriquement l'oppression. Le fait de naître « sous » lui signifie que les générations nouvelles n'ont jamais connu l'espace libre avant la contrainte — elles ne savent pas ce qu'elles ont perdu."
+          },
+          {
+            titre: "🧠 L'illusion du naturel",
+            citation: "ils considèrent comme naturel l'état de leur naissance",
+            explication: "C'est le paradoxe au cœur du texte : ce qui est historique (une domination imposée) est vécu comme naturel (un ordre inévitable). La Boétie nomme ici un mécanisme d'idéologie — la servitude se rend invisible en se faisant passer pour l'ordre des choses."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : La puissance écrasante de la coutume",
+        ideePrincipale: "La coutume est une force qui dépasse la volonté individuelle : elle enseigne à servir, au point que la servitude devient aussi familière qu'un poison qu'on a appris à boire.",
+        procedes: [
+          {
+            titre: "🔁 La personnification de la coutume",
+            citation: "la coutume, qui a en toutes choses grand pouvoir sur nous",
+            explication: "La coutume est traitée comme une puissance active, presque un personnage. Cette personnification la rend concrète et menaçante — elle n'est pas une simple habitude, elle est une force qui agit sur nous sans qu'on le remarque."
+          },
+          {
+            titre: "☠️ La métaphore du poison (Mithridate)",
+            citation: "comme l'on dit de Mithridate qu'il s'accoutuma à boire le poison… avaler le venin de la servitude",
+            explication: "La référence à Mithridate (roi qui s'immunisa au poison en en absorbant de petites doses) est un exemple historique frappant. La servitude fonctionne de même : ingérée par petites doses dès l'enfance, elle cesse de faire mal — et on finit par la trouver « moins amère »."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : La coutume plus forte que la nature",
+        ideePrincipale: "La Boétie développe une réflexion philosophique : la nature humaine est fragile et modelable ; l'environnement et l'éducation la transforment profondément, comme le jardinier modifie la plante.",
+        procedes: [
+          {
+            titre: "⚖️ La thèse du renversement",
+            citation: "la nature a sur nous moins de pouvoir que la coutume",
+            explication: "Cette phrase est la thèse philosophique centrale du passage. Elle renverse la hiérarchie attendue : on imaginerait la nature plus forte que l'habitude — La Boétie affirme le contraire. Ce renversement explique comment la liberté naturelle peut être effacée par le conditionnement."
+          },
+          {
+            titre: "🌱 La métaphore des semences",
+            citation: "les semences de bien que la nature met en nous sont si menues et glissantes",
+            explication: "Le naturel bon (la liberté, la conscience) est comparé à des semences — petites, fragiles, faciles à écraser. L'image dit la vulnérabilité de ce qui est inné face à ce qui est appris. La liberté naturelle ne survit que si on l'entretient."
+          },
+          {
+            titre: "🌳 La métaphore de l'arbre greffé",
+            citation: "arbres fruitiers… qu'ils délaissent aussitôt pour porter d'autres fruits étrangers… pour peu qu'on les greffe",
+            explication: "L'arbre greffé produit des fruits qui ne lui appartiennent pas — comme l'homme conditionné adopte des valeurs qui ne sont pas les siennes. La greffe est une image forte de la manipulation culturelle : on peut faire produire à un être ce qui lui est étranger."
+          },
+          {
+            titre: "🌿 Le champ lexical du jardinage",
+            citation: "le gel, le temps, le terroir ou la main du jardinier",
+            explication: "La clôture du passage avec des images végétales (herbes, propriété, terroir) universalise la réflexion. Tous les êtres vivants sont façonnés par leur milieu — et l'homme n'échappe pas à cette loi. Le « jardinier » représente discrètement le pouvoir politique qui façonne les esprits."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "⛓️ Antithèse contrainte / volonté", exemple: "contraint et vaincu… servent sans regret", effet: "Décrit le basculement psychologique de la servitude forcée à la servitude acceptée." },
+      { procede: "☠️ Métaphore du poison (Mithridate)", exemple: "avaler le venin de la servitude", effet: "Rend la coutume concrètement dangereuse — et montre l'accoutumance comme un mécanisme d'anesthésie." },
+      { procede: "🧠 Illusion du naturel", exemple: "ils considèrent comme naturel l'état de leur naissance", effet: "Nomme le mécanisme idéologique central : la domination se rend invisible en se faisant passer pour l'ordre naturel." },
+      { procede: "🌱 Métaphore des semences", exemple: "semences de bien… si menues et glissantes", effet: "Dit la fragilité du naturel bon — la liberté doit être entretenue, sinon elle s'étiole." },
+      { procede: "🌳 Métaphore de l'arbre greffé", exemple: "pour peu qu'on les greffe", effet: "L'homme conditionné produit des valeurs étrangères à sa nature — image de la manipulation culturelle." }
+    ],
+    problematiquesPossibles: [
+      "Comment La Boétie explique-t-il l'acceptation de la servitude par les hommes ?",
+      "En quoi la coutume est-elle plus puissante que la nature ?",
+      "Comment l'auteur montre-t-il que l'homme peut être conditionné dès l'enfance ?"
+    ],
+    axesLecture: [
+      "Le mécanisme d'accoutumance à la servitude : la contrainte devient habitude, puis conviction naturelle.",
+      "La puissance psychologique de la coutume : plus forte que la nature, elle agit comme un poison ingéré dès l'enfance.",
+      "La transformation de la nature humaine par l'environnement : les métaphores végétales montrent que l'homme est façonnable — et donc manipulable."
+    ],
+    mnemo: [
+      "📌 Départ = Contrainte → forcé, vaincu, joug natal",
+      "📌 Milieu = Habitude → sans regret, considèrent comme naturel",
+      "📌 Coutume = Poison → Mithridate, venin, moins amer",
+      "📌 Nature = Fragile → semences menues, arbres greffés, plante méconnaissable",
+      "📌 Structure = Forcé → Habitué → Convaincu"
+    ]
   }
 ];
