@@ -556,14 +556,7 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
   },
   {
     id: "balzac-peau-mesure",
-    texteComplet: `— Jamais je ne l'ai vu si stupide ! dit Émile.
-— Je te dis..., répondit Raphaël en agitant la Peau devant lui.
-— Oui, cela est très vrai, je pense comme toi, dit Émile en souriant.
-— Je te dis, la Peau ! tu es menteur comme un nouveau roi. Tu ne me crois pas ?
-— Comment veux-tu que j'adopte les divagations de ton ivresse ? répondit Émile.
-— Prenons la mesure ! Prenons la mesure ! s'écria Raphaël.
-Animé d'une adresse de singe et d'une singulière lucidité qui s'élève parfois au-dessus des obtuses visions de l'ivresse, Raphaël sut trouver une écritoire et une serviette. Les deux amis étendirent la Peau sur la serviette, superposèrent le papier sur la Peau, et Raphaël décrivit avec soin les contours du talisman.
-— J'ai souhaité deux cent mille livres de rente, dit-il d'un air triomphant, et tu verras la diminution de tout mon chagrin.
+    texteComplet: `– Jamais je ne l'ai vu si stupide. – Stupide, mon ami ? Non. Cette Peau se rétrécit quand j'ai un désir… c'est une antiphrase. Le brahmane, il se trouve un brahmane là dessous ! le brahmane donc était un goguenard, parce que les désirs, vois-tu, doivent étendre... – Eh ! bien, oui. – Je te dis... – Oui, cela est très vrai, je pense comme toi. Le désir étend... – Je te dis, la Peau ! – Oui. – Tu ne me crois pas. Je te connais, mon ami, tu es menteur comme un nouveau roi. – Comment veux-tu que j'adopte les divagations de ton ivresse ? – Je te parie, je peux te le prouver. Prenons la mesure. – Allons, il ne s'endormira pas, s'écria Émile en voyant Raphaël occupé à fureter dans la salle à manger. Valentin animé d'une adresse de singe, grâce à cette singulière lucidité dont les phénomènes contrastent parfois chez les ivrognes avec les obtuses visions de l'ivresse, sut trouver une écritoire et une serviette, en répétant toujours : – Prenons la mesure ! Prenons la mesure ! – Eh ! bien, oui, reprit Émile, prenons la mesure ! Les deux amis étendirent la serviette et y superposèrent la Peau de chagrin. Émile, dont la main semblait être plus assurée que celle de Raphaël, décrivit à la plume, par une ligne d'encre, les contours du talisman, pendant que son ami lui disait : – J'ai souhaité deux cent mille livres de rente, n'est-il pas vrai ? Eh bien, quand je les aurai, tu verras la diminution de tout mon chagrin.
 
 — Honoré de Balzac, La Peau de chagrin, 1831`,
     title: "La Mesure du talisman",
@@ -831,19 +824,33 @@ Animé d'une adresse de singe et d'une singulière lucidité qui s'élève parfo
   },
   {
     id: "moliere-dom-juan-charlotte",
-    texteComplet: `CHARLOTTE : On m'a toujours dit qu'il ne faut jamais croire les Monsieux, et que vous autres courtisans êtes des enjoleurs, qui ne cherchez qu'à abuser les filles. Pour moi, j'aimerais mieux me voir morte, que de me voir déshonorée.
+    texteComplet: `CHARLOTTE. Aussi vrai, Monsieur, je ne sais comment faire quand vous parlez. Ce que vous dites me fait aise, et j'aurais toutes les envies du monde de vous croire ; mais on m'a toujou dit qu'il ne faut jamais croire les Monsieux, et que vous autres courtisans êtes des enjoleus, qui ne songez qu'à abuser les filles.
 
-DOM JUAN : Je ne suis pas de ces gens-là, et ce n'est pas ma manière d'agir. Je veux vous parler en tout bien et en tout honneur. Je n'ai point d'autre dessein que de vous épouser, et pour vous en convaincre, je prends à témoin l'homme que voilà de la sincérité de mes intentions.
+DON JUAN. Je ne suis pas de ces gens-là.
 
-SGANARELLE, bas : (à part) Hélas !
+SGANARELLE. Il n'a garde.
 
-DOM JUAN : Votre beauté vous assure de tout, et on doit être à couvert de toutes ces sortes de crainte auprès d'une personne comme vous. Je n'aurais garde de vous offenser, et si je vous ai fait quelque déclaration qui vous ait pu déplaire, je me percerais le cœur de mille coups.
+CHARLOTTE. Voyez-vous, Monsieur, il n'y a pas plaisir à se laisser abuser. Je suis une pauvre paysanne ; mais j'ai l'honneur en recommandation, et j'aimerais mieux me voir morte, que de me voir déshonorée.
 
-CHARLOTTE : Mon Dieu ! je ne sais si vous dites vrai ou non ; mais vous faites que l'on vous croit.
+DON JUAN. Moi, j'aurais l'âme assez méchante pour abuser une personne comme vous ? Je serais assez lâche pour vous déshonorer ? Non, non : j'ai trop de conscience pour cela. Je vous aime, Charlotte, en tout bien et en tout honneur ; et pour vous montrer que je vous dis vrai, sachez que je n'ai point d'autre dessein que de vous épouser : en voulez-vous un plus grand témoignage ? M'y voilà prêt quand vous voudrez ; et je prends à témoin l'homme que voilà de la parole que je vous donne.
 
-DOM JUAN : Ce n'est pas assez que vous me croyiez sur des paroles : je vous jure par tout ce qu'il y a de plus sacré que je suis sincère...
+SGANARELLE. Non, non, ne craignez point : il se mariera avec vous tant que vous voudrez.
 
-CHARLOTTE : Mon Dieu, ne jurez point, je vous crois.
+DON JUAN. Ah ! Charlotte, je vois bien que vous ne me connaissez pas encore. Vous me faites grand tort de juger de moi par les autres ; et s'il y a des fourbes dans le monde, des gens qui ne cherchent qu'à abuser des filles, vous devez me tirer du nombre, et ne pas mettre en doute la sincérité de ma foi. Et puis votre beauté vous assure de tout. Quand on est faite comme vous, on doit être à couvert de toutes ces sortes de crainte ; vous n'avez point l'air, croyez-moi, d'une personne qu'on abuse ; et pour moi, je l'avoue, je me percerais le coeur de mille coups, si j'avais eu la moindre pensée de vous trahir.
+
+CHARLOTTE. Mon Dieu ! Je ne sais si vous dites vrai, ou non ; mais vous faites que l'on vous croit.
+
+DON JUAN. Lorsque vous me croirez, vous me rendrez justice assurément, et je vous réitère encore la promesse que je vous ai faite. Ne l'acceptez-vous pas, et ne voulez-vous pas consentir à être ma femme ?
+
+CHARLOTTE. Oui, pourvu que ma tante le veuille.
+
+DON JUAN. Touchez donc là, Charlotte, puisque vous le voulez bien de votre part.
+
+CHARLOTTE. Mais au moins, Monsieur, ne m'allez pas tromper, je vous prie : il y aurait de la conscience à vous, et vous voyez comme j'y vais à la bonne foi.
+
+DON JUAN. Comment ? Il semble que vous doutiez encore de ma sincérité ! Voulez-vous que je fasse des serments épouvantables ? Que le Ciel...
+
+CHARLOTTE. Mon Dieu, ne jurez point, je vous crois.
 
 — Molière, Dom Juan ou le Festin de pierre, Acte II, scène 2, 1665`,
     title: "Dom Juan et Charlotte",
@@ -976,19 +983,41 @@ CHARLOTTE : Mon Dieu, ne jurez point, je vous crois.
   },
   {
     id: "musset-on-ne-badine",
-    texteComplet: `LE BARON : Bonjour, mes enfants ; bonjour, ma chère Camille, mon cher Perdican ! embrassez-moi, et embrassez-vous.
+    texteComplet: `(Perdican entre d'un côté, Camille de l'autre.)
 
-PERDICAN : Quel bonheur ! que je suis heureux ! Comme te voilà grande, Camille ! et belle comme le jour ! Comme te voilà métamorphosée en femme !
+LE BARON. Bonjour, mes enfants ; bonjour, ma chère Camille, mon cher Perdican ! embrassez-moi, et embrassez-vous.
 
-(Il veut l'embrasser.)
+PERDICAN. Bonjour, mon père, ma sœur bien-aimée ! Quel bonheur ! que je suis heureux !
 
-CAMILLE : Excusez-moi.
+CAMILLE. Mon père et mon cousin, je vous salue.
 
-PERDICAN : Tu es si belle que c'est au-dessus de ma raison. L'amour peut voler un baiser, mais non pas l'amitié. Je te demande comme ami un baiser de bienvenue.
+PERDICAN. Comme te voilà grande, Camille ! et belle comme le jour !
 
-CAMILLE : L'amitié ni l'amour ne doivent recevoir que ce qu'ils peuvent rendre.
+LE BARON. Quand as-tu quitté Paris, Perdican ?
 
-LE BARON : Voilà un commencement de mauvais augure. Je suis choqué, – blessé – Ce moment, qui devait m'être si doux, est complètement gâté.
+PERDICAN. Mercredi, je crois, ou mardi. Comme te voilà métamorphosée en femme ! Je suis donc un homme, moi ? Il me semble que c'est hier que je t'ai vue pas plus haute que cela.
+
+LE BARON. Vous devez être fatigués ; la route est longue, et il fait chaud.
+
+PERDICAN. Oh ! mon Dieu, non. Regardez donc, mon père, comme Camille est jolie !
+
+LE BARON. Allons, Camille, embrasse ton cousin.
+
+CAMILLE. Excusez-moi.
+
+LE BARON. Un compliment vaut un baiser ; embrasse-la, Perdican.
+
+PERDICAN. Si ma cousine recule quand je lui tends la main, je vous dirai à mon tour : Excusez-moi ; l'amour peut voler un baiser, mais non pas l'amitié.
+
+CAMILLE. L'amitié ni l'amour ne doivent recevoir que ce qu'ils peuvent rendre.
+
+LE BARON, à maître Bridaine. Voilà un commencement de mauvais augure, hé ?
+
+MAÎTRE BRIDAINE, au baron. Trop de pudeur est sans doute un défaut ; mais le mariage lève bien des scrupules.
+
+LE BARON, à maître Bridaine. Je suis choqué, – blessé –. Cette réponse m'a déplu. – Excusez-moi ! Avez-vous vu qu'elle a fait mine de se signer ? – Venez ici que je vous parle. – Cela m'est pénible au dernier point. Ce moment, qui devait m'être si doux, est complètement gâté. – Je suis vexé, piqué. – Diable ! voilà qui est fort mauvais.
+
+MAÎTRE BRIDAINE. Dites-leur quelques mots ; les voilà qui se tournent le dos.
 
 — Alfred de Musset, On ne badine pas avec l'amour, Acte I, 1834`,
     title: "Les Retrouvailles de Perdican et Camille",
@@ -1089,6 +1118,139 @@ LE BARON : Voilà un commencement de mauvais augure. Je suis choqué, – bless�
       "📌 Dialogue = Conflit → antithèse amour/amitié, phrase sentencieuse",
       "📌 Baron = Pressentiment → « mauvais augure », « complètement gâté »",
       "📌 Structure = Accueil → Refus → Conflit latent"
+    ]
+  },
+  {
+    id: "musset-on-ne-badine-tirade",
+    texteComplet: `PERDICAN
+Sais-tu ce que c'est que des nonnes, malheureuse fille ? Elles qui te représentent l'amour des hommes comme un mensonge, savent-elles qu'il y a pis encore, le mensonge de l'amour divin ? Savent-elles que c'est un crime qu'elles font de venir chuchoter à une vierge des paroles de femme ? Ah ! comme elles t'ont fait la leçon ! Comme j'avais prévu tout cela quand tu t'es arrêtée devant le portrait de notre vieille tante ! Tu voulais partir sans me serrer la main ; tu ne voulais revoir ni ce bois, ni cette pauvre petite fontaine qui nous regarde tout en larmes ; tu reniais les jours de ton enfance et le masque de plâtre que les nonnes t'ont placé sur les joues me refusait un baiser de frère ; mais ton coeur a battu ; il a oublié sa leçon, lui qui ne sait pas lire, et tu es revenue t'asseoir sur l'herbe où nous voilà. Eh bien ! Camille, ces femmes ont bien parlé ; elles t'ont mise dans le vrai chemin ; il pourra m'en coûter le bonheur de ma vie ; mais dis-leur cela de ma part : le ciel n'est pas pour elles.
+
+CAMILLE
+Ni pour moi, n'est-ce pas ?
+
+PERDICAN
+Adieu, Camille, retourne à ton couvent, et lorsqu'on te fera de ces récits hideux qui t'ont empoisonnée, réponds ce que je vais te dire : Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels ; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées ; le monde n'est qu'un égout sans fond où les phoques les plus informes rampent et se tordent sur des montagnes de fange ; mais il y a au monde une chose sainte et sublime, c'est l'union de deux de ces êtres si imparfaits et si affreux. On est souvent trompé en amour, souvent blessé et souvent malheureux ; mais on aime, et quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière, et on se dit : J'ai souffert souvent, je me suis trompé quelquefois, mais j'ai aimé. C'est moi qui ai vécu, et non pas un être factice créé par mon orgueil et mon ennui. (Il sort.)
+
+— Alfred de Musset, On ne badine pas avec l'amour, 1834`,
+    title: "La Tirade de Perdican",
+    oeuvre: "On ne badine pas avec l'amour",
+    auteur: "Alfred de Musset",
+    annee: 1834,
+    mouvement: "Romantisme",
+    contexteAuteur: "Alfred de Musset (1810-1857) est un auteur romantique majeur. Son théâtre explore les passions extrêmes, les désillusions amoureuses et les conflits entre idéal et réalité.",
+    contexteOeuvre: "On ne badine pas avec l'amour (1834) met en scène Perdican et Camille, deux êtres destinés à s'aimer mais déchirés par leurs blessures et leur éducation religieuse. Cette tirade intervient après une tension liée à l'influence des nonnes sur Camille : Perdican s'emporte et prononce ce discours passionné où il défend sa vision de l'amour.",
+    resume: "Perdican s'emporte contre l'influence des nonnes sur Camille. Il critique violemment leur vision du monde et de l'amour. Dans un mouvement très intense, il dresse un portrait pessimiste de l'humanité avant de se contredire pour défendre une vision paradoxale : malgré tous les défauts humains, l'amour reste la seule vérité essentielle de la vie.",
+    problematique: "Comment Perdican transforme-t-il une tirade violente en une réflexion universelle sur l'amour et la condition humaine ?",
+    introduction: "Dans cette tirade de On ne badine pas avec l'amour d'Alfred de Musset, Perdican s'adresse violemment à Camille après une tension liée à leur éducation et à leur éloignement affectif. Ce passage est l'une des grandes tirades du théâtre romantique : une parole passionnée qui passe de la colère à la philosophie. Nous étudierons d'abord l'attaque contre l'influence des nonnes, puis la généralisation pessimiste sur l'humanité, avant d'analyser la réhabilitation paradoxale de l'amour qui constitue le pivot du texte.",
+    conclusion: "Dans cette tirade, Musset fait de Perdican le porte-parole d'une vision romantique paradoxale : le monde est imparfait, les hommes sont défaillants, mais l'amour demeure la seule expérience authentique de la vie. La colère initiale contre les nonnes se transforme progressivement en une méditation philosophique sur le sens de l'existence. Ainsi, Musset montre que l'amour est une vérité paradoxale qui naît du désespoir même du monde.\n\nOuverture : Ce discours peut être rapproché du lyrisme hugolien, notamment dans Les Contemplations, où Hugo fait de la souffrance amoureuse une voie d'accès à la vérité universelle.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Une attaque violente contre l'influence des nonnes",
+        ideePrincipale: "Perdican s'emporte contre l'éducation religieuse qui a conditionné Camille et lui a imposé une vision fausse de l'amour.",
+        procedes: [
+          {
+            titre: "😡 La question rhétorique agressive",
+            citation: "Sais-tu ce que c'est que des nonnes, malheureuse fille ?",
+            explication: "L'apostrophe (« malheureuse fille ») et la question rhétorique installent un ton agressif et dramatique. Perdican ne demande pas une réponse — il accuse. La violence du registre signale que la parole dépasse le simple reproche."
+          },
+          {
+            titre: "🧠 Le parallélisme accusateur",
+            citation: "l'amour des hommes comme un mensonge… le mensonge de l'amour divin",
+            explication: "Le parallélisme met dos à dos deux mensonges : l'amour humain présenté comme faux par les nonnes, et l'amour divin que Perdican juge lui-même mensonger. Il refuse toute autorité morale — qu'elle soit humaine ou religieuse."
+          },
+          {
+            titre: "⚖️ L'accusation de crime",
+            citation: "c'est un crime qu'elles font",
+            explication: "Le lexique judiciaire est frappant : Perdican condamne moralement les nonnes. En les accusant de « crime », il renverse la hiérarchie religieuse — ce ne sont pas les amoureux qui pèchent, ce sont celles qui condamnent l'amour."
+          },
+          {
+            titre: "😢 La métaphore du conditionnement",
+            citation: "le masque de plâtre que les nonnes t'ont placé sur les joues",
+            explication: "La métaphore du masque dit l'artificiel, le fabriqué, le faux. Camille ne serait pas elle-même — elle porterait une identité construite par l'éducation religieuse. C'est une image forte qui touche à l'authenticité de la personne."
+          },
+          {
+            titre: "🕊️ Le retour du cœur malgré tout",
+            citation: "mais ton coeur a battu ; il a oublié sa leçon",
+            explication: "Le « mais » marque un retournement : malgré le conditionnement, la nature profonde de Camille a résisté. Le cœur, opposé à la « leçon » apprise, représente l'instinct contre la raison imposée — c'est l'argument central de Perdican."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : Une généralisation pessimiste sur l'humanité",
+        ideePrincipale: "Perdican élargit son discours à une vision radicalement sombre de l'humanité entière — un portrait noir qui sert de socle à son retournement final.",
+        procedes: [
+          {
+            titre: "🌍 L'anaphore généralisante",
+            citation: "Tous les hommes… toutes les femmes…",
+            explication: "La répétition du quantificateur total (« Tous », « toutes ») produit une généralisation absolue. Personne n'est épargné — ni les hommes ni les femmes. Paradoxalement, c'est Perdican lui-même qui dit cela, se condamnant en même temps."
+          },
+          {
+            titre: "💀 L'accumulation de défauts",
+            citation: "menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels",
+            explication: "L'accumulation sans lien grammatical (asyndète) crée un effet d'accumulation vertigineuse. La liste est exhaustive, quasi comique dans son excès — ce pessimisme extrême prépare le renversement paradoxal qui suit."
+          },
+          {
+            titre: "🐍 La métaphore dégradante du monde",
+            citation: "le monde n'est qu'un égout sans fond",
+            explication: "L'image de l'égout est violente et grotesque. Elle destitue le monde de toute dignité. Mais cette dévalorisation totale n'est pas une conclusion — c'est le point le plus bas avant le rebond du « mais »."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : La réhabilitation paradoxale de l'amour",
+        ideePrincipale: "Après le pessimisme total, Perdican opère un retournement : l'amour, né de l'imperfection humaine, reste la seule chose sainte et la seule expérience authentique de la vie.",
+        procedes: [
+          {
+            titre: "💎 Le pivot du « mais »",
+            citation: "mais il y a au monde une chose sainte et sublime",
+            explication: "La conjonction adversative « mais » renverse toute la logique précédente. Après l'égout et la fange, apparaît soudainement le « saint » et le « sublime ». Le contraste est maximal — et c'est précisément pour cela qu'il est convaincant."
+          },
+          {
+            titre: "❤️ Le paradoxe de l'union",
+            citation: "l'union de deux de ces êtres si imparfaits et si affreux",
+            explication: "Paradoxe central : l'amour est défini comme l'union de deux êtres que Perdican vient de qualifier de méprisables. L'idéal naît du pire — c'est la vision romantique de l'amour : non pas malgré les défauts, mais à travers eux."
+          },
+          {
+            titre: "⏳ Le bilan au bord de la tombe",
+            citation: "quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière",
+            explication: "L'image de la mort donne une dimension philosophique universelle au discours. Perdican ne parle plus seulement de lui et Camille — il parle de l'humanité entière. Le registre élégiaque s'installe."
+          },
+          {
+            titre: "🪞 Le rythme ternaire du souvenir",
+            citation: "J'ai souffert souvent, je me suis trompé quelquefois, mais j'ai aimé.",
+            explication: "La structure ternaire (souffert / trompé / aimé) oppose deux aveux d'échec à une affirmation. L'amour n'efface pas les souffrances — il les dépasse. La brièveté de la formule lui donne une force de maxime."
+          },
+          {
+            titre: "🧍 L'affirmation existentielle finale",
+            citation: "C'est moi qui ai vécu, et non pas un être factice créé par mon orgueil et mon ennui.",
+            explication: "La dernière phrase oppose vivre réellement à exister artificiellement — exactement ce qu'il reprochait aux nonnes de faire subir à Camille. C'est la vision romantique de l'authenticité : seul l'amour, même douloureux, constitue une vie véritable."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "😡 Question rhétorique et apostrophe", exemple: "Sais-tu ce que c'est que des nonnes, malheureuse fille ?", effet: "Installe un ton violent et accusateur qui fait de la tirade une véritable plaidoirie." },
+      { procede: "🌍 Anaphore généralisante", exemple: "Tous les hommes… toutes les femmes…", effet: "Généralisation absolue — prépare le renversement paradoxal en poussant le pessimisme à son maximum." },
+      { procede: "🐍 Métaphore dégradante", exemple: "le monde n'est qu'un égout sans fond", effet: "Point le plus bas du discours — rend le retournement du « mais » d'autant plus spectaculaire." },
+      { procede: "💎 Le pivot du « mais »", exemple: "mais il y a au monde une chose sainte et sublime", effet: "Retournement logique total — transforme le pessimisme en célébration de l'amour." },
+      { procede: "🪞 Rythme ternaire", exemple: "J'ai souffert… je me suis trompé… mais j'ai aimé.", effet: "Donne à la conclusion la force d'une maxime universelle — le ton élégiaque remplace la violence initiale." }
+    ],
+    problematiquesPossibles: [
+      "Comment Musset exprime-t-il une vision désabusée du monde pour mieux valoriser l'amour ?",
+      "En quoi cette tirade est-elle à la fois violente et philosophique ?",
+      "Comment Perdican défend-il une conception paradoxale de l'amour ?"
+    ],
+    axesLecture: [
+      "Une tirade passionnée et violente : la colère contre les nonnes est le moteur d'une parole qui déborde son objet initial.",
+      "Une vision profondément pessimiste de l'humanité : l'accumulation des défauts prépare paradoxalement l'éloge de l'amour.",
+      "L'exaltation paradoxale de l'amour : né de l'imperfection, l'amour est la seule expérience authentique — c'est la philosophie romantique de Musset."
+    ],
+    mnemo: [
+      "📌 Nonnes = Crime → masque de plâtre, mensonge de l'amour divin",
+      "📌 Humanité = Liste noire → tous menteurs, toutes perfides, monde = égout",
+      "📌 Mais = Pivot → « une chose sainte et sublime » — le retournement total",
+      "📌 Amour = Paradoxe → union de deux imparfaits, souffrir mais aimer",
+      "📌 Final = Vivre → « C'est moi qui ai vécu » — authenticité romantique"
     ]
   }
 ];
