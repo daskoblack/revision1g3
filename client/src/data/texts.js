@@ -973,5 +973,122 @@ CHARLOTTE : Mon Dieu, ne jurez point, je vous crois.
       "📌 Effet = Croyance → « vous faites que l'on vous croit »",
       "📌 Théâtre = Illusion → ironie dramatique, le public sait, Charlotte non"
     ]
+  },
+  {
+    id: "musset-on-ne-badine",
+    texteComplet: `LE BARON : Bonjour, mes enfants ; bonjour, ma chère Camille, mon cher Perdican ! embrassez-moi, et embrassez-vous.
+
+PERDICAN : Quel bonheur ! que je suis heureux ! Comme te voilà grande, Camille ! et belle comme le jour ! Comme te voilà métamorphosée en femme !
+
+(Il veut l'embrasser.)
+
+CAMILLE : Excusez-moi.
+
+PERDICAN : Tu es si belle que c'est au-dessus de ma raison. L'amour peut voler un baiser, mais non pas l'amitié. Je te demande comme ami un baiser de bienvenue.
+
+CAMILLE : L'amitié ni l'amour ne doivent recevoir que ce qu'ils peuvent rendre.
+
+LE BARON : Voilà un commencement de mauvais augure. Je suis choqué, – blessé – Ce moment, qui devait m'être si doux, est complètement gâté.
+
+— Alfred de Musset, On ne badine pas avec l'amour, Acte I, 1834`,
+    title: "Les Retrouvailles de Perdican et Camille",
+    oeuvre: "On ne badine pas avec l'amour",
+    auteur: "Alfred de Musset",
+    annee: 1834,
+    mouvement: "Romantisme",
+    contexteAuteur: "Alfred de Musset (1810-1857) est un écrivain romantique du XIXe siècle. Il s'intéresse aux passions humaines, aux conflits amoureux et aux illusions sentimentales. Son théâtre est marqué par une tension permanente entre amour sincère et jeu social.",
+    contexteOeuvre: "On ne badine pas avec l'amour (1834) met en scène Perdican et Camille, deux cousins destinés à s'aimer mais séparés par leur orgueil et leurs blessures affectives. Cette scène correspond à leurs retrouvailles au début de la pièce : après des années de séparation, le Baron espère les voir s'unir, mais la rencontre tourne immédiatement au malaise.",
+    resume: "Perdican et Camille se retrouvent après plusieurs années de séparation. Leur entourage (le Baron et Maître Bridaine) encourage un futur mariage. Cependant, dès les premières interactions, une froideur et une tension s'installent entre les deux cousins. Camille refuse un baiser, créant un malaise immédiat qui annonce le conflit amoureux à venir.",
+    problematique: "Comment Musset transforme-t-il une scène de retrouvailles en une mise en place subtile du conflit amoureux et dramatique ?",
+    introduction: "Dans cet extrait de On ne badine pas avec l'amour d'Alfred de Musset, dramaturge romantique du XIXe siècle, deux cousins se retrouvent après des années de séparation. On pourrait s'attendre à un moment de joie pure, mais très vite une tension apparaît. Nous verrons d'abord que la scène s'ouvre sur des retrouvailles en apparence chaleureuses, avant d'analyser l'apparition progressive du malaise et du conflit qui révèle les enjeux dramatiques de la pièce.",
+    conclusion: "Dans cet extrait, Musset transforme une scène de retrouvailles en une mise en place progressive du conflit amoureux. D'abord chaleureux et familial, l'échange bascule dès le refus de Camille, installant un malaise qui annonce les tensions à venir. Musset montre ainsi que l'amour est déjà menacé dès les premières interactions — l'orgueil et la blessure affective font obstacle au bonheur possible.\n\nOuverture : Cette scène rappelle d'autres œuvres romantiques où les passions naissent dans le conflit, comme chez Racine avec Andromaque, où l'amour est dès l'origine indissociable de la souffrance.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Des retrouvailles en apparence chaleureuses",
+        ideePrincipale: "La scène s'ouvre comme un moment familial joyeux, marqué par l'affection du Baron et l'enthousiasme de Perdican — une harmonie qui semble annoncer un avenir heureux.",
+        procedes: [
+          {
+            titre: "👨‍👩‍👧 Le champ lexical de la famille",
+            citation: "Bonjour, mes enfants ; bonjour, ma chère Camille, mon cher Perdican !",
+            explication: "Les termes affectueux (« mes enfants », « chère », « cher ») et la salutation répétée créent une atmosphère de bienveillance. Le Baron incarne la figure tutélaire qui espère unir les deux cousins — l'harmonie familiale est mise en scène comme un décor."
+          },
+          {
+            titre: "🤗 L'impératif bienveillant",
+            citation: "embrassez-moi, et embrassez-vous",
+            explication: "L'impératif traduit l'autorité douce du Baron, mais aussi sa volonté de rétablir immédiatement le lien affectif. Il ordonne la réconciliation avant même qu'elle soit possible — ce qui, rétrospectivement, annonce son échec."
+          },
+          {
+            titre: "😊 L'enthousiasme de Perdican",
+            citation: "Quel bonheur ! que je suis heureux !",
+            explication: "Les exclamations multipliées traduisent une intensité émotionnelle sincère. Perdican semble véritablement ravi — son enthousiasme contraste avec la froideur à venir de Camille, ce qui rend son refus encore plus cinglant."
+          },
+          {
+            titre: "💄 L'hyperbole admirative",
+            citation: "Comme te voilà grande, Camille ! et belle comme le jour !",
+            explication: "La comparaison valorisante (« belle comme le jour ») et l'hyperbole de la surprise (« Comme te voilà ») montrent que Perdican est frappé par la transformation de Camille. Son admiration naïve le rend vulnérable au rejet qui suit."
+          },
+          {
+            titre: "🕰️ La nostalgie du temps",
+            citation: "Comme te voilà métamorphosée en femme !",
+            explication: "Le mot « métamorphosée » introduit l'idée de transformation irréversible. Perdican prend conscience du temps écoulé — l'enfant qu'il connaissait a disparu, ce qui crée une distance supplémentaire entre eux."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : L'apparition progressive du malaise et du conflit",
+        ideePrincipale: "Derrière la cordialité initiale, les tensions surgissent dès la première réponse de Camille, déclenchant une rupture émotionnelle qui révèle le conflit central de la pièce.",
+        procedes: [
+          {
+            titre: "❄️ La brièveté comme distance",
+            citation: "Excusez-moi.",
+            explication: "Deux mots, un refus. La réponse de Camille est d'une brièveté qui contraste brutalement avec la chaleur de Perdican. La formule polie cache un rejet total du contact — la froideur est d'autant plus efficace qu'elle s'exprime avec des mots courtois."
+          },
+          {
+            titre: "⚖️ L'antithèse amour / amitié",
+            citation: "l'amour peut voler un baiser, mais non pas l'amitié",
+            explication: "Perdican tente de justifier sa demande en distinguant amour et amitié. Cette antithèse révèle une réflexion morale qui masque en réalité un désir — il ne s'adresse plus à une cousine mais à une femme. La tension s'intellectualise."
+          },
+          {
+            titre: "🧠 La phrase sentencieuse de Camille",
+            citation: "L'amitié ni l'amour ne doivent recevoir que ce qu'ils peuvent rendre.",
+            explication: "Ton philosophique, formule équilibrée, refus de tout geste gratuit. Camille oppose une vision rationnelle et froide des relations à l'impulsivité de Perdican — ce décalage de registre annonce deux conceptions incompatibles de l'amour."
+          },
+          {
+            titre: "😬 Le pressentiment du Baron",
+            citation: "Voilà un commencement de mauvais augure",
+            explication: "Le Baron nomme le malaise collectif. L'expression « mauvais augure » appartient au registre du destin et de la fatalité — en une phrase, Musset introduit la dimension tragique sous la comédie apparente."
+          },
+          {
+            titre: "💥 La gradation émotionnelle",
+            citation: "Je suis choqué, – blessé – Ce moment, qui devait m'être si doux, est complètement gâté",
+            explication: "La gradation (choqué → blessé) et les tirets qui miment l'agitation intérieure montrent l'effondrement des espoirs du Baron. L'opposition « devait m'être si doux » / « complètement gâté » condense toute l'ironie dramatique de la scène."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "👨‍👩‍👧 Champ lexical de la famille", exemple: "mes enfants, ma chère Camille, mon cher Perdican", effet: "Crée une illusion d'harmonie initiale qui rend le refus de Camille encore plus brutal." },
+      { procede: "❄️ Brièveté et froideur", exemple: "Excusez-moi.", effet: "La politesse apparente masque un rejet total — distance émotionnelle exprimée en deux mots." },
+      { procede: "⚖️ Antithèse amour / amitié", exemple: "l'amour peut voler un baiser, mais non pas l'amitié", effet: "Révèle un désir masqué chez Perdican et met en place le conflit idéologique central." },
+      { procede: "🧠 Phrase sentencieuse", exemple: "L'amitié ni l'amour ne doivent recevoir que ce qu'ils peuvent rendre.", effet: "Camille oppose la raison à l'émotion — annonce deux conceptions incompatibles de l'amour." },
+      { procede: "💥 Registre dramatique / fatalité", exemple: "mauvais augure, gâté, blessé", effet: "Introduit la dimension tragique sous l'apparence comique des retrouvailles." }
+    ],
+    problematiquesPossibles: [
+      "Comment Musset transforme-t-il une scène de retrouvailles en tension dramatique ?",
+      "En quoi cette scène annonce-t-elle l'échec de l'amour entre Perdican et Camille ?",
+      "Comment le dialogue révèle-t-il l'opposition entre deux conceptions de l'amour ?"
+    ],
+    axesLecture: [
+      "Une scène de retrouvailles sous apparence harmonieuse : la chaleur initiale n'est qu'un décor qui masque les blessures non dites.",
+      "Une montée progressive des tensions : du champ lexical familial à la phrase sentencieuse, le conflit s'installe par étapes.",
+      "L'opposition entre sentiments spontanés et contrôle rationnel : Perdican agit par élan, Camille par principe — deux langages amoureux incompatibles."
+    ],
+    mnemo: [
+      "📌 Accueil = Chaleur → famille, exclamations, admiration de Perdican",
+      "📌 Refus = Glace → « Excusez-moi » — deux mots qui brisent tout",
+      "📌 Dialogue = Conflit → antithèse amour/amitié, phrase sentencieuse",
+      "📌 Baron = Pressentiment → « mauvais augure », « complètement gâté »",
+      "📌 Structure = Accueil → Refus → Conflit latent"
+    ]
   }
 ];
