@@ -1,4 +1,4 @@
-// Données des textes du programme — extraites des fichiers HTML fournis par le professeur.
+// Données des textes du programme — extraites des fichiers HTML, MD et textes fournis par le professeur.
 // NE PAS modifier le contenu littéraire sans validation du professeur.
 export const texts = [
   {
@@ -556,7 +556,27 @@ Tout bas : « Sens donc, j'ai pris 'une' froid sur la joue… »
   },
   {
     id: "balzac-peau-mesure",
-    texteComplet: `– Jamais je ne l'ai vu si stupide. – Stupide, mon ami ? Non. Cette Peau se rétrécit quand j'ai un désir… c'est une antiphrase. Le brahmane, il se trouve un brahmane là dessous ! le brahmane donc était un goguenard, parce que les désirs, vois-tu, doivent étendre... – Eh ! bien, oui. – Je te dis... – Oui, cela est très vrai, je pense comme toi. Le désir étend... – Je te dis, la Peau ! – Oui. – Tu ne me crois pas. Je te connais, mon ami, tu es menteur comme un nouveau roi. – Comment veux-tu que j'adopte les divagations de ton ivresse ? – Je te parie, je peux te le prouver. Prenons la mesure. – Allons, il ne s'endormira pas, s'écria Émile en voyant Raphaël occupé à fureter dans la salle à manger. Valentin animé d'une adresse de singe, grâce à cette singulière lucidité dont les phénomènes contrastent parfois chez les ivrognes avec les obtuses visions de l'ivresse, sut trouver une écritoire et une serviette, en répétant toujours : – Prenons la mesure ! Prenons la mesure ! – Eh ! bien, oui, reprit Émile, prenons la mesure ! Les deux amis étendirent la serviette et y superposèrent la Peau de chagrin. Émile, dont la main semblait être plus assurée que celle de Raphaël, décrivit à la plume, par une ligne d'encre, les contours du talisman, pendant que son ami lui disait : – J'ai souhaité deux cent mille livres de rente, n'est-il pas vrai ? Eh bien, quand je les aurai, tu verras la diminution de tout mon chagrin.
+    texteComplet: `– Jamais je ne l'ai vu si stupide.
+– Stupide, mon ami ? Non. Cette Peau se rétrécit quand j'ai un désir… c'est une antiphrase. Le brahmane, il se trouve un brahmane là dessous ! le brahmane donc était un goguenard, parce que les désirs, vois-tu, doivent étendre...
+– Eh ! bien, oui.
+– Je te dis...
+– Oui, cela est très vrai, je pense comme toi. Le désir étend...
+– Je te dis, la Peau !
+– Oui.
+– Tu ne me crois pas. Je te connais, mon ami, tu es menteur comme un nouveau roi.
+– Comment veux-tu que j'adopte les divagations de ton ivresse ?
+– Je te parie, je peux te le prouver. Prenons la mesure.
+
+– Allons, il ne s'endormira pas, s'écria Émile en voyant Raphaël occupé à fureter dans la salle à manger.
+
+Valentin animé d'une adresse de singe, grâce à cette singulière lucidité dont les phénomènes contrastent parfois chez les ivrognes avec les obtuses visions de l'ivresse, sut trouver une écritoire et une serviette, en répétant toujours :
+
+– Prenons la mesure ! Prenons la mesure !
+– Eh ! bien, oui, reprit Émile, prenons la mesure !
+
+Les deux amis étendirent la serviette et y superposèrent la Peau de chagrin. Émile, dont la main semblait être plus assurée que celle de Raphaël, décrivit à la plume, par une ligne d'encre, les contours du talisman, pendant que son ami lui disait :
+
+– J'ai souhaité deux cent mille livres de rente, n'est-il pas vrai ? Eh bien, quand je les aurai, tu verras la diminution de tout mon chagrin.
 
 — Honoré de Balzac, La Peau de chagrin, 1831`,
     title: "La Mesure du talisman",
@@ -1251,6 +1271,109 @@ Adieu, Camille, retourne à ton couvent, et lorsqu'on te fera de ces récits hid
       "📌 Mais = Pivot → « une chose sainte et sublime » — le retournement total",
       "📌 Amour = Paradoxe → union de deux imparfaits, souffrir mais aimer",
       "📌 Final = Vivre → « C'est moi qui ai vécu » — authenticité romantique"
+    ]
+  },
+  {
+    id: "la-boetie-servitude-volontaire",
+    texteComplet: `Mais certes, s'il y a bien quelque chose de clair et d'apparent dans la Nature, et où il ne soit permis de faire l'aveugle, c'est le fait que Nature, ministre de Dieu et gouvernante des hommes, nous a tous faits de même forme et, comme il semble, selon un même moule, afin de nous nous reconnaissions tous comme compagnons ou plutôt comme frères. Et si partageant les présents qu'elle nous faisait, elle a fait quelque avantage de son bien, soit au corps ou en l'esprit, aux uns plus qu'aux autres, cependant elle n'a pas pour autant eu l'intention de nous mettre en ce monde comme en champ clos, et n'a pas envoyé ici bas les plus forts et plus avisés comme des brigands armés dans une forêt pour y brutaliser les plus faibles. Mais au contraire il faut croire que, faisant ainsi des parts aux uns plus grands et aux autres plus petits, elle voulait faire place à la fraternelle affection afin qu'elle eût où s'employer, les uns ayant la possibilité de donner de l'aide, les autres ayant besoin d'en recevoir.
+
+Puisque donc que cette bonne mère nous a donné à tous toute la terre pour demeure, nous a tous logés en quelque façon dans même maison, nous a tous façonnés selon le même patron afin que chacun pût se mirer et quasiment se reconnaître en l'autre, si elle nous a donné à tous ce grand présent de la voix et de la parole pour nous rapprocher et fraterniser davantage, et faire par la commune mutuelle déclaration de nos pensées une communion de nos volontés, si elle a tâché par tous moyens de serrer et étreindre plus fort le nœud de notre alliance et société, si elle a montré en toutes choses qu'elle ne voulait pas tant nous faire tous unis que tous uns, il ne faut douter que nous ne soyons tous naturellement libres, puisque nous sommes tous compagnons, et il ne peut venir à l'esprit de personne que Nature ait mis certains en servitude, puisqu'elle nous a tous fait membres d'une compagnie.
+
+— Étienne de La Boétie, Discours de la servitude volontaire, vers 1548`,
+    title: "Égalité et liberté naturelle",
+    oeuvre: "Discours de la servitude volontaire",
+    auteur: "Étienne de La Boétie",
+    annee: 1548,
+    mouvement: "Humanisme / Renaissance",
+    contexteAuteur: "Étienne de La Boétie (1530-1563) est un humaniste de la Renaissance, ami de Montaigne. Il réfléchit aux notions de liberté, d'autorité et de pouvoir politique. Son œuvre principale, rédigée alors qu'il n'avait qu'une vingtaine d'années, est un texte fondateur de la pensée politique moderne.",
+    contexteOeuvre: "Le Discours de la servitude volontaire est un essai philosophique qui cherche à comprendre pourquoi les peuples acceptent d'obéir à un pouvoir injuste alors qu'ils pourraient être libres. Dans ce passage, La Boétie s'appuie sur la Nature pour démontrer l'égalité originelle des hommes et fonder philosophiquement l'idée de liberté naturelle.",
+    resume: "La Boétie explique que la Nature a créé tous les êtres humains de manière égale. Elle ne les a pas destinés à s'opprimer, mais à vivre en fraternité. Même si certains ont reçu plus de talents que d'autres, cela ne justifie pas la domination : ces différences sont faites pour favoriser l'entraide. Tous les hommes sont donc naturellement libres et égaux.",
+    problematique: "Comment La Boétie utilise-t-il l'idée de Nature pour démontrer l'égalité et la liberté naturelle des hommes ?",
+    introduction: "Dans cet extrait du Discours de la servitude volontaire d'Étienne de La Boétie, humaniste de la Renaissance, l'auteur s'interroge sur la liberté humaine et l'origine de la domination politique. Rédigé vers 1548, ce texte est d'une modernité remarquable : il fonde l'égalité des hommes non sur la religion mais sur la Nature. Nous étudierons d'abord la vision égalitaire et fraternelle de la Nature, puis la critique implicite de la domination, avant d'analyser l'affirmation philosophique de la liberté naturelle.",
+    conclusion: "Dans cet extrait, La Boétie construit un raisonnement humaniste rigoureux : la Nature, en créant tous les hommes selon le même modèle, a voulu qu'ils vivent en fraternité et non en hiérarchie. Les différences de talents ne justifient pas la domination — elles appellent la coopération. La conclusion est politique autant que philosophique : tous les hommes sont naturellement libres.\n\nOuverture : Ce texte annonce les grandes déclarations des siècles suivants, notamment la Déclaration des droits de l'homme de 1789, qui proclame elle aussi l'égalité naturelle des hommes.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Une Nature égalitaire et fraternelle",
+        ideePrincipale: "La Boétie présente la Nature comme une force divine et politique qui a créé tous les hommes identiques, destinés à se reconnaître comme frères.",
+        procedes: [
+          {
+            titre: "🌿 La personnification de la Nature",
+            citation: "Nature, ministre de Dieu et gouvernante des hommes",
+            explication: "La Nature reçoit une double fonction : divine (« ministre de Dieu ») et politique (« gouvernante »). Cette personnification lui confère une autorité absolue — ce qu'elle a fait est une loi supérieure à laquelle aucun argument humain ne peut s'opposer."
+          },
+          {
+            titre: "⚖️ L'insistance sur l'égalité physique",
+            citation: "nous a tous faits de même forme… selon un même moule",
+            explication: "La métaphore du moule est artisanale et concrète : comme un potier qui fabrique des objets identiques, la Nature a produit des hommes uniformes. L'égalité n'est pas une idée abstraite — elle est inscrite dans les corps mêmes."
+          },
+          {
+            titre: "🤝 Le glissement vers la fraternité",
+            citation: "compagnons ou plutôt comme frères",
+            explication: "Le mouvement « ou plutôt » est une correction qui renforce le propos : La Boétie ne se contente pas de l'amitié entre égaux, il va jusqu'à la fraternité. Ce glissement lexical est le pivot humaniste du texte."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : Critique implicite de la domination",
+        ideePrincipale: "La Boétie réfute l'idée que les différences naturelles entre les hommes justifient la domination : ces différences appellent l'entraide, non la violence.",
+        procedes: [
+          {
+            titre: "⚔️ La métaphore guerrière rejetée",
+            citation: "comme en champ clos… brigands armés dans une forêt pour y brutaliser les plus faibles",
+            explication: "La Boétie convoque une image de violence pour mieux la rejeter. Le « champ clos » (arène de combat) et les « brigands armés » représentent une vision du monde que la Nature refuse. La force de l'argument tient dans le rejet explicite de cette métaphore."
+          },
+          {
+            titre: "🤝 La complémentarité comme réponse aux différences",
+            citation: "les uns ayant la possibilité de donner de l'aide, les autres ayant besoin d'en recevoir",
+            explication: "La Boétie ne nie pas les différences entre les hommes — il les réinterprète. Les inégalités de talents ne créent pas une hiérarchie mais une complémentarité : elles sont la condition de l'entraide, non de la domination."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : Affirmation de la liberté naturelle",
+        ideePrincipale: "La Boétie conclut par une thèse politique forte : puisque la Nature a tout fait pour unir les hommes, la servitude ne peut être naturelle — tous les hommes sont libres.",
+        procedes: [
+          {
+            titre: "🪞 La métaphore du miroir",
+            citation: "se mirer et quasiment se reconnaître en l'autre",
+            explication: "L'image du miroir dit l'égalité essentielle : se voir dans l'autre, c'est reconnaître qu'il est notre semblable. Cette reconnaissance mutuelle est le fondement philosophique de l'égalité — je ne peux pas dominer celui en qui je me reconnais."
+          },
+          {
+            titre: "🗣️ La parole comme lien naturel",
+            citation: "ce grand présent de la voix et de la parole pour nous rapprocher et fraterniser",
+            explication: "Le langage n'est pas un outil de pouvoir mais un don fait à tous pour communiquer et s'unir. La parole est ici politique : elle crée une « communion de nos volontés » — une démocratie naturelle du dialogue."
+          },
+          {
+            titre: "🕊️ La thèse finale : liberté naturelle",
+            citation: "nous sommes tous naturellement libres, puisque nous sommes tous compagnons",
+            explication: "La conclusion est un syllogisme : si la Nature nous a faits égaux et faits pour vivre ensemble, alors la servitude est contre nature. La liberté n'est pas un droit à conquérir — c'est l'état originel de l'homme. C'est la thèse centrale du Discours."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "🌿 Personnification de la Nature", exemple: "Nature, ministre de Dieu et gouvernante des hommes", effet: "Donne une autorité absolue au raisonnement — ce que la Nature a voulu ne peut être contesté." },
+      { procede: "⚖️ Métaphore du moule", exemple: "selon un même moule", effet: "Rend l'égalité concrète et physique — les hommes sont littéralement fabriqués identiques." },
+      { procede: "⚔️ Métaphore guerrière rejetée", exemple: "brigands armés dans une forêt", effet: "La violence est convoquée pour être immédiatement niée — procédé rhétorique qui renforce le refus de la domination." },
+      { procede: "🪞 Métaphore du miroir", exemple: "se mirer et se reconnaître en l'autre", effet: "Fonde philosophiquement l'égalité : reconnaître son semblable interdit la domination." },
+      { procede: "🕊️ Syllogisme conclusif", exemple: "tous naturellement libres, puisque nous sommes tous compagnons", effet: "Structure logique qui transforme l'humanisme en argument politique irréfutable." }
+    ],
+    problematiquesPossibles: [
+      "Comment La Boétie utilise-t-il la Nature pour défendre l'égalité humaine ?",
+      "En quoi ce texte est-il un manifeste humaniste ?",
+      "Comment l'auteur démontre-t-il que la liberté est l'état naturel de l'homme ?"
+    ],
+    axesLecture: [
+      "Une vision humaniste et égalitaire de la Nature : la Nature est une autorité philosophique qui fonde l'égalité des hommes en droit.",
+      "Une critique indirecte de la hiérarchie et de la violence : les différences naturelles appellent la coopération, non la domination.",
+      "Une affirmation philosophique de la liberté naturelle : la servitude est contre nature — la liberté est l'état originel de l'homme."
+    ],
+    mnemo: [
+      "📌 Nature = Égalité → même forme, même moule, compagnons et frères",
+      "📌 Différences = Entraide → donner / recevoir, non dominer",
+      "📌 Miroir = Reconnaissance → se voir en l'autre = ne pas pouvoir le dominer",
+      "📌 Parole = Fraternité → communion des volontés, don fait à tous",
+      "📌 Conclusion = Liberté → tous naturellement libres, puisque tous compagnons"
     ]
   }
 ];
