@@ -828,5 +828,150 @@ Animé d'une adresse de singe et d'une singulière lucidité qui s'élève parfo
       "📌 Regard = Grandeur tragique → Prométhée, Napoléon, hyperbole « faisait mal à voir »",
       "📌 Renoncement = Paradoxe → automate, « abdiquer la vie pour vivre », Origène"
     ]
+  },
+  {
+    id: "moliere-dom-juan-charlotte",
+    texteComplet: `CHARLOTTE : On m'a toujours dit qu'il ne faut jamais croire les Monsieux, et que vous autres courtisans êtes des enjoleurs, qui ne cherchez qu'à abuser les filles. Pour moi, j'aimerais mieux me voir morte, que de me voir déshonorée.
+
+DOM JUAN : Je ne suis pas de ces gens-là, et ce n'est pas ma manière d'agir. Je veux vous parler en tout bien et en tout honneur. Je n'ai point d'autre dessein que de vous épouser, et pour vous en convaincre, je prends à témoin l'homme que voilà de la sincérité de mes intentions.
+
+SGANARELLE, bas : (à part) Hélas !
+
+DOM JUAN : Votre beauté vous assure de tout, et on doit être à couvert de toutes ces sortes de crainte auprès d'une personne comme vous. Je n'aurais garde de vous offenser, et si je vous ai fait quelque déclaration qui vous ait pu déplaire, je me percerais le cœur de mille coups.
+
+CHARLOTTE : Mon Dieu ! je ne sais si vous dites vrai ou non ; mais vous faites que l'on vous croit.
+
+DOM JUAN : Ce n'est pas assez que vous me croyiez sur des paroles : je vous jure par tout ce qu'il y a de plus sacré que je suis sincère...
+
+CHARLOTTE : Mon Dieu, ne jurez point, je vous crois.
+
+— Molière, Dom Juan ou le Festin de pierre, Acte II, scène 2, 1665`,
+    title: "Dom Juan et Charlotte",
+    oeuvre: "Dom Juan ou le Festin de pierre",
+    auteur: "Molière",
+    annee: 1665,
+    mouvement: "Classicisme",
+    contexteAuteur: "Molière (1622-1673) est l'un des plus grands auteurs du théâtre classique français. Il écrit des comédies qui dénoncent les hypocrisies sociales, religieuses et morales de son époque, souvent à travers des personnages comiques mais profondément critiques.",
+    contexteOeuvre: "Dom Juan ou le Festin de pierre met en scène un libertin séducteur, Dom Juan, qui enchaîne les conquêtes féminines sans jamais respecter ses promesses. Ce passage (Acte II, scène 2) intervient lors d'une rencontre en milieu rural : Dom Juan, naufragé, croise Charlotte, une jeune paysanne, et décide immédiatement de la séduire malgré ses réticences.",
+    resume: "Dom Juan tente de séduire Charlotte, une jeune paysanne méfiante. Malgré les mises en garde de son entourage sur les « courtisans trompeurs », Dom Juan use de son éloquence et de promesses de mariage pour la rassurer. Sganarelle assiste à la scène sans pouvoir intervenir efficacement. Charlotte hésite, puis finit par croire Dom Juan, qui poursuit sa manipulation avec habileté.",
+    problematique: "Comment Molière met-il en scène une stratégie de séduction fondée sur le mensonge, tout en révélant la naïveté et la vulnérabilité des personnages ?",
+    introduction: "Dans cet extrait de Dom Juan (Acte II, scène 2), Molière met en scène la tentative de séduction du célèbre libertin auprès de Charlotte, une jeune paysanne méfiante. À travers un dialogue vif et théâtral, l'auteur fait s'opposer la ruse argumentative de Dom Juan à la naïveté de la jeune fille. Cette scène, comique en apparence, révèle en réalité une manipulation habile fondée sur le mensonge et l'art de la parole. Nous étudierons d'abord la méfiance initiale de Charlotte, puis la stratégie persuasive de Dom Juan, avant d'analyser la bascule progressive de la jeune fille vers la croyance.",
+    conclusion: "Dans cet extrait, Molière met en scène une confrontation entre la naïveté de Charlotte et l'habileté rhétorique du libertin. Grâce à un dialogue vif et progressif, Dom Juan parvient à transformer la méfiance initiale en confiance aveugle, en utilisant flatterie, promesses et manipulation du langage. Cette scène illustre la puissance destructrice de la parole lorsqu'elle est détachée de la vérité, tout en offrant au spectateur une ironie dramatique comique et inquiétante.\n\nOuverture : On peut rapprocher Dom Juan des autres grands séducteurs de la littérature, comme Don Giovanni de Mozart, qui incarne également la séduction sans limites et le refus de tout engagement.",
+    analyseLineaire: [
+      {
+        titre: "Mouvement 1 : Une méfiance populaire face aux « courtisans »",
+        ideePrincipale: "La scène s'ouvre sur la prudence de Charlotte, qui exprime une vision méfiante des hommes de la cour héritée de son milieu social.",
+        procedes: [
+          {
+            titre: "⚖️ La généralisation sociale",
+            citation: "on m'a toujours dit qu'il ne faut jamais croire les Monsieux",
+            explication: "Charlotte ne parle pas en son nom propre mais répète une opinion collective. Le « on » indéfini signale une pensée héritée : elle n'a pas d'expérience personnelle, elle suit un avertissement social — ce qui la rend d'emblée vulnérable car facilement retournée."
+          },
+          {
+            titre: "😈 Le champ lexical de la tromperie",
+            citation: "enjoleurs, abuser, déshonorée",
+            explication: "Ces termes négatifs installent immédiatement la thématique du mensonge et du danger moral. Paradoxalement, Charlotte nomme exactement ce que Dom Juan va faire — mais sans pouvoir s'en protéger, ce qui crée l'ironie dramatique."
+          },
+          {
+            titre: "⚠️ L'hyperbole de l'honneur",
+            citation: "j'aimerais mieux me voir morte, que de me voir déshonorée",
+            explication: "Cette hyperbole forte montre que Charlotte associe amour et danger moral. Elle oppose clairement sa valeur principale — l'honneur — à la menace que représente Dom Juan, sans encore le savoir."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 2 : Dom Juan impose une fausse sincérité",
+        ideePrincipale: "Dom Juan utilise la parole pour renverser la méfiance de Charlotte en se présentant comme un homme d'honneur.",
+        procedes: [
+          {
+            titre: "🎭 La négation catégorique",
+            citation: "Je ne suis pas de ces gens-là",
+            explication: "Phrase courte, catégorique, sans preuve. Dom Juan nie sans démontrer — stratégie classique du menteur habile qui répond à une accusation générale par un simple rejet. Le spectateur, lui, sait exactement qu'il ment."
+          },
+          {
+            titre: "❤️ Le lexique de la vertu",
+            citation: "en tout bien et en tout honneur",
+            explication: "Dom Juan emprunte délibérément le vocabulaire moral de son époque. Il imite le langage de la vertu pour mieux tromper — le comble de la manipulation est d'utiliser les mots de l'honnêteté pour mentir."
+          },
+          {
+            titre: "📜 La promesse de mariage",
+            citation: "je n'ai point d'autre dessein que de vous épouser",
+            explication: "Le mariage, valeur suprême pour une paysanne du XVIIe siècle, devient un outil de manipulation. Dom Juan ne fait aucune promesse réelle — il exploite la hiérarchie sociale et les aspirations de Charlotte pour l'enfermer dans sa confiance."
+          },
+          {
+            titre: "🎤 Le témoin malgré lui",
+            citation: "je prends à témoin l'homme que voilà",
+            explication: "Dom Juan intègre Sganarelle comme garant de sa parole sans lui demander son avis. Il fabrique une validation sociale de toutes pièces, transformant la scène en performance théâtrale — le theatre dans le théâtre."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 3 : Une flatterie pour désarmer Charlotte",
+        ideePrincipale: "Dom Juan renforce son emprise en flattant Charlotte, rendant sa beauté responsable de la confiance qu'elle mérite.",
+        procedes: [
+          {
+            titre: "💄 La flatterie dangereuse",
+            citation: "votre beauté vous assure de tout",
+            explication: "Dom Juan transforme la beauté en argument moral : si Charlotte est belle, elle mérite d'être aimée honnêtement. C'est un sophisme séduisant qui court-circuite la raison — la victime se retrouve désarmée par ses propres qualités."
+          },
+          {
+            titre: "🎭 Le renversement logique",
+            citation: "on doit être à couvert de toutes ces sortes de crainte",
+            explication: "Dom Juan prétend que la méfiance est désormais inutile — il retourne l'argument de la prudence contre lui-même. C'est une inversion du raisonnement : plus on vous admire, moins vous devez vous méfier de moi."
+          },
+          {
+            titre: "💔 L'hyperbole émotionnelle",
+            citation: "je me percerais le cœur de mille coups",
+            explication: "L'exagération spectaculaire vise à impressionner. Dom Juan se pose en amoureux transi prêt au sacrifice — une performance rhétorique qui substitue l'émotion à la vérité."
+          }
+        ]
+      },
+      {
+        titre: "Mouvement 4 : L'effondrement de la méfiance",
+        ideePrincipale: "Charlotte cède progressivement à la persuasion : la parole a triomphé de la raison.",
+        procedes: [
+          {
+            titre: "⚖️ L'hésitation révélatrice",
+            citation: "je ne sais si vous dites vrai ou non",
+            explication: "Charlotte n'a plus de certitude. Sa méfiance initiale s'est effacée. L'hésitation montre que Dom Juan a atteint son but : introduire le doute là où il y avait une conviction."
+          },
+          {
+            titre: "🧠 La victoire de la parole sur la vérité",
+            citation: "vous faites que l'on vous croit",
+            explication: "Charlotte reconnaît elle-même qu'elle n'a aucune preuve de la sincérité de Dom Juan — mais qu'elle le croit quand même. C'est la formule clé de la scène : le langage a triomphé de la vérité."
+          },
+          {
+            titre: "🎭 L'ironie dramatique finale",
+            citation: "Mon Dieu, ne jurez point, je vous crois",
+            explication: "Paradoxe final : Charlotte demande à Dom Juan de ne plus jurer alors même qu'elle cède. Le public sait qu'elle est trompée, elle non — c'est le cœur de la comédie moliéresque, à la fois comique et moralement inquiétant."
+          }
+        ]
+      }
+    ],
+    procedesStyliques: [
+      { procede: "🎭 L'ironie dramatique", exemple: "je ne suis pas de ces gens-là", effet: "Le spectateur sait que Dom Juan ment, Charlotte non — décalage qui crée tension et comique simultanément." },
+      { procede: "😈 Champ lexical de la tromperie", exemple: "enjoleurs, abuser, déshonorée", effet: "Charlotte nomme exactement ce qui va lui arriver — sans pouvoir s'en protéger." },
+      { procede: "❤️ Flatterie manipulatrice", exemple: "votre beauté vous assure de tout", effet: "Désarme la victime en transformant ses propres qualités en argument contre sa méfiance." },
+      { procede: "💬 Puissance de la parole", exemple: "vous faites que l'on vous croit", effet: "La parole triomphe de la raison — critique du langage comme instrument de domination." },
+      { procede: "⚖️ Hyperbole émotionnelle", exemple: "me percerais le cœur de mille coups", effet: "Substitue l'émotion spectaculaire à la preuve — manipulation sentimentale pure." }
+    ],
+    problematiquesPossibles: [
+      "Comment Molière dénonce-t-il l'art de la séduction mensongère ?",
+      "En quoi Dom Juan incarne-t-il le pouvoir destructeur du langage ?",
+      "Comment cette scène met-elle en évidence l'opposition entre innocence et libertinage ?",
+      "En quoi le théâtre devient-il un espace de manipulation ?"
+    ],
+    axesLecture: [
+      "Le pouvoir de la parole comme instrument de manipulation : Dom Juan ne prouve rien, il convainc par la performance rhétorique.",
+      "La naïveté paysanne face au discours libertin : le contexte social détermine la vulnérabilité de Charlotte.",
+      "Le théâtre du mensonge : Dom Juan est avant tout un acteur permanent qui joue les rôles que son interlocuteur attend."
+    ],
+    mnemo: [
+      "📌 Charlotte = Peur → tromperie, honneur, méfiance héritée",
+      "📌 Dom Juan = Parole → promesse de mariage, flatterie, témoin fabriqué",
+      "📌 Séduction = Stratégie → nier, flatter, jurer — sans jamais prouver",
+      "📌 Effet = Croyance → « vous faites que l'on vous croit »",
+      "📌 Théâtre = Illusion → ironie dramatique, le public sait, Charlotte non"
+    ]
   }
 ];
