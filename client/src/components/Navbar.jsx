@@ -45,6 +45,12 @@ export default function Navbar() {
                 Programme
               </Link>
               <Link
+                to="/fiches"
+                className={`transition-colors hover:text-amber-300 ${location.pathname.startsWith('/fiches') ? 'text-amber-300' : 'text-navy-100'}`}
+              >
+                Fiches de révision
+              </Link>
+              <Link
                 to="/textes-classe"
                 className={`transition-colors hover:text-amber-300 ${location.pathname === '/textes-classe' ? 'text-amber-300' : 'text-navy-100'}`}
               >
@@ -108,6 +114,13 @@ export default function Navbar() {
             onClick={() => setMenuOpen(false)}
           >
             Textes du programme
+          </Link>
+          <Link
+            to="/fiches"
+            className="block text-navy-100 hover:text-amber-300 transition-colors py-2"
+            onClick={() => setMenuOpen(false)}
+          >
+            📝 Fiches de révision
           </Link>
           <Link
             to="/textes-classe"

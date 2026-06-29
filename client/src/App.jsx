@@ -10,6 +10,8 @@ import MyTexts from './pages/MyTexts';
 import ClassTexts from './pages/ClassTexts';
 import SharedTextView from './pages/SharedTextView';
 import UserTextDetail from './pages/UserTextDetail';
+import FicheList from './pages/FicheList';
+import FicheDetail from './pages/FicheDetail';
 import Admin from './pages/Admin';
 
 // Route accessible uniquement si connecté
@@ -41,6 +43,10 @@ function AppRoutes() {
         <Route path="/mes-textes" element={<PrivateRoute><MyTexts /></PrivateRoute>} />
         <Route path="/textes-classe" element={<PrivateRoute><ClassTexts /></PrivateRoute>} />
         <Route path="/textes-utilisateur/:slug" element={<PrivateRoute><UserTextDetail /></PrivateRoute>} />
+
+        {/* Fiches de révision (méthode + notions clés) */}
+        <Route path="/fiches" element={<PrivateRoute><FicheList /></PrivateRoute>} />
+        <Route path="/fiches/:id" element={<PrivateRoute><FicheDetail /></PrivateRoute>} />
 
         {/* Lien de partage public (lecture seule sans auth) */}
         <Route path="/textes/share/:token" element={<SharedTextView />} />
