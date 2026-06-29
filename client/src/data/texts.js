@@ -1293,70 +1293,88 @@ Puisque donc que cette bonne mère nous a donné à tous toute la terre pour dem
     conclusion: "Dans cet extrait, La Boétie construit un raisonnement humaniste rigoureux : la Nature, en créant tous les hommes selon le même modèle, a voulu qu'ils vivent en fraternité et non en hiérarchie. Les différences de talents ne justifient pas la domination — elles appellent la coopération. La conclusion est politique autant que philosophique : tous les hommes sont naturellement libres.\n\nOuverture : Ce texte annonce les grandes déclarations des siècles suivants, notamment la Déclaration des droits de l'homme de 1789, qui proclame elle aussi l'égalité naturelle des hommes.",
     analyseLineaire: [
       {
-        titre: "Mouvement 1 : Une Nature égalitaire et fraternelle",
-        ideePrincipale: "La Boétie présente la Nature comme une force divine et politique qui a créé tous les hommes identiques, destinés à se reconnaître comme frères.",
+        titre: "Mouvement 1 : La Nature crée tous les hommes égaux",
+        ideePrincipale: "La Boétie présente la Nature comme une force bienveillante qui a créé tous les hommes pour vivre ensemble dans l'égalité et la fraternité.",
         procedes: [
           {
-            titre: "🌿 La personnification de la Nature",
+            titre: "🌿 Personnification de la Nature",
             citation: "Nature, ministre de Dieu et gouvernante des hommes",
-            explication: "La Nature reçoit une double fonction : divine (« ministre de Dieu ») et politique (« gouvernante »). Cette personnification lui confère une autorité absolue — ce qu'elle a fait est une loi supérieure à laquelle aucun argument humain ne peut s'opposer."
+            explication: "La Nature est personnifiée comme une mère ou un dirigeant bienveillant qui agit et décide. Cette personnification donne une autorité absolue au raisonnement : ce que la Nature a voulu s'impose à tous sans exception."
           },
           {
-            titre: "⚖️ L'insistance sur l'égalité physique",
+            titre: "🔁 La répétition de « tous »",
             citation: "nous a tous faits de même forme… selon un même moule",
-            explication: "La métaphore du moule est artisanale et concrète : comme un potier qui fabrique des objets identiques, la Nature a produit des hommes uniformes. L'égalité n'est pas une idée abstraite — elle est inscrite dans les corps mêmes."
+            explication: "Le mot « tous » revient plusieurs fois dans le passage. Cette répétition insiste sur l'universalité de l'égalité — personne n'est exclu. L'égalité n'est pas un idéal, c'est un fait de nature."
           },
           {
-            titre: "🤝 Le glissement vers la fraternité",
+            titre: "⚖️ La métaphore du moule",
+            citation: "selon un même moule",
+            explication: "Tous les hommes sont comparés à des objets fabriqués dans un même moule. L'image est artisanale et concrète : l'égalité n'est pas abstraite, elle est inscrite dans les corps mêmes."
+          },
+          {
+            titre: "🤝 La comparaison fraternelle",
             citation: "compagnons ou plutôt comme frères",
-            explication: "Le mouvement « ou plutôt » est une correction qui renforce le propos : La Boétie ne se contente pas de l'amitié entre égaux, il va jusqu'à la fraternité. Ce glissement lexical est le pivot humaniste du texte."
+            explication: "La Boétie se corrige lui-même : il passe de « compagnons » à « frères », renforçant encore l'idée de solidarité. Ce glissement montre que l'égalité naturelle va jusqu'à la fraternité."
+          },
+          {
+            titre: "⚔️ L'antithèse « plus forts / plus faibles »",
+            citation: "les plus forts et plus avisés comme des brigands armés… pour y brutaliser les plus faibles",
+            explication: "La Boétie reconnaît que les hommes sont différents — mais ces différences ne doivent jamais servir à dominer. En rejetant l'image du « champ clos » (arène de combat), il refuse que le monde soit une arène de violence."
+          },
+          {
+            titre: "💞 Le champ lexical de la fraternité",
+            citation: "fraternelle affection… donner de l'aide… en recevoir",
+            explication: "Les différences entre les hommes servent à créer de la solidarité, non de la hiérarchie. Celui qui a plus donne, celui qui a moins reçoit — c'est une vision de la société fondée sur l'entraide, non la domination."
           }
         ]
       },
       {
-        titre: "Mouvement 2 : Critique implicite de la domination",
-        ideePrincipale: "La Boétie réfute l'idée que les différences naturelles entre les hommes justifient la domination : ces différences appellent l'entraide, non la violence.",
+        titre: "Mouvement 2 : La Nature fonde la liberté",
+        ideePrincipale: "La Boétie explique que la Nature a tout donné aux hommes pour qu'ils vivent libres ensemble, et en conclut logiquement que la servitude est contre nature.",
         procedes: [
           {
-            titre: "⚔️ La métaphore guerrière rejetée",
-            citation: "comme en champ clos… brigands armés dans une forêt pour y brutaliser les plus faibles",
-            explication: "La Boétie convoque une image de violence pour mieux la rejeter. Le « champ clos » (arène de combat) et les « brigands armés » représentent une vision du monde que la Nature refuse. La force de l'argument tient dans le rejet explicite de cette métaphore."
+            titre: "👩 La métaphore de la « bonne mère »",
+            citation: "cette bonne mère nous a donné à tous toute la terre pour demeure",
+            explication: "La Nature devient une mère protectrice. Cette image inspire confiance et bienveillance — elle renforce l'idée que la Nature veut le bien de tous ses enfants, sans exclusion ni hiérarchie."
           },
           {
-            titre: "🤝 La complémentarité comme réponse aux différences",
-            citation: "les uns ayant la possibilité de donner de l'aide, les autres ayant besoin d'en recevoir",
-            explication: "La Boétie ne nie pas les différences entre les hommes — il les réinterprète. Les inégalités de talents ne créent pas une hiérarchie mais une complémentarité : elles sont la condition de l'entraide, non de la domination."
-          }
-        ]
-      },
-      {
-        titre: "Mouvement 3 : Affirmation de la liberté naturelle",
-        ideePrincipale: "La Boétie conclut par une thèse politique forte : puisque la Nature a tout fait pour unir les hommes, la servitude ne peut être naturelle — tous les hommes sont libres.",
-        procedes: [
-          {
-            titre: "🪞 La métaphore du miroir",
-            citation: "se mirer et quasiment se reconnaître en l'autre",
-            explication: "L'image du miroir dit l'égalité essentielle : se voir dans l'autre, c'est reconnaître qu'il est notre semblable. Cette reconnaissance mutuelle est le fondement philosophique de l'égalité — je ne peux pas dominer celui en qui je me reconnais."
+            titre: "🏠 La métaphore de la maison commune",
+            citation: "nous a tous logés en quelque façon dans même maison",
+            explication: "La Terre entière est comparée à une maison partagée. Les hommes sont membres d'une même famille — personne ne peut légitimement en dominer un autre dans sa propre maison."
           },
           {
-            titre: "🗣️ La parole comme lien naturel",
-            citation: "ce grand présent de la voix et de la parole pour nous rapprocher et fraterniser",
-            explication: "Le langage n'est pas un outil de pouvoir mais un don fait à tous pour communiquer et s'unir. La parole est ici politique : elle crée une « communion de nos volontés » — une démocratie naturelle du dialogue."
+            titre: "🗣️ Le champ lexical de la communication",
+            citation: "voix et de la parole… pensées… communion de nos volontés",
+            explication: "La parole est un don universel qui permet aux hommes de vivre ensemble. Elle fonde une démocratie naturelle du dialogue : par la parole, les hommes forment une communauté de volontés — libre et égale."
           },
           {
-            titre: "🕊️ La thèse finale : liberté naturelle",
-            citation: "nous sommes tous naturellement libres, puisque nous sommes tous compagnons",
-            explication: "La conclusion est un syllogisme : si la Nature nous a faits égaux et faits pour vivre ensemble, alors la servitude est contre nature. La liberté n'est pas un droit à conquérir — c'est l'état originel de l'homme. C'est la thèse centrale du Discours."
+            titre: "📋 L'énumération des dons de la Nature",
+            citation: "si elle nous a donné… si elle a tâché… si elle a montré…",
+            explication: "La Boétie accumule les actions de la Nature par une anaphore répétée en « si ». Cette accumulation renforce l'argumentation : la Nature a tout fait pour que les hommes vivent libres — la servitude contredit donc son œuvre entière."
+          },
+          {
+            titre: "💡 La formule paradoxale",
+            citation: "non pas tant nous faire tous unis que tous uns",
+            explication: "Cette formule célèbre dit que les hommes ne sont pas seulement « réunis » (« unis ») mais qu'ils forment une seule et même communauté (« uns »). C'est plus qu'une alliance — c'est une unité naturelle indivise."
+          },
+          {
+            titre: "🕊️ La conclusion logique",
+            citation: "tous naturellement libres, puisque nous sommes tous compagnons",
+            explication: "La conclusion est un syllogisme : si la Nature nous a faits égaux et destinés à vivre ensemble, alors personne n'est destiné à être esclave. La liberté est l'état originel de l'homme — c'est la thèse centrale du Discours."
           }
         ]
       }
     ],
     procedesStyliques: [
-      { procede: "🌿 Personnification de la Nature", exemple: "Nature, ministre de Dieu et gouvernante des hommes", effet: "Donne une autorité absolue au raisonnement — ce que la Nature a voulu ne peut être contesté." },
-      { procede: "⚖️ Métaphore du moule", exemple: "selon un même moule", effet: "Rend l'égalité concrète et physique — les hommes sont littéralement fabriqués identiques." },
-      { procede: "⚔️ Métaphore guerrière rejetée", exemple: "brigands armés dans une forêt", effet: "La violence est convoquée pour être immédiatement niée — procédé rhétorique qui renforce le refus de la domination." },
-      { procede: "🪞 Métaphore du miroir", exemple: "se mirer et se reconnaître en l'autre", effet: "Fonde philosophiquement l'égalité : reconnaître son semblable interdit la domination." },
-      { procede: "🕊️ Syllogisme conclusif", exemple: "tous naturellement libres, puisque nous sommes tous compagnons", effet: "Structure logique qui transforme l'humanisme en argument politique irréfutable." }
+      { procede: "🌿 Personnification", exemple: "Nature, ministre de Dieu", effet: "Donne à la Nature une autorité morale — son œuvre s'impose comme une loi supérieure." },
+      { procede: "🔁 Répétition", exemple: "tous", effet: "Insiste sur l'universalité de l'égalité — sans aucune exception." },
+      { procede: "⚖️ Métaphore du moule", exemple: "selon un même moule", effet: "Montre que tous les hommes ont la même origine physique et morale." },
+      { procede: "🤝 Comparaison", exemple: "comme frères", effet: "Renforce l'idée de fraternité — plus fort que la simple amitié entre égaux." },
+      { procede: "⚔️ Antithèse", exemple: "plus forts / plus faibles", effet: "Les différences existent mais servent à l'entraide, non à la domination." },
+      { procede: "👩 Métaphore", exemple: "bonne mère", effet: "Présente la Nature comme protectrice de tous ses enfants sans exception." },
+      { procede: "🗣️ Champ lexical", exemple: "voix, parole, communion", effet: "Souligne que la communication est le fondement naturel de la société libre." },
+      { procede: "📋 Énumération / anaphore", exemple: "si elle nous a donné… si elle a tâché…", effet: "Accumule les preuves de la bienveillance de la Nature — argumentation progressive et convaincante." },
+      { procede: "💡 Formule paradoxale", exemple: "tous unis que tous uns", effet: "Montre que les hommes forment une seule communauté naturelle — au-delà de la simple alliance." }
     ],
     problematiquesPossibles: [
       "Comment La Boétie utilise-t-il la Nature pour défendre l'égalité humaine ?",
@@ -1369,11 +1387,12 @@ Puisque donc que cette bonne mère nous a donné à tous toute la terre pour dem
       "Une affirmation philosophique de la liberté naturelle : la servitude est contre nature — la liberté est l'état originel de l'homme."
     ],
     mnemo: [
-      "📌 Nature = Égalité → même forme, même moule, compagnons et frères",
+      "📌 Nature = Égalité → même moule, même forme, compagnons et frères",
       "📌 Différences = Entraide → donner / recevoir, non dominer",
-      "📌 Miroir = Reconnaissance → se voir en l'autre = ne pas pouvoir le dominer",
-      "📌 Parole = Fraternité → communion des volontés, don fait à tous",
-      "📌 Conclusion = Liberté → tous naturellement libres, puisque tous compagnons"
+      "📌 Mère = Protectrice → même maison, même terre pour tous",
+      "📌 Parole = Fraternité → communion des volontés, don universel",
+      "📌 Conclusion = Liberté → tous naturellement libres, puisque tous compagnons",
+      "💡 3 idées clés : (1) Nature = égalité (même moule, même forme) · (2) Différences = entraide, pas domination · (3) Liberté = droit naturel de tous les hommes"
     ]
   },
   {
@@ -1399,75 +1418,81 @@ Les herbes ont chacune leur propriété, leur naturel et leur singularité, mais
     conclusion: "Dans cet extrait, La Boétie démontre que la servitude est avant tout un conditionnement psychologique : ce qui était contrainte devient habitude, puis conviction. La coutume, plus puissante que la nature, finit par rendre invisible le joug que l'on porte. Les métaphores végétales donnent à cette réflexion une dimension universelle : comme la plante greffée, l'homme finit par produire des fruits qui ne sont pas les siens.\n\nOuverture : Cette réflexion préfigure les analyses modernes du conditionnement social, comme celles de Bourdieu sur l'habitus, ou de Rousseau sur la corruption de l'état naturel par la société.",
     analyseLineaire: [
       {
-        titre: "Mouvement 1 : La servitude devient une habitude acceptée",
-        ideePrincipale: "La Boétie montre que la contrainte initiale se transforme progressivement en acceptation volontaire, au point que les hommes considèrent leur servitude comme naturelle.",
+        titre: "Mouvement 1 : La servitude devient une habitude",
+        ideePrincipale: "La Boétie explique que les premiers hommes sont soumis par la force, mais que leurs descendants finissent par accepter cette domination sans même la remettre en question.",
         procedes: [
           {
-            titre: "⛓️ L'antithèse contrainte / volonté",
-            citation: "on sert contraint et vaincu par la force… servent sans regret",
-            explication: "L'antithèse entre « contraint » et « sans regret » décrit le basculement psychologique central du texte. La violence initiale disparaît — non parce que la situation change, mais parce que les générations suivantes n'ont pas connu l'avant. C'est le mécanisme de la normalisation."
+            titre: "⚡ L'opposition contrainte / volonté",
+            citation: "ceux qui viennent après servent sans regret",
+            explication: "La contrainte initiale (« par la force ») disparaît au profit de l'habitude (« sans regret »). Les générations suivantes n'ont pas connu la liberté avant la domination — elles ne savent pas ce qu'elles ont perdu."
+          },
+          {
+            titre: "⛓️ Le champ lexical de la servitude",
+            citation: "joug… servage… servir",
+            explication: "Ces mots sont répétés tout au long du passage. Leur accumulation insiste sur l'enfermement progressif des hommes — la servitude est partout, elle enveloppe toute la vie dès la naissance."
           },
           {
             titre: "👶 La métaphore du joug natal",
-            citation: "naissant sous le joug, puis nourris et élevés dans le servage",
-            explication: "Le joug (instrument de labour) désigne métaphoriquement l'oppression. Le fait de naître « sous » lui signifie que les générations nouvelles n'ont jamais connu l'espace libre avant la contrainte — elles ne savent pas ce qu'elles ont perdu."
+            citation: "les hommes naissant sous le joug",
+            explication: "Le joug (instrument de labour des animaux) désigne métaphoriquement l'oppression. Naître « sous » le joug, c'est ne jamais avoir connu autre chose — l'absence de liberté devient invisible car elle a toujours été là."
           },
           {
-            titre: "🧠 L'illusion du naturel",
-            citation: "ils considèrent comme naturel l'état de leur naissance",
-            explication: "C'est le paradoxe au cœur du texte : ce qui est historique (une domination imposée) est vécu comme naturel (un ordre inévitable). La Boétie nomme ici un mécanisme d'idéologie — la servitude se rend invisible en se faisant passer pour l'ordre des choses."
-          }
-        ]
-      },
-      {
-        titre: "Mouvement 2 : La puissance écrasante de la coutume",
-        ideePrincipale: "La coutume est une force qui dépasse la volonté individuelle : elle enseigne à servir, au point que la servitude devient aussi familière qu'un poison qu'on a appris à boire.",
-        procedes: [
+            titre: "😶 La critique de la passivité",
+            citation: "se contentent de vivre comme ils sont nés",
+            explication: "Le verbe « se contentent » est clé : il montre que les hommes renoncent à réfléchir. Ils prennent leur situation pour normale et naturelle — alors qu'elle est le résultat d'une domination historique."
+          },
           {
-            titre: "🔁 La personnification de la coutume",
-            citation: "la coutume, qui a en toutes choses grand pouvoir sur nous",
-            explication: "La coutume est traitée comme une puissance active, presque un personnage. Cette personnification la rend concrète et menaçante — elle n'est pas une simple habitude, elle est une force qui agit sur nous sans qu'on le remarque."
+            titre: "👨‍💼 L'exemple de l'héritier",
+            citation: "il n'est point d'héritier si prodigue… qui ne jette les yeux sur les registres de son père",
+            explication: "Même un héritier paresseux vérifie ses droits. Sous-entendu : les hommes devraient eux aussi vérifier leurs droits naturels — mais ils ne le font pas, par habitude et par manque de mémoire de leur liberté."
           },
           {
             titre: "☠️ La métaphore du poison (Mithridate)",
-            citation: "comme l'on dit de Mithridate qu'il s'accoutuma à boire le poison… avaler le venin de la servitude",
-            explication: "La référence à Mithridate (roi qui s'immunisa au poison en en absorbant de petites doses) est un exemple historique frappant. La servitude fonctionne de même : ingérée par petites doses dès l'enfance, elle cesse de faire mal — et on finit par la trouver « moins amère »."
+            citation: "Mithridate s'accoutuma à boire le poison… avaler le venin de la servitude",
+            explication: "Le roi Mithridate s'immunisa contre le poison en en absorbant de petites doses. La servitude fonctionne de même : ingérée progressivement dès l'enfance, elle cesse de faire souffrir — et on finit par la trouver « moins amère »."
           }
         ]
       },
       {
-        titre: "Mouvement 3 : La coutume plus forte que la nature",
-        ideePrincipale: "La Boétie développe une réflexion philosophique : la nature humaine est fragile et modelable ; l'environnement et l'éducation la transforment profondément, comme le jardinier modifie la plante.",
+        titre: "Mouvement 2 : La nature contre la coutume",
+        ideePrincipale: "La Boétie affirme que la coutume est plus puissante que la nature elle-même : l'environnement et l'éducation transforment profondément les hommes, comme le jardinier modifie la plante.",
         procedes: [
           {
-            titre: "⚖️ La thèse du renversement",
+            titre: "⚖️ L'opposition nature / coutume",
             citation: "la nature a sur nous moins de pouvoir que la coutume",
-            explication: "Cette phrase est la thèse philosophique centrale du passage. Elle renverse la hiérarchie attendue : on imaginerait la nature plus forte que l'habitude — La Boétie affirme le contraire. Ce renversement explique comment la liberté naturelle peut être effacée par le conditionnement."
+            explication: "C'est la thèse centrale du passage. La Nature représente la liberté et les qualités humaines innées ; la coutume représente l'habitude et l'éducation. La Boétie affirme que la seconde est plus forte — ce qui explique comment les hommes acceptent la servitude malgré leur liberté naturelle."
+          },
+          {
+            titre: "📚 La personnification de la coutume",
+            citation: "la coutume nous enseigne à servir",
+            explication: "La coutume agit presque comme un professeur — elle enseigne, elle forme. Cette personnification lui donne un pouvoir presque humain : elle n'est pas une simple routine, c'est une force active qui conditionne les esprits."
           },
           {
             titre: "🌱 La métaphore des semences",
             citation: "les semences de bien que la nature met en nous sont si menues et glissantes",
-            explication: "Le naturel bon (la liberté, la conscience) est comparé à des semences — petites, fragiles, faciles à écraser. L'image dit la vulnérabilité de ce qui est inné face à ce qui est appris. La liberté naturelle ne survit que si on l'entretient."
+            explication: "Les qualités naturelles (liberté, conscience) sont comparées à des graines fragiles. L'image dit leur vulnérabilité : elles doivent être cultivées et entretenues, sinon elles disparaissent sous l'effet du conditionnement."
           },
           {
-            titre: "🌳 La métaphore de l'arbre greffé",
+            titre: "🌳 La comparaison avec les arbres greffés",
             citation: "arbres fruitiers… qu'ils délaissent aussitôt pour porter d'autres fruits étrangers… pour peu qu'on les greffe",
-            explication: "L'arbre greffé produit des fruits qui ne lui appartiennent pas — comme l'homme conditionné adopte des valeurs qui ne sont pas les siennes. La greffe est une image forte de la manipulation culturelle : on peut faire produire à un être ce qui lui est étranger."
+            explication: "L'arbre greffé produit des fruits qui ne lui appartiennent pas — comme l'homme conditionné adopte des valeurs qui ne sont pas les siennes. C'est une image puissante de la transformation par l'éducation."
           },
           {
             titre: "🌿 Le champ lexical du jardinage",
             citation: "le gel, le temps, le terroir ou la main du jardinier",
-            explication: "La clôture du passage avec des images végétales (herbes, propriété, terroir) universalise la réflexion. Tous les êtres vivants sont façonnés par leur milieu — et l'homme n'échappe pas à cette loi. Le « jardinier » représente discrètement le pouvoir politique qui façonne les esprits."
+            explication: "Toutes les plantes sont façonnées par leur milieu. De même, l'homme est façonné par son environnement social et éducatif. Le « jardinier » représente discrètement le pouvoir politique qui modèle les esprits dès l'enfance."
           }
         ]
       }
     ],
     procedesStyliques: [
-      { procede: "⛓️ Antithèse contrainte / volonté", exemple: "contraint et vaincu… servent sans regret", effet: "Décrit le basculement psychologique de la servitude forcée à la servitude acceptée." },
-      { procede: "☠️ Métaphore du poison (Mithridate)", exemple: "avaler le venin de la servitude", effet: "Rend la coutume concrètement dangereuse — et montre l'accoutumance comme un mécanisme d'anesthésie." },
-      { procede: "🧠 Illusion du naturel", exemple: "ils considèrent comme naturel l'état de leur naissance", effet: "Nomme le mécanisme idéologique central : la domination se rend invisible en se faisant passer pour l'ordre naturel." },
-      { procede: "🌱 Métaphore des semences", exemple: "semences de bien… si menues et glissantes", effet: "Dit la fragilité du naturel bon — la liberté doit être entretenue, sinon elle s'étiole." },
-      { procede: "🌳 Métaphore de l'arbre greffé", exemple: "pour peu qu'on les greffe", effet: "L'homme conditionné produit des valeurs étrangères à sa nature — image de la manipulation culturelle." }
+      { procede: "⚡ Opposition", exemple: "par la force / volontairement", effet: "Montre que la contrainte initiale se transforme progressivement en habitude acceptée." },
+      { procede: "⛓️ Champ lexical", exemple: "joug, servage, servir", effet: "Insiste sur l'omniprésence de la domination — la servitude enveloppe toute la vie." },
+      { procede: "☠️ Métaphore du poison", exemple: "le venin de la servitude", effet: "Assimile la servitude à un poison : dangereuse mais progressivement supportée." },
+      { procede: "📜 Référence historique", exemple: "Mithridate", effet: "Rend l'argument concret et mémorable — l'accoutumance au poison illustre l'accoutumance à la tyrannie." },
+      { procede: "🌳 Comparaison", exemple: "arbres fruitiers… qu'on greffe", effet: "Explique que l'éducation transforme les hommes comme la greffe transforme l'arbre." },
+      { procede: "📚 Personnification", exemple: "la coutume nous enseigne", effet: "Donne à la coutume un pouvoir presque humain — elle agit, elle forme, elle conditionne." },
+      { procede: "🌿 Comparaison végétale", exemple: "gel, temps, terroir", effet: "Illustre que l'environnement façonne les individus comme il façonne les plantes." }
     ],
     problematiquesPossibles: [
       "Comment La Boétie explique-t-il l'acceptation de la servitude par les hommes ?",
@@ -1480,11 +1505,12 @@ Les herbes ont chacune leur propriété, leur naturel et leur singularité, mais
       "La transformation de la nature humaine par l'environnement : les métaphores végétales montrent que l'homme est façonnable — et donc manipulable."
     ],
     mnemo: [
-      "📌 Départ = Contrainte → forcé, vaincu, joug natal",
-      "📌 Milieu = Habitude → sans regret, considèrent comme naturel",
-      "📌 Coutume = Poison → Mithridate, venin, moins amer",
+      "📌 Départ = Contrainte → forcé, vaincu par la force",
+      "📌 Milieu = Habitude → servent sans regret, considèrent comme naturel",
+      "📌 Coutume = Poison → Mithridate, venin, moins amer avec le temps",
       "📌 Nature = Fragile → semences menues, arbres greffés, plante méconnaissable",
-      "📌 Structure = Forcé → Habitué → Convaincu"
+      "📌 Structure = Forcé → Habitué → Convaincu",
+      "💡 Idée essentielle : les hommes ne naissent pas esclaves, ils le deviennent par l'habitude et la coutume."
     ]
   }
 ];
